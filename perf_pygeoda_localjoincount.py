@@ -1,6 +1,12 @@
 import pygeoda
 import time
 
+def get_runtime(rounds, w, v, perm, threads):
+    for 
+    start_time = time.time()
+    lisa = pygeoda.local_joincount(w20, x, permutations=999, cpu_threads=1)
+    print("--- %s seconds ---" % (time.time() - start_time))
+
 snow = pygeoda.open("./data/deaths_nd_by_house.shp")
 w20 = pygeoda.weights.distance_weights(snow, 20.0)
 x = snow.GetIntegerCol("death_dum")
