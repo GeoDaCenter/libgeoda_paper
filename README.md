@@ -71,18 +71,60 @@ The outpu:
 
 # 2. Performance tests for the paper
 
-**Test Datasets:**
+**Test datasets:**
 
 | Name | # observations | variable |
 |------|----------------|----------|
 |U.S. counties (natregimes.shp)| 3,085 | HR60 (homicide rates for 1960) |
-|U.S. census tracts (us-sdoh-2014-chi_utm.shp) | 72,344 | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
-|New York City census blocks | 108,487 | CE01_02 (employed persons earning less than $1250 per month in 2002) |
-| Chicago parcels | 592,521 | HVAL (assessed house value) |
+|U.S. census tracts (us-sdoh-2014.shp) | 72,344 | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
+|New York City census blocks (NYC Area2010_2data.shp) | 108,487 | CE01_02 (employed persons earning less than $1250 per month in 2002) |
+| Chicago parcels (Chicago_parcels_points.shp) | 592,521 | EstBuild Board of Review final estimated market value of building from the prior tax year.|
 
 **Test function:**
 
-The main time-consuming part in the Local Moran statistic is the conditional permutation. The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 99,999 (the largest possible value in GeoDa). 
+The main time-consuming part in the Local Moran statistic is the conditional permutation. 
+The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 99,999 
+(the largest possible value in GeoDa). 
+
+| Software | Test Function |
+|----------|---------------|
+| GeoDa    |  Local Moran using GPU |
+| pygeoda  |  local_moran() with permutation_method="brutal-force" |
+| pygeoda  |  local_moran() with permutation_method="lookup-table" |
+| rgeoda   |  local_moran() with permutation_method="brutal-force" |
+| rgeoda   |  local_moran() with permutation_method="lookup-table" |
+| pysal/esda |  Moran_Local() without Numba (single-thread) |
+| pysal/esda |  Moran_Local() with Numba (multi-threads) |
+| spedp |  localmoran_perm() |
+
+* NOTE: permutation_method="brutal-force" vs "lookup-table"
+
+In "brutal-force" permutation method, for example with 999 permutations,  each observation will find 999 groups of random neighbors which are used to compute a pseudo-p value.
+Therefore, the total number of permutation computation is: sum(999 x nbr_i)
+
+In "lookup-table" permutation method, for example with 999 permutations, a 999 groups of random neighbors (size = max_neighbors) 
+from a pool of (N-1) indices will be created as a "lookup-table". Then, each observation will use this "lookup-table" to 
+compute a pseudo-p value. The (N-1) indices in the "lookup-table" will be reordered by removing the index of current observation,
+so to create a "conditional" permutation test. Therefore, the total number of permutation computation is: 999 x max_neighbors
+
+The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeoda/rgeoda (version 0.0.8).
+ 
+**Test machine:**
+
+* Mac Pro (Later 2013)
+* Processor: 2.7 GHz 12-Core Intel Xeon E5
+* Memory: 64 GB 1866 MHz DDR3
+* Graphic: AMD FirePro D700 6 GB
+
+**Test environment:**
+
+
+| Software  | Version |
+|--|---------------------|
+|macOS| Mojave Version 10.14.6| 
+|Python| Python3.6.6 64-bit |
+|R | R 4.0.3 |
+|clang | Apple clang version 11.0.0|
 
 **Test implementations:**
 
@@ -91,9 +133,12 @@ The main time-consuming part in the Local Moran statistic is the conditional per
 | 1 | GeoDa desktop (using GPU) | 1.18 |
 | 2 | libgeoda C++ API | 0.0.8 |
 | 3 | rgeoda | 0.0.8 |
-| 4 | spdep | ?? |
+| 4 | spdep |  remotes::install_github("r-spatial/spdep") |
 | 5 | pygeoda | 0.0.8 |
-| 6 | PySAL | 2.4.0 |
+| 6 | PySAL | libpysal 4.4.0, esda-2.3.6 |
 
-Each test function will be executed 10 times, and the average executing time (in seconds with 2 digital decimals) will be recorded.
+Each test function will be executed 3 times, and the average executing time (in seconds with 6 digital decimals) will be recorded.
 
+**Test results:**
+
+1. run_pygeoda_perf.sh > result_pygeoda_brutalforce_1.txt

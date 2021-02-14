@@ -1,0 +1,17 @@
+Test pyGeoDa local moran with Natregimes using permutation_method=brutal-force
+./data/natregimes.shp 999 brutal-force 1: 0.5929338932037354 seconds
+./data/natregimes.shp 999 brutal-force 8: 0.08582210540771484 seconds
+./data/natregimes.shp 999 brutal-force 16: 0.060598134994506836 seconds
+./data/natregimes.shp 9999 brutal-force 1: 6.018259048461914 seconds
+./data/natregimes.shp 9999 brutal-force 8: 0.8519999980926514 seconds
+./data/natregimes.shp 9999 brutal-force 16: 0.5908770561218262 seconds
+./data/natregimes.shp 99999 brutal-force 1: 60.1445529460907 seconds
+./data/natregimes.shp 99999 brutal-force 8: 8.609315872192383 seconds
+./data/natregimes.shp 99999 brutal-force 16: 5.684102773666382 seconds
+Test pyGeoDa local moran with SDOH using permutation_method=brutal-force
+./data/us-sdoh-2014.shp 999 brutal-force 1: 17.749497652053833 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 8: 2.563847064971924 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 16: 1.8563120365142822 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 1: 180.92932605743408 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 8: 25.381216049194336 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 16: 17.188417196273804 seconds
