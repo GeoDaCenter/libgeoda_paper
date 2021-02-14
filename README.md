@@ -53,10 +53,9 @@ chi = pygeoda.open("./data/us-sdoh-2014-chi_utm.shp")
 
 # get data from variables:"1_SES", "2_MOB", "3_URB","4_MICA"
 v = ("1_SES", "2_MOB", "3_URB","4_MICA")
-data = [chi.GetRealCol(i) for i in v]
 
 # apply neighbor match test with 8 nearest neighbors
-chsdoh = pygeoda.neighbor_match_test(chi, data, 8)
+chsdoh = pygeoda.neighbor_match_test(chi, v, 8)
 
 print(chsdoh)
 ```
