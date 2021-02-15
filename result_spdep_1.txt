@@ -1,0 +1,110 @@
+====Run spdep localmoran_perm using Natregimes 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "1"                    
+   user  system elapsed 
+  1.175   0.095   1.271 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "8"                    
+   user  system elapsed 
+  1.626   0.365   0.618 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "16"                   
+   user  system elapsed 
+  1.710   0.589   0.434 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "1"                    
+   user  system elapsed 
+  8.911   0.803   9.714 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "8"                    
+   user  system elapsed 
+ 12.100   1.213   3.492 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "16"                   
+   user  system elapsed 
+ 12.398   1.638   1.956 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "1"                    
+   user  system elapsed 
+ 91.734   5.280  97.019 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "8"                    
+   user  system elapsed 
+124.231   6.968  33.408 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "16"                   
+   user  system elapsed 
+128.648   9.064  18.353 
+====Run spdep localmoran_perm using SDOH 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326

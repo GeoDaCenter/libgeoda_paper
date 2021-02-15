@@ -13,9 +13,10 @@ perm_method <- args[4]
 cpu_threads <- as.integer(args[5])
 
 dt <- st_read(file_path)
-if (file_path=='./data/Chicago_parcels_points.shp ') {
-    w <- knn_weights(dt, 20)
+if (file_path=='./data/Chicago_parcels_points.shp') {
+    w <- knn_weights(dt, 4)
 } else {
     w <- queen_weights(dt)
 }
+args
 system.time(lm <- local_moran(w, dt[variable_name], permutations=perms, permutation_method=perm_method, cpu_threads=cpu_threads))

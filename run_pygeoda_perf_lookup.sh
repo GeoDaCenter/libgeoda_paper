@@ -29,13 +29,13 @@ python perf_pygeoda.py ./data/NYC_Area2010_2data.shp CE01_02 9999 lookup-table  
 python perf_pygeoda.py ./data/NYC_Area2010_2data.shp CE01_02 99999 lookup-table  1
 python perf_pygeoda.py ./data/NYC_Area2010_2data.shp CE01_02 99999 lookup-table  8
 python perf_pygeoda.py ./data/NYC_Area2010_2data.shp CE01_02 99999 lookup-table  16
-echo "Test pyGeoDa local moran with Chicago_Parcels using permutation_method=lookup-table "
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 999 lookup-table  1
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 999 lookup-table  8
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 999 lookup-table  16
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 9999 lookup-table  1
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 9999 lookup-table  8
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 9999 lookup-table  16
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 99999 lookup-table  1
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 99999 lookup-table  8
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp CE01_02 99999 lookup-table  16
+echo "Test pyGeoDa local moran with Chicago_Parcels using permutation_method=lookup-table
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 lookup-table  1
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 lookup-table  8
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 lookup-table  16
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 9999 lookup-table  1
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 9999 lookup-table  8
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 9999 lookup-table  16
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 99999 lookup-table  1
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 99999 lookup-table  8
+python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 99999 lookup-table  16"

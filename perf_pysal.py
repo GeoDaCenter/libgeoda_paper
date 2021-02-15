@@ -20,8 +20,8 @@ np.random.seed(12345)
 
 # prepare the data and weights
 gdf = gpd.read_file(data_path)
-if data_path == './data/Chicago_parcels_points.shp ':
-    w = lps.weights.KNN.from_dataframe(gdf, k=20)
+if data_path != './data/natregimes.shp':
+    w = lps.weights.KNN.from_dataframe(gdf, k=4)
 else:
     w = lps.weights.Queen.from_dataframe(gdf)
 w.transform = 'r'

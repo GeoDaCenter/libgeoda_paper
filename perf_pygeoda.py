@@ -16,8 +16,8 @@ cpu_threads = int(sys.argv[5])
 
 # prepare the data and weights
 dt = pygeoda.open(data_path)
-if data_path == './data/Chicago_parcels_points.shp ':
-    w = pygeoda.weights.knn_weights(dt, 20)
+if data_path == './data/Chicago_parcels_points.shp':
+    w = pygeoda.weights.knn_weights(dt, 4)
 else:
     w = pygeoda.weights.queen_weights(dt)
 x = dt.GetRealCol(var_name)

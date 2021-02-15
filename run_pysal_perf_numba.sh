@@ -30,12 +30,12 @@ python perf_pysal.py ./data/NYC_Area2010_2data.shp CE01_02 99999 1
 python perf_pysal.py ./data/NYC_Area2010_2data.shp CE01_02 99999 8
 python perf_pysal.py ./data/NYC_Area2010_2data.shp CE01_02 99999 16
 echo "Test pysal local moran with Chicago_Parcels with Numba"
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 999 1
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 999 8
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 999 16
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 9999 1
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 9999 8
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 9999 16
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 99999 1
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 99999 8
-python perf_pysal.py ./data/Chicago_parcels_points.shp CE01_02 99999 16
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 999 1
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 999 8
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 999 16
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 9999 1
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 9999 8
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 9999 16
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 99999 1
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 99999 8
+python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 99999 16

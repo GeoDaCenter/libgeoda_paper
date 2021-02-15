@@ -1,17 +1,37 @@
 Test pyGeoDa local moran with Natregimes using permutation_method=brutal-force
-./data/natregimes.shp 999 brutal-force 1: 0.5929338932037354 seconds
-./data/natregimes.shp 999 brutal-force 8: 0.08582210540771484 seconds
-./data/natregimes.shp 999 brutal-force 16: 0.060598134994506836 seconds
-./data/natregimes.shp 9999 brutal-force 1: 6.018259048461914 seconds
-./data/natregimes.shp 9999 brutal-force 8: 0.8519999980926514 seconds
-./data/natregimes.shp 9999 brutal-force 16: 0.5908770561218262 seconds
-./data/natregimes.shp 99999 brutal-force 1: 60.1445529460907 seconds
-./data/natregimes.shp 99999 brutal-force 8: 8.609315872192383 seconds
-./data/natregimes.shp 99999 brutal-force 16: 5.684102773666382 seconds
+./data/natregimes.shp 999 brutal-force 1: 0.5914509296417236 seconds
+./data/natregimes.shp 999 brutal-force 8: 0.08591008186340332 seconds
+./data/natregimes.shp 999 brutal-force 16: 0.05975604057312012 seconds
+./data/natregimes.shp 9999 brutal-force 1: 6.03707218170166 seconds
+./data/natregimes.shp 9999 brutal-force 8: 0.8514440059661865 seconds
+./data/natregimes.shp 9999 brutal-force 16: 0.5646729469299316 seconds
+./data/natregimes.shp 99999 brutal-force 1: 58.92710328102112 seconds
+./data/natregimes.shp 99999 brutal-force 8: 8.485954999923706 seconds
+./data/natregimes.shp 99999 brutal-force 16: 5.570709943771362 seconds
 Test pyGeoDa local moran with SDOH using permutation_method=brutal-force
-./data/us-sdoh-2014.shp 999 brutal-force 1: 17.749497652053833 seconds
-./data/us-sdoh-2014.shp 999 brutal-force 8: 2.563847064971924 seconds
-./data/us-sdoh-2014.shp 999 brutal-force 16: 1.8563120365142822 seconds
-./data/us-sdoh-2014.shp 9999 brutal-force 1: 180.92932605743408 seconds
-./data/us-sdoh-2014.shp 9999 brutal-force 8: 25.381216049194336 seconds
-./data/us-sdoh-2014.shp 9999 brutal-force 16: 17.188417196273804 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 1: 17.454599857330322 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 8: 2.4892380237579346 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 16: 1.6712172031402588 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 1: 175.07298302650452 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 8: 25.021250009536743 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 16: 16.907100200653076 seconds
+./data/us-sdoh-2014.shp 99999 brutal-force 1: 1727.7120940685272 seconds
+./data/us-sdoh-2014.shp 99999 brutal-force 8: 248.83428502082825 seconds
+./data/us-sdoh-2014.shp 99999 brutal-force 16: 166.1402678489685 seconds
+Test pyGeoDa local moran with NYC using permutation_method=brutal-force
+./data/NYC_Area2010_2data.shp 999 brutal-force 1: 28.46846580505371 seconds
+./data/NYC_Area2010_2data.shp 999 brutal-force 8: 4.277080059051514 seconds
+./data/NYC_Area2010_2data.shp 999 brutal-force 16: 2.896711826324463 seconds
+./data/NYC_Area2010_2data.shp 9999 brutal-force 1: 282.76479601860046 seconds
+./data/NYC_Area2010_2data.shp 9999 brutal-force 8: 42.7974419593811 seconds
+./data/NYC_Area2010_2data.shp 9999 brutal-force 16: 28.276558876037598 seconds
+./data/NYC_Area2010_2data.shp 99999 brutal-force 1: 2821.240134000778 seconds
+./data/NYC_Area2010_2data.shp 99999 brutal-force 8: 422.4912781715393 seconds
+./data/NYC_Area2010_2data.shp 99999 brutal-force 16: 283.2045419216156 seconds
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=brutal-force
+./data/Chicago_parcels_points.shp 999 brutal-force 1: 389.7134437561035 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 8: 57.798383951187134 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 16: 43.7291738986969 seconds
+./data/Chicago_parcels_points.shp 9999 brutal-force 1: 3842.998600959778 seconds
+./data/Chicago_parcels_points.shp 9999 brutal-force 8: 556.979868888855 seconds
+./data/Chicago_parcels_points.shp 9999 brutal-force 16: 436.6491787433624 seconds

@@ -1,0 +1,134 @@
+====Run rgeoda local_moran using Natregimes and permutation_method=brutal-force
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "1"                    
+   user  system elapsed 
+  0.642   0.000   0.643 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "8"                    
+   user  system elapsed 
+  0.683   0.001   0.104 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "16"                   
+   user  system elapsed 
+  0.998   0.004   0.079 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "brutal-force"          "1"                    
+   user  system elapsed 
+  6.417   0.003   6.419 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "brutal-force"          "8"                    
+   user  system elapsed 
+  6.768   0.013   0.891 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "brutal-force"          "16"                   
+   user  system elapsed 
+ 10.043   0.020   0.673 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "brutal-force"          "1"                    
+   user  system elapsed 
+ 65.300   0.025  65.327 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "brutal-force"          "8"                    
+   user  system elapsed 
+ 69.830   0.188   9.141 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "brutal-force"          "16"                   
+   user  system elapsed 
+106.202   0.207   6.844 
+====Run rgeoda local_moran using SDOH and permutation_method=brutal-force
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "brutal-force"           
+[5] "1"                      
+   user  system elapsed 
+ 27.739   0.016  27.756 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "brutal-force"           
+[5] "8"                      
+   user  system elapsed 
+ 20.820   0.032   2.760 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "brutal-force"           
+[5] "16"                     
+   user  system elapsed 
+ 31.949   0.065   2.195 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "1"                      

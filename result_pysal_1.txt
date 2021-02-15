@@ -1,0 +1,6 @@
+Test pysal local moran with Natregimes without Numba
+./data/natregimes.shp 999 1: 0.5935728549957275 seconds
+./data/natregimes.shp 9999 1: 2.9768733978271484 seconds
+Test pysal local moran with SDOH without Numba
+Test pysal local moran with NYC without Numba
+Test pysal local moran with Chicago_Parcels without Numba
