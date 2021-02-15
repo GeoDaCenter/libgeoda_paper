@@ -96,7 +96,7 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 | pysal/esda |  Moran_Local() with Numba (multi-threading) |
 | spedp |  localmoran_perm() |
 
-* NOTE: permutation_method="brutal-force" vs "lookup-table"
+* NOTE: permutation_method="complete" vs "lookup-table"
 
 In "complete" permutation method, for example with 999 permutations,  each observation will find 999 groups of random neighbors which are used to compute a pseudo-p value.
 Therefore, the total number of permutation computation is: sum(999 x nbr_i)
