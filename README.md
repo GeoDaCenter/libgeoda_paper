@@ -98,7 +98,7 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 
 * NOTE: permutation_method="brutal-force" vs "lookup-table"
 
-In "brutal-force" permutation method, for example with 999 permutations,  each observation will find 999 groups of random neighbors which are used to compute a pseudo-p value.
+In "complete" permutation method, for example with 999 permutations,  each observation will find 999 groups of random neighbors which are used to compute a pseudo-p value.
 Therefore, the total number of permutation computation is: sum(999 x nbr_i)
 
 In "lookup-table" permutation method, for example with 999 permutations, a 999 groups of random neighbors (size = max_neighbors) 
