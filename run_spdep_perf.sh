@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "====Run spdep localmoran_perm using Natregimes "
+echo "====Run spdep localmoran_perm using Natregimes"
 Rscript perf_spdep.R ./data/natregimes.shp HR60 999 1
 Rscript perf_spdep.R ./data/natregimes.shp HR60 999 8
 Rscript perf_spdep.R ./data/natregimes.shp HR60 999 16

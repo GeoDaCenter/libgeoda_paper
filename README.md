@@ -300,13 +300,12 @@ The new Moran_Local() can't handle the islands and throws ValueError:
 
 * pygeoda (permutation_method="complete")
 
+(knn=20)
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
 | 999   | 389.7134437561035  | 57.798383951187134| 43.7291738986969  | |
 | 9999 | 3842.998600959778 | 556.979868888855 | 436.6491787433624 | |
-| 99999  | | | | |
-
-(single thread takes more than 11 hours! should reconsider knn=4?)
+| 99999  | 53586.285209178925 | 1964.156000137329 | 1349.4739561080933  | |
 
 
 * pygeoda (permutation_method="lookup-table")
