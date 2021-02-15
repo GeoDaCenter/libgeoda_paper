@@ -169,6 +169,14 @@ Each test function will be executed 3 times, and the average executing time (in 
 | 9999  | 2.856947898864746  |
 | 99999  | 32.94658708572388 |
 
+* PySAL/ESDA wit Numba 
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999    | 4.20540714263916  | 8.051929950714111  | 11.0227689743042  | 
+| 9999  | 5.640074968338013 | 9.817737817764282 | 12.505669832229614 | 
+| 99999 | | | | 
+
 * rgeoda (permutation_method="complete")
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
