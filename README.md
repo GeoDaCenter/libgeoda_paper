@@ -88,12 +88,12 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 | Software | Test Function |
 |----------|---------------|
 | GeoDa    |  Local Moran using GPU |
-| pygeoda  |  local_moran() with permutation_method="brutal-force" |
+| pygeoda  |  local_moran() with permutation_method="complete" |
 | pygeoda  |  local_moran() with permutation_method="lookup-table" |
-| rgeoda   |  local_moran() with permutation_method="brutal-force" |
+| rgeoda   |  local_moran() with permutation_method="complete" |
 | rgeoda   |  local_moran() with permutation_method="lookup-table" |
-| pysal/esda |  Moran_Local() without Numba (single-thread) |
-| pysal/esda |  Moran_Local() with Numba (multi-threads) |
+| pysal/esda |  Moran_Local() without Numba (No multi-threading) |
+| pysal/esda |  Moran_Local() with Numba (multi-threading) |
 | spedp |  localmoran_perm() |
 
 * NOTE: permutation_method="brutal-force" vs "lookup-table"
