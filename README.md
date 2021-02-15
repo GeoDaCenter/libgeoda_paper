@@ -141,85 +141,27 @@ Each test function will be executed 3 times, and the average executing time (in 
 **Test results:**
 
 
-1. Pygeoda using permutation_method="complete"
 
-```bash
-./run_pygeoda_perf.sh > result_pygeoda_complete_1.txt
-```
+### 1. Natregimes
 
-1.1 Natregimes
+* pygeoda (permutation_method="complete")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999    | 0.5914509296417236 | 0.08591008186340332 | 0.05975604057312012 | |
-| 9999  | 6.03707218170166 | 0.8514440059661865 | 0.5646729469299316 | |
-| 99999 | 58.92710328102112 | 8.485954999923706 | 5.570709943771362 | |
-
-1.2 US-SDOH
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 17.454599857330322  | 2.4892380237579346| 1.6712172031402588| |
-| 9999 | 175.07298302650452 | 25.021250009536743 | 16.907100200653076| |
-| 99999  | 1727.7120940685272| 248.83428502082825| 166.1402678489685| |
-
-1.3 NYC
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 28.46846580505371  | 4.277080059051514 | 2.896711826324463 | |
-| 9999 | 282.76479601860046| 42.7974419593811| 28.276558876037598  | |
-| 99999  | 2821.240134000778 | 422.4912781715393 | 283.2045419216156 | |
-
-1.4 Chicago (knn=20)
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 389.7134437561035  | 57.798383951187134| 43.7291738986969  | |
-| 9999 | 3842.998600959778 | 556.979868888855 | 436.6491787433624 | |
-| 99999  | | | | |
-
-(>10:38:45 )
-
-2. Pygeoda using permutation_method="lookup-table"
-
-2.1 Natregimes
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999    | 0.05076098442077637 | 0.009467840194702148 | 0.007524013519287109 | |
-| 9999  | 0.49645209312438965| 0.07634782791137695| 0.05653190612792969| |
-| 99999 | 4.989437103271484  | 0.6796438694000244  | 0.5439951419830322| |
-
-2.2 US-SDOH
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 2.0331978797912598 | 0.30008673667907715| 0.23631691932678223 | |
-| 9999 | 20.22104287147522 | 2.7842931747436523 | 2.2208046913146973| |
-| 99999  | 278.66816306114197 | 29.182877779006958  | 23.67146110534668  | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999    | 0.5914509296417236 | 0.08591008186340332 | 0.05975604057312012 | 
+| 9999  | 6.03707218170166 | 0.8514440059661865 | 0.5646729469299316 | 
+| 99999 | 58.92710328102112 | 8.485954999923706 | 5.570709943771362 | 
 
 
-2.3 NYC
+* Pygeoda using permutation_method="lookup-table"
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | 3.9321858882904053 | 0.5913081169128418  | 0.45052385330200195 | |
-| 9999  | 37.25004291534424 | 5.340345859527588 | 4.245307922363281  | |
-| 99999  | 656.4548988342285 | 62.88683271408081 | 48.3938422203064 | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999    | 0.05076098442077637 | 0.009467840194702148 | 0.007524013519287109 | 
+| 9999  | 0.49645209312438965| 0.07634782791137695| 0.05653190612792969| 
+| 99999 | 4.989437103271484  | 0.6796438694000244  | 0.5439951419830322| 
 
-
-2.4 Chicago (TBD)
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-3. PySAL/ESDA without Numba (No multi-threading)
-
-3.1 Natregimes
+* PySAL/ESDA without Numba (No multi-threading)
 
 | Permutations | No multi-threading |
 |--------------|--------------------|
@@ -227,14 +169,51 @@ Each test function will be executed 3 times, and the average executing time (in 
 | 9999  | 2.856947898864746  |
 | 99999  | 32.94658708572388 |
 
+* rgeoda (permutation_method="complete")
 
-3.2 US-SDOH 
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 0.643  |  0.104 | 0.079  | 
+| 9999  | 6.419  | 0.891  | 0.673  | 
+| 99999  | 65.327  | 9.141  | 6.844  | 
 
-| Permutations | No multi-threading | Average |
-|--------------|--------------------|---------|
-| 999  | | |
-| 9999  | | |
-| 99999  | | |
+* spdep 
+
+1 Core = 2 CPU threads ?
+
+| Permutations | No parallel   | 4 Cores       | 8 Cores        | 
+|--------------|---------------|---------------|----------------|
+| 999  |1.271  | 0.618 | 0.434 |
+| 9999  | 9.714  | 3.492  | 1.956  |
+| 99999  | 97.019  | 33.408  | 18.353 |
+
+* rgeoda (permutation_method="lookup")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 0.061   |  0.018  | 0.016   | 
+| 9999  | 0.528  | 0.081   | 0.070   | 
+| 99999  | 4.954   | 0.695   | 0.549   | 
+
+### 2. US-SDOH
+
+* pygeoda (permutation_method="complete")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
+|--------------|---------------|---------------|----------------|---------|
+| 999   | 17.454599857330322  | 2.4892380237579346| 1.6712172031402588| |
+| 9999 | 175.07298302650452 | 25.021250009536743 | 16.907100200653076| |
+| 99999  | 1727.7120940685272| 248.83428502082825| 166.1402678489685| |
+
+* pygeoda (permutation_method="lookup-table")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
+|--------------|---------------|---------------|----------------|---------|
+| 999   | 2.0331978797912598 | 0.30008673667907715| 0.23631691932678223 | |
+| 9999 | 20.22104287147522 | 2.7842931747436523 | 2.2208046913146973| |
+| 99999  | 278.66816306114197 | 29.182877779006958  | 23.67146110534668  | |
+
+* PySAL/ESDA without Numba (No multi-threading)
 
 The new Moran_Local() can't handle the islands and throws ValueError:
 
@@ -261,174 +240,74 @@ Traceback (most recent call last):
     zrand = z_no_i[flat_permutation_ids].reshape(-1, cardinality)
 ValueError: cannot reshape array of size 0 into shape (0)
 ```
+* spdep
 
-3.3 NYC 
+"Error in nb2listw(nb_q, style = "W") : Empty neighbour sets found"
+
+* rgeoda (permutation_method="lookup")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 2.185    |  0.432   | 0.345    | 
+| 9999  | 21.004   | 3.039    | 2.402    | 
+| 99999  | 373.949    | 31.582    | 23.572    | 
+
+### 3. NYC
+
+* pygeoda (permutation_method="complete")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
+|--------------|---------------|---------------|----------------|---------|
+| 999   | 28.46846580505371  | 4.277080059051514 | 2.896711826324463 | |
+| 9999 | 282.76479601860046| 42.7974419593811| 28.276558876037598  | |
+| 99999  | 2821.240134000778 | 422.4912781715393 | 283.2045419216156 | |
+
+* pygeoda (permutation_method="lookup-table")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
+|--------------|---------------|---------------|----------------|---------|
+| 999  | 3.9321858882904053 | 0.5913081169128418  | 0.45052385330200195 | |
+| 9999  | 37.25004291534424 | 5.340345859527588 | 4.245307922363281  | |
+| 99999  | 656.4548988342285 | 62.88683271408081 | 48.3938422203064 | |
+
+* PySAL/ESDA without Numba (No multi-threading)
 
 The new Moran_Local() can't handle the islands and throws ValueError:
 
-| Permutations | No multi-threading | Average |
-|--------------|--------------------|---------|
-| 999  | | |
-| 9999  | | |
-| 99999  | | |
+* rgeoda (permutation_method="complete")
 
+* spdep
 
-3.4 Chicago
+"Error in nb2listw(nb_q, style = "W") : Empty neighbour sets found"
 
-| Permutations | No multi-threading | Average |
-|--------------|--------------------|---------|
-| 999  | | |
-| 9999  | | |
-| 99999  | | |
+* rgeoda (permutation_method="lookup")
 
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 4.074    |  0.706    | 0.567     | 
+| 9999  | 37.748    | 5.500     | 4.387     | 
+| 99999  | 735.241     | 68.873     | 48.744     | 
 
+### 4. Chicago (knn=20)
 
-5. rgeoda with permutation_method="complete"
-
-
-5.1 Natregimes
+* pygeoda (permutation_method="complete")
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
-| 999  | 0.643  |  0.104 | 0.079  | |
-| 9999  | 6.419  | 0.891  | 0.673  | |
-| 99999  | 65.327  | 9.141  | 6.844  | |
-
-
-5.2 US-SDOH 
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | 27.756  | 2.760  | 2.195  | |
-| 9999  | | | | |
+| 999   | 389.7134437561035  | 57.798383951187134| 43.7291738986969  | |
+| 9999 | 3842.998600959778 | 556.979868888855 | 436.6491787433624 | |
 | 99999  | | | | |
 
+(single thread takes more than 11 hours! should reconsider knn=4?)
 
-5.3 NYC 
+
+* pygeoda (permutation_method="lookup-table")
+
+(knn=10)
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
 | 999  | | | | |
 | 9999  | | | | |
-| 99999  | | | | |
+| 99999  | 3419.858710050583 | | | |
 
-5.4 Chicago
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-
-
-7. spdep 
-
-
-7.1 Natregimes
-
-| Permutations | No parallel   | 4 Cores       | 8 Cores        | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  |1.271  | 0.618 | 0.434 | |
-| 9999  | 9.714  | 3.492  | 1.956  | |
-| 99999  | 97.019  | 33.408  | 18.353 | |
-
-
-7.2 US-SDOH 
-
-| Permutations | No parallel|| 4 Cores | 8 Cores | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-
-7.3 NYC 
-
-| Permutations | No parallel|| 4 Cores | 8 Cores | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-7.4 Chicago
-
-| Permutations | No parallel|| 4 Cores | 8 Cores | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-6. rgeoda with permutation_method="lookup-table"
-
-
-6.1 Natregimes
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-
-6.2 US-SDOH 
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-
-6.3 NYC 
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-6.4 Chicago
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-4. PySAL/ESDA with Numba
-
-
-4.1 Natregimes
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-
-4.2 US-SDOH 
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-
-4.3 NYC 
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
-
-4.4 Chicago
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | | | |
