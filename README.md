@@ -204,6 +204,8 @@ GPU took 4073 ms
 
 * spdep 
 
+(Using multi-processing, so no hyper-threading)
+
 spdep uses multi-processing programming to parallel the local moran computation
 
 | Permutations | No parallel   | 4 Cores       | 8 Cores        | 
@@ -257,6 +259,8 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 * spdep
 
+(Using multi-processing, so no hyper-threading)
+
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 78.861 | 28.678 | 17.504  |
@@ -307,6 +311,8 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 * spdep
 
+(Using multi-processing, so no hyper-threading)
+
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 143.273 | 49.197 | 30.782  |
@@ -330,7 +336,7 @@ spdep uses multi-processing programming to parallel the local moran computation
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
 | 999   | 119.42543983459473 | 16.434907913208008  |12.032907962799072 | |
-| 9999  | | | | |
+| 9999  | | 162.7958836555481 | 120.59185600280762| |
 | 99999  |  13525.546596050262 | 1605.97736287117 | 1161.3201611042023   | |
 
 * pygeoda (permutation_method="lookup-table")
@@ -359,10 +365,12 @@ spdep uses multi-processing programming to parallel the local moran computation
 | 9999  | 1269.854 | 162.848 | 121.514  | 
 | 99999  | 12497.949 | 1613.119 | 1318.064 | 
 
-* spdep
+* spdep 
+
+(Using multi-processing, so no hyper-threading)
 
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 1296.269 | 563.027 | 407.151 |
-| 9999  | ??? | | |
+| 9999  | ??? > 5 hours | | |
 | 99999  | | | |

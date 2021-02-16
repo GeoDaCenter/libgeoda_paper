@@ -4,9 +4,7 @@
     <list default="true" id="3f3b7d89-913e-4b26-9fef-91ae1905c5d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_pygeoda_lookup_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_pygeoda_lookup_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_rgeoda_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_rgeoda_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_rgeoda_perf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_rgeoda_perf.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,18 +31,18 @@
           <entry key="ipynb" value="1" />
           <entry key="md" value="4" />
           <entry key="prj" value="1" />
-          <entry key="py" value="31" />
-          <entry key="sh" value="25" />
-          <entry key="txt" value="51" />
+          <entry key="py" value="32" />
+          <entry key="sh" value="26" />
+          <entry key="txt" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="25" />
+          <entry key="Bash" value="26" />
           <entry key="IPNB" value="1" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="31" />
+          <entry key="PLAIN_TEXT" value="57" />
+          <entry key="Python" value="32" />
           <entry key="R" value="8" />
         </counts>
       </usages-collector>
@@ -53,16 +51,16 @@
           <entry key="Python Console" value="36" />
           <entry key="R" value="1309" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="5056" />
+          <entry key="md" value="5143" />
           <entry key="py" value="2590" />
-          <entry key="sh" value="1258" />
+          <entry key="sh" value="1270" />
           <entry key="txt" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="1258" />
-          <entry key="Markdown" value="5056" />
+          <entry key="Bash" value="1270" />
+          <entry key="Markdown" value="5143" />
           <entry key="PLAIN_TEXT" value="107" />
           <entry key="Python" value="2626" />
           <entry key="R" value="1309" />
@@ -87,8 +85,8 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="95">
-                    <caret line="140" column="175" selection-start-line="140" selection-start-column="175" selection-end-line="140" selection-end-column="175" />
+                  <first_editor relative-caret-position="190">
+                    <caret line="338" column="50" selection-start-line="338" selection-start-column="50" selection-end-line="338" selection-end-column="50" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -98,8 +96,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/result_pygeoda_lookup_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+                <state relative-caret-position="525">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
                 </state>
               </provider>
             </entry>
@@ -116,11 +114,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/perf_pysal.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                <state relative-caret-position="585">
+                  <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/esda/moran.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="463">
+                  <caret line="949" column="37" selection-start-line="949" selection-start-column="37" selection-end-line="949" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -130,15 +137,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="455">
                   <caret line="276" column="35" selection-start-line="276" selection-start-column="35" selection-end-line="276" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/run_pygeoda_perf_lookup.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -155,8 +153,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="770">
-                  <caret line="416" column="24" selection-start-line="416" selection-start-column="24" selection-end-line="416" selection-end-column="24" />
+                <state relative-caret-position="290">
+                  <caret line="384" selection-start-line="384" selection-end-line="384" />
                 </state>
               </provider>
             </entry>
@@ -210,8 +208,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/result_spdep_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="530">
-                  <caret line="313" column="56" selection-start-line="313" selection-start-column="56" selection-end-line="313" selection-end-column="56" />
+                <state relative-caret-position="470">
+                  <caret line="309" column="42" selection-start-line="309" selection-start-column="42" selection-end-line="309" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -219,17 +217,35 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+                <state relative-caret-position="720">
+                  <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/result_pysal_1.txt">
+            <entry file="file://$PROJECT_DIR$/result_rgeoda_lookup_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="560">
+                  <caret line="286" column="37" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/run_rgeoda_perf_lookup.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="500">
+                  <caret line="398" column="18" selection-start-line="398" selection-start-column="18" selection-end-line="398" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -255,18 +271,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/perf_pysal_numba.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -277,7 +281,6 @@
       <find>perf_pysal_localmoran</find>
       <find>&gt;&gt; result_pysal.txt</find>
       <find>999</find>
-      <find>999</find>
       <find>without Numba</find>
       <find>&gt;&gt; result_rgeoda.txt</find>
       <find>HR60</find>
@@ -287,7 +290,6 @@
       <find>NYC_Area2010_2data</find>
       <find>perf_rgeoda_brutalforce</find>
       <find>CE01_02</find>
-      <find>brutal-force</find>
       <find>and permutation_method=brutal-force&quot;</find>
       <find>cran</find>
       <find>Moran_Local</find>
@@ -302,7 +304,6 @@
       <replace>NYC_Area2010_2data.</replace>
       <replace>999 brutal-force</replace>
       <replace>with permutation_method=brutal-force</replace>
-      <replace>999 brutal-force</replace>
       <replace>using permutation_method=brutal-force</replace>
       <replace>lookup-table</replace>
       <replace>with Numba</replace>
@@ -310,7 +311,6 @@
       <replace>ep_unem</replace>
       <replace>NYC_Area2010_2data</replace>
       <replace>CE01_02</replace>
-      <replace>lookup-table</replace>
       <replace>Chicago_parcels_points</replace>
       <replace>perf_rgeoda</replace>
       <replace>EstBuild</replace>
@@ -334,7 +334,6 @@
         <option value="$PROJECT_DIR$/run_pygeoda_perf_lookup.sh" />
         <option value="$PROJECT_DIR$/run_pysal_perf.sh" />
         <option value="$PROJECT_DIR$/run_spdep_perf.sh" />
-        <option value="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" />
         <option value="$PROJECT_DIR$/run_pysal_perf_numba.sh" />
         <option value="$PROJECT_DIR$/perf_spdep.R" />
         <option value="$PROJECT_DIR$/perf_pysal_numba.py" />
@@ -345,6 +344,7 @@
         <option value="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" />
         <option value="$PROJECT_DIR$/perf_pysal.py" />
         <option value="$PROJECT_DIR$/run_rgeoda_perf.sh" />
+        <option value="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -478,15 +478,9 @@
     <frame x="519" y="23" width="1872" height="1401" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17431694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32925898" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.31245226" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32925898" />
@@ -494,13 +488,19 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31245226" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32925898" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,36 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Chicago_parcels.prj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="107" selection-start-column="107" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perf_pygeoda.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perf_pygeoda_localjoincount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_rgeoda.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Chicago_parcels.prj" />
+    <entry file="file://$PROJECT_DIR$/perf_pygeoda.txt" />
+    <entry file="file://$PROJECT_DIR$/perf_pygeoda_localjoincount.py" />
+    <entry file="file://$PROJECT_DIR$/result_rgeoda.txt" />
     <entry file="file://$PROJECT_DIR$/snow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -604,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result_rgeoda_lookup_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="264" column="34" selection-start-line="264" selection-start-column="34" selection-end-line="264" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result_pysal_numba_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -622,13 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_rgeoda_perf_lookup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -664,13 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/esda/moran.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="1039" selection-start-line="1039" selection-end-line="1039" />
         </state>
       </provider>
     </entry>
@@ -747,16 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perf_pysal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/perf_pysal_numba.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -793,15 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/result_pygeoda_lookup_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="416" column="24" selection-start-line="416" selection-start-column="24" selection-end-line="416" selection-end-column="24" />
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -812,18 +748,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/perf_pysal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/esda/moran.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="949" column="37" selection-start-line="949" selection-start-column="37" selection-end-line="949" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_rgeoda_lookup_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="286" column="37" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_rgeoda_perf_lookup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="384" selection-start-line="384" selection-end-line="384" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="720">
+          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="95">
-            <caret line="140" column="175" selection-start-line="140" selection-start-column="175" selection-end-line="140" selection-end-column="175" />
+          <first_editor relative-caret-position="190">
+            <caret line="338" column="50" selection-start-line="338" selection-start-column="50" selection-end-line="338" selection-end-column="50" />
           </first_editor>
           <second_editor />
         </state>
