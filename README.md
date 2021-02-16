@@ -163,13 +163,13 @@ Each test function will be executed 3 times, and the average executing time (in 
 
 * PySAL/ESDA without Numba (No multi-threading)
 
-| Permutations | No multi-threading |
-|--------------|--------------------|
+| Permutations | No Numba |
+|--------------|----------|
 | 999  |0.5763969421386719 |
 | 9999  | 2.856947898864746  |
 | 99999  | 32.94658708572388 |
 
-* PySAL/ESDA wit Numba 
+* PySAL/ESDA with Numba 
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
@@ -221,8 +221,22 @@ spdep uses multi-processing programming to parallel the local moran computation
 | 9999 | 20.22104287147522 | 2.7842931747436523 | 2.2208046913146973| |
 | 99999  | 278.66816306114197 | 29.182877779006958  | 23.67146110534668  | |
 
+
 * PySAL/ESDA without Numba (No multi-threading)
 
+| Permutations | No Numba |
+|--------------|----------|
+| 999  | 25.053487062454224 |
+| 9999  | 77.59662580490112 |
+| 99999  | (>64GB Memory usage) |
+
+* rgeoda (permutation_method="complete")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 27.756  | 2.760 | 2.195  | 
+| 9999  | | | | 
+| 99999  | 1910.860    | 253.879  | 185.140  | 
 
 * spdep
 
@@ -260,9 +274,19 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 * PySAL/ESDA without Numba (No multi-threading)
 
-The new Moran_Local() can't handle the islands and throws ValueError:
+| Permutations | No Numba |
+|--------------|----------|
+| 999  ||
+| 9999  | |
+| 99999  | |
 
 * rgeoda (permutation_method="complete")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 32.052  | 4.582 | 3.203  | 
+| 9999  | 319.400 | 43.551  | 31.251  | 
+| 99999  | 3262.898    | 432.714  | 319.074 | 
 
 * spdep
 
@@ -285,11 +309,21 @@ The new Moran_Local() can't handle the islands and throws ValueError:
 * pygeoda (permutation_method="complete")
 
 (knn=20)
+
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
 | 999   | 389.7134437561035  | 57.798383951187134| 43.7291738986969  | |
 | 9999 | 3842.998600959778 | 556.979868888855 | 436.6491787433624 | |
 | 99999  | 53586.285209178925 | 1964.156000137329 | 1349.4739561080933  | |
+
+(knn=10)
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
+|--------------|---------------|---------------|----------------|---------|
+| 999   | | | | |
+| 9999 | | | | |
+| 99999  |  13525.546596050262 | 1605.97736287117 |  | |
+
 
 
 * pygeoda (permutation_method="lookup-table")
@@ -300,5 +334,28 @@ The new Moran_Local() can't handle the islands and throws ValueError:
 |--------------|---------------|---------------|----------------|---------|
 | 999  | | | | |
 | 9999  | | | | |
-| 99999  | 3419.858710050583 | | 164.23768401145935 | |
+| 99999  | | 191.051757812  | 164.23768401145935 | |
 
+* PySAL/ESDA without Numba (No multi-threading)
+
+| Permutations | No Numba |
+|--------------|----------|
+| 999  ||
+| 9999  | |
+| 99999  | |
+
+* rgeoda (permutation_method="complete")
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 128.734   | 16.890 | 13.451  | 
+| 9999  | 1269.854 | 162.848 | 121.514  | 
+| 99999  | 12497.949 | 1613.119 | 1318.064 | 
+
+* spdep
+
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999  | 1296.269 | 563.027 | |
+| 9999  | | | |
+| 99999  | | | |

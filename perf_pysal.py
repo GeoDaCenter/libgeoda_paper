@@ -37,7 +37,7 @@ w.transform = 'r'
 
 # function to execute and time
 start_time = time.time()
-li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads, numba=True)
+li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads)
 run_time = time.time() - start_time
 
 print("{0} {1} {2}: {3} seconds".format(data_path, perms, cpu_threads, run_time))

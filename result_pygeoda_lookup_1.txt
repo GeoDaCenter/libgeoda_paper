@@ -28,13 +28,8 @@ Test pyGeoDa local moran with NYC using permutation_method=lookup-table
 ./data/NYC_Area2010_2data.shp 99999 lookup-table 1: 656.4548988342285 seconds
 ./data/NYC_Area2010_2data.shp 99999 lookup-table 8: 62.88683271408081 seconds
 ./data/NYC_Area2010_2data.shp 99999 lookup-table 16: 48.3938422203064 seconds
-Test pyGeoDa local moran with Chicago_Parcels using permutation_method=lookup-table
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 lookup-table  1
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 lookup-table  8
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 lookup-table  16
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 9999 lookup-table  1
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 9999 lookup-table  8
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 9999 lookup-table  16
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 99999 lookup-table  1
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 99999 lookup-table  8
-python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 99999 lookup-table  16
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=brutal-force (knn=10 no duplicates)
+./data/Chicago_parcels_points.shp 99999 lookup-table 1: 1449.7298228740692 seconds
+./data/Chicago_parcels_points.shp 99999 lookup-table 8: 191.0517578125 seconds
+./data/Chicago_parcels_points.shp 99999 lookup-table 16: 164.23768401145935 seconds
+./data/Chicago_parcels_points.shp 9999 lookup-table 1: 140.48916697502136 seconds
