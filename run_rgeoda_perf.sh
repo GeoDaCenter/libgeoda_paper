@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "====Run rgeoda local_moran using Natregimes and permutation_method=brutal-force"
+echo "====Run rgeoda local_moran using Natregimes and permutation_method=brutal-force
 Rscript perf_rgeoda.R ./data/natregimes.shp HR60 999 brutal-force 1
 Rscript perf_rgeoda.R ./data/natregimes.shp HR60 999 brutal-force 8
 Rscript perf_rgeoda.R ./data/natregimes.shp HR60 999 brutal-force 16
@@ -8,14 +8,14 @@ Rscript perf_rgeoda.R ./data/natregimes.shp HR60 9999 brutal-force 8
 Rscript perf_rgeoda.R ./data/natregimes.shp HR60 9999 brutal-force 16
 Rscript perf_rgeoda.R ./data/natregimes.shp HR60 99999 brutal-force 1
 Rscript perf_rgeoda.R ./data/natregimes.shp HR60 99999 brutal-force 8
-Rscript perf_rgeoda.R ./data/natregimes.shp HR60 99999 brutal-force 16
-echo "====Run rgeoda local_moran using SDOH and permutation_method=brutal-force"
+Rscript perf_rgeoda.R ./data/natregimes.shp HR60 99999 brutal-force 16"
+echo "====Run rgeoda local_moran using SDOH and permutation_method=brutal-force
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 999 brutal-force 1
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 999 brutal-force 8
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 999 brutal-force 16
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 9999 brutal-force 1
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 9999 brutal-force 8
-Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 9999 brutal-force 16
+Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 9999 brutal-force 16"
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 99999 brutal-force 1
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 99999 brutal-force 8
 Rscript perf_rgeoda.R ./data/us-sdoh-2014.shp ep_unem 99999 brutal-force 16

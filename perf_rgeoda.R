@@ -14,7 +14,7 @@ cpu_threads <- as.integer(args[5])
 
 dt <- st_read(file_path)
 if (file_path=='./data/Chicago_parcels_points.shp') {
-    w <- knn_weights(dt, 4)
+    w <- knn_weights(dt, 10)
 } else {
     w <- queen_weights(dt)
 }

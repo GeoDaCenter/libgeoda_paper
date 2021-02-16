@@ -187,7 +187,7 @@ Each test function will be executed 3 times, and the average executing time (in 
 
 * spdep 
 
-1 Core = 2 CPU threads ?
+spdep uses multi-processing programming to parallel the local moran computation
 
 | Permutations | No parallel   | 4 Cores       | 8 Cores        | 
 |--------------|---------------|---------------|----------------|
@@ -223,34 +223,14 @@ Each test function will be executed 3 times, and the average executing time (in 
 
 * PySAL/ESDA without Numba (No multi-threading)
 
-The new Moran_Local() can't handle the islands and throws ValueError:
 
-```
-('WARNING: ', 6540, ' is an island (no neighbors)')
-...
-('WARNING: ', 70050, ' is an island (no neighbors)')
-/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/libpysal/weights/weights.py:172: UserWarning: The weights matrix is not fully connected: 
- There are 30 disconnected components.
- There are 15 islands with ids: 6540, 6583, 7933, 19288, 23844, 33314, 35600, 38699, 39317, 53310, 58715, 58849, 69632, 70049, 70050.
-  warnings.warn(message)
-Traceback (most recent call last):
-  File "perf_pysal.py", line 33, in <module>
-    li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads)
-  File "/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/esda/moran.py", line 1040, in __init__
-    seed=seed,
-  File "/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/esda/crand.py", line 169, in crand
-    stat_func,
-  File "/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/esda/crand.py", line 265, in compute_chunk
-    rstats = stat_func(chunk_start + i, z, permuted_ids, weights_i, scaling)
-  File "/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/esda/moran.py", line 1792, in _moran_local_crand
-    zi, zrand = _prepare_univariate(i, z, permuted_ids, weights_i)
-  File "/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/esda/crand.py", line 483, in _prepare_univariate
-    zrand = z_no_i[flat_permutation_ids].reshape(-1, cardinality)
-ValueError: cannot reshape array of size 0 into shape (0)
-```
 * spdep
 
-"Error in nb2listw(nb_q, style = "W") : Empty neighbour sets found"
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999  | 78.861 | 28.678 | 17.504  |
+| 9999  | 394.205  | 159.013  | 86.205  |
+| 99999  | 3517.074  | 1435.823  | 766.686 |
 
 * rgeoda (permutation_method="lookup")
 
@@ -286,7 +266,11 @@ The new Moran_Local() can't handle the islands and throws ValueError:
 
 * spdep
 
-"Error in nb2listw(nb_q, style = "W") : Empty neighbour sets found"
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999  | 143.273 | 49.197 | 30.782  |
+| 9999  | 518.500 | 206.445  | 113.492  |
+| 99999  | 4254.713 | 1745.632  | 933.819  |
 
 * rgeoda (permutation_method="lookup")
 
@@ -316,5 +300,5 @@ The new Moran_Local() can't handle the islands and throws ValueError:
 |--------------|---------------|---------------|----------------|---------|
 | 999  | | | | |
 | 9999  | | | | |
-| 99999  | 3419.858710050583 | | | |
+| 99999  | 3419.858710050583 | | 164.23768401145935 | |
 

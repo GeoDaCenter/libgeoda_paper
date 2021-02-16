@@ -1,129 +1,100 @@
-====Run spdep localmoran_perm using Natregimes 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-[1] "./data/natregimes.shp" "HR60"                  "999"                  
-[4] "1"                    
-   user  system elapsed 
-  1.175   0.095   1.271 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-NULL
-[1] "./data/natregimes.shp" "HR60"                  "999"                  
-[4] "8"                    
-   user  system elapsed 
-  1.626   0.365   0.618 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-NULL
-[1] "./data/natregimes.shp" "HR60"                  "999"                  
-[4] "16"                   
-   user  system elapsed 
-  1.710   0.589   0.434 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-[1] "./data/natregimes.shp" "HR60"                  "9999"                 
-[4] "1"                    
-   user  system elapsed 
-  8.911   0.803   9.714 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-NULL
-[1] "./data/natregimes.shp" "HR60"                  "9999"                 
-[4] "8"                    
-   user  system elapsed 
- 12.100   1.213   3.492 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-NULL
-[1] "./data/natregimes.shp" "HR60"                  "9999"                 
-[4] "16"                   
-   user  system elapsed 
- 12.398   1.638   1.956 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-[1] "./data/natregimes.shp" "HR60"                  "99999"                
-[4] "1"                    
-   user  system elapsed 
- 91.734   5.280  97.019 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-NULL
-[1] "./data/natregimes.shp" "HR60"                  "99999"                
-[4] "8"                    
-   user  system elapsed 
-124.231   6.968  33.408 
-Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 3085 features and 73 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
-CRS:            4326
-NULL
-[1] "./data/natregimes.shp" "HR60"                  "99999"                
-[4] "16"                   
-   user  system elapsed 
-128.648   9.064  18.353 
-====Run spdep localmoran_perm using SDOH 
-Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
-Simple feature collection with 71901 features and 25 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
-CRS:            4326
-Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
-Simple feature collection with 71901 features and 25 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
-CRS:            4326
-Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
-Simple feature collection with 71901 features and 25 fields
-geometry type:  MULTIPOLYGON
-dimension:      XY
-bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
-CRS:            4326
 ====Run spdep localmoran_perm using Natregimes
-Rscript perf_spdep.R ./data/natregimes.shp HR60 999 1
-Rscript perf_spdep.R ./data/natregimes.shp HR60 999 8
-Rscript perf_spdep.R ./data/natregimes.shp HR60 999 16
-Rscript perf_spdep.R ./data/natregimes.shp HR60 9999 1
-Rscript perf_spdep.R ./data/natregimes.shp HR60 9999 8
-Rscript perf_spdep.R ./data/natregimes.shp HR60 9999 16
-Rscript perf_spdep.R ./data/natregimes.shp HR60 99999 1
-Rscript perf_spdep.R ./data/natregimes.shp HR60 99999 8
-Rscript perf_spdep.R ./data/natregimes.shp HR60 99999 16
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "1"                    
+   user  system elapsed 
+  1.090   0.086   1.175 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "8"                    
+   user  system elapsed 
+  1.554   0.297   0.580 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "16"                   
+   user  system elapsed 
+  1.680   0.558   0.413 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "1"                    
+   user  system elapsed 
+  8.169   0.611   8.781 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "8"                    
+   user  system elapsed 
+ 11.491   1.032   3.274 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "16"                   
+   user  system elapsed 
+ 12.018   1.502   1.861 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "1"                    
+   user  system elapsed 
+ 83.131   4.541  87.685 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "8"                    
+   user  system elapsed 
+119.320   6.754  32.258 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "16"                   
+   user  system elapsed 
+125.803   8.958  17.754 
 ====Run spdep localmoran_perm using SDOH 
 Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
 Simple feature collection with 71901 features and 25 fields
@@ -131,5 +102,197 @@ geometry type:  MULTIPOLYGON
 dimension:      XY
 bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
 CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "1"                      
+   user  system elapsed 
+ 64.384  14.468  78.861 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+NULL
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "8"                      
+   user  system elapsed 
+ 88.329  18.535  28.678 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+NULL
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "16"                     
+   user  system elapsed 
+ 93.569  24.818  17.504 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "1"                      
+   user  system elapsed 
+361.949  32.202 394.205 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+NULL
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "8"                      
+   user  system elapsed 
+578.697  42.073 159.013 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+NULL
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "16"                     
+   user  system elapsed 
+607.067  43.291  86.205 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "1"                      
+    user   system  elapsed 
+3353.522  163.033 3517.074 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+NULL
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "8"                      
+    user   system  elapsed 
+5485.264  177.986 1435.823 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+NULL
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "16"                     
+    user   system  elapsed 
+5711.224  202.159  766.686 
 ====Run spdep localmoran_perm using NYC 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "1"                            
+   user  system elapsed 
+110.011  33.246 143.273 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "8"                            
+   user  system elapsed 
+139.518  41.275  49.197 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "16"                           
+   user  system elapsed 
+150.886  59.134  30.782 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "1"                            
+   user  system elapsed 
+457.782  60.655 518.500 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "8"                            
+   user  system elapsed 
+707.916  79.838 206.445 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "16"                           
+   user  system elapsed 
+739.998  84.591 113.492 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "1"                            
+    user   system  elapsed 
+4007.458  246.580 4254.713 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "8"                            
+    user   system  elapsed 
+6405.427  303.092 1745.632 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "16"                           
+    user   system  elapsed 
+6568.550  322.207  933.819 
 ====Run spdep localmoran_perm using Chicago_Parcels 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326

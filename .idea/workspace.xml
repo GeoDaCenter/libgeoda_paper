@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3b7d89-913e-4b26-9fef-91ae1905c5d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/perf_pysal_numba.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perf_pysal.py" beforeDir="false" afterPath="$PROJECT_DIR$/perf_pysal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perf_spdep.R" beforeDir="false" afterPath="$PROJECT_DIR$/perf_spdep.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Chicago_parcels_points.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/data/Chicago_parcels_points.dbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Chicago_parcels_points.shp" beforeDir="false" afterPath="$PROJECT_DIR$/data/Chicago_parcels_points.shp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Chicago_parcels_points.shx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Chicago_parcels_points.shx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perf_pygeoda.py" beforeDir="false" afterPath="$PROJECT_DIR$/perf_pygeoda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perf_rgeoda.R" beforeDir="false" afterPath="$PROJECT_DIR$/perf_rgeoda.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_rgeoda_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_rgeoda_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_spdep_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_spdep_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_pysal_perf_numba.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_pysal_perf_numba.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_spdep_perf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_spdep_perf.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_rgeoda_perf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_rgeoda_perf.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,40 +36,42 @@
         <counts>
           <entry key="R" value="7" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="3" />
+          <entry key="ipynb" value="1" />
+          <entry key="md" value="4" />
           <entry key="prj" value="1" />
-          <entry key="py" value="26" />
-          <entry key="sh" value="21" />
-          <entry key="txt" value="41" />
+          <entry key="py" value="29" />
+          <entry key="sh" value="24" />
+          <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="21" />
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="43" />
-          <entry key="Python" value="26" />
+          <entry key="Bash" value="24" />
+          <entry key="IPNB" value="1" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="Python" value="29" />
           <entry key="R" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="36" />
-          <entry key="R" value="1287" />
+          <entry key="R" value="1309" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="3630" />
-          <entry key="py" value="2204" />
-          <entry key="sh" value="1218" />
+          <entry key="md" value="3932" />
+          <entry key="py" value="2582" />
+          <entry key="sh" value="1232" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="1218" />
-          <entry key="Markdown" value="3630" />
+          <entry key="Bash" value="1232" />
+          <entry key="Markdown" value="3932" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="2240" />
-          <entry key="R" value="1287" />
+          <entry key="Python" value="2618" />
+          <entry key="R" value="1309" />
         </counts>
       </usages-collector>
     </session>
@@ -76,11 +80,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.49768364">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/perf_spdep.R">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="730">
+                    <caret line="302" column="52" selection-start-line="302" selection-start-column="52" selection-end-line="302" selection-end-column="52" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -98,76 +114,67 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/perf_rgeoda.R">
+            <entry file="file://$PROJECT_DIR$/perf_pysal_numba.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="310" selection-start-line="310" selection-end-line="310" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/scipy/sparse/base.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="502" column="41" selection-start-line="502" selection-start-column="41" selection-end-line="502" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/esda/moran.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="1039" selection-start-line="1039" selection-end-line="1039" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/geopandas/geodataframe.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="232">
-                  <caret line="827" selection-start-line="827" selection-end-line="827" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/esda/crand.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="309">
-                  <caret line="170" column="9" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+                <state relative-caret-position="465">
+                  <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
                   <folding>
-                    <element signature="e#74#83#0" expanded="true" />
+                    <element signature="e#0#10#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+            <entry file="file://$PROJECT_DIR$/run_pysal_perf.sh">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+                <state relative-caret-position="255">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+            <entry file="file://$PROJECT_DIR$/result_spdep_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="455">
+                  <caret line="276" column="35" selection-start-line="276" selection-start-column="35" selection-end-line="276" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/run_pygeoda_perf_lookup.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/perf_rgeoda.R">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="818">
+                  <caret line="152" selection-start-line="152" selection-end-line="152" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/run_rgeoda_perf.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
                 </state>
               </provider>
             </entry>
@@ -180,26 +187,22 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor />
+                  <first_editor relative-caret-position="278">
+                    <caret line="186" selection-start-line="186" selection-end-line="186" />
+                  </first_editor>
                   <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/run_spdep_perf.sh">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/perf_pygeoda.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/perf_spdep.R">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+                <state relative-caret-position="420">
+                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -207,8 +210,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/result_spdep_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+                <state relative-caret-position="411">
+                  <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/perf_spdep.R">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" selection-start-line="28" selection-end-line="28" />
                 </state>
               </provider>
             </entry>
@@ -258,11 +270,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/perf_pysal.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+                <state relative-caret-position="555">
+                  <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
                   </folding>
@@ -295,6 +307,7 @@
       <find>cran</find>
       <find>Moran_Local</find>
       <find>numba</find>
+      <find>columbus</find>
     </findStrings>
     <replaceStrings>
       <replace>result_pysal.txt</replace>
@@ -315,6 +328,7 @@
       <replace>Chicago_parcels_points</replace>
       <replace>perf_rgeoda</replace>
       <replace>EstBuild</replace>
+      <replace>test</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -329,20 +343,22 @@
         <option value="$PROJECT_DIR$/perf_rgeoda_brutalforce.R" />
         <option value="$PROJECT_DIR$/result_rgeoda.txt" />
         <option value="$PROJECT_DIR$/run_pygeoda_perf_lookuptable.sh" />
-        <option value="$PROJECT_DIR$/run_rgeoda_perf.sh" />
         <option value="$PROJECT_DIR$/sdoh.py" />
         <option value="$PROJECT_DIR$/run_pygeoda_perf.sh" />
-        <option value="$PROJECT_DIR$/perf_pygeoda.py" />
         <option value="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" />
         <option value="$PROJECT_DIR$/run_pygeoda_perf_lookup.sh" />
         <option value="$PROJECT_DIR$/run_pysal_perf.sh" />
-        <option value="$PROJECT_DIR$/perf_rgeoda.R" />
         <option value="$PROJECT_DIR$/run_spdep_perf.sh" />
         <option value="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" />
         <option value="$PROJECT_DIR$/run_pysal_perf_numba.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/perf_spdep.R" />
         <option value="$PROJECT_DIR$/perf_pysal.py" />
+        <option value="$PROJECT_DIR$/perf_spdep.R" />
+        <option value="$PROJECT_DIR$/perf_pysal_numba.py" />
+        <option value="$PROJECT_DIR$/numba.ipynb" />
+        <option value="$PROJECT_DIR$/perf_pygeoda.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/run_rgeoda_perf.sh" />
+        <option value="$PROJECT_DIR$/perf_rgeoda.R" />
       </list>
     </option>
   </component>
@@ -353,7 +369,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="629" />
+    <option name="x" value="519" />
     <option name="y" value="23" />
     <option name="width" value="1872" />
     <option name="height" value="1401" />
@@ -472,17 +488,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="629" y="23" width="1872" height="1401" extended-state="0" />
+    <frame x="519" y="23" width="1872" height="1401" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17431694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17431694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" weight="0.32925898" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.27196333" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.31245226" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925898" />
@@ -594,13 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_pygeoda_perf_lookup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result_pygeoda_lookup_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -615,41 +624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_rgeoda_perf.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_spdep_perf.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_spdep_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perf_pygeoda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_pysal_perf.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -692,14 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -776,27 +739,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perf_rgeoda.R">
+    <entry file="file://$PROJECT_DIR$/perf_pysal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/libpysal/examples/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numba.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perf_pysal_numba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_pysal_perf.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_pygeoda_perf_lookup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/perf_spdep.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perf_pysal.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="730">
+            <caret line="302" column="52" selection-start-line="302" selection-start-column="52" selection-end-line="302" selection-end-column="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_rgeoda_perf.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="15">
+          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perf_pygeoda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_spdep_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="276" column="35" selection-start-line="276" selection-start-column="35" selection-end-line="276" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perf_rgeoda.R">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_rgeoda_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
         </state>
       </provider>
     </entry>
