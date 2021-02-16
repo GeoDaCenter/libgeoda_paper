@@ -94,7 +94,7 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 | rgeoda   |  local_moran() with permutation_method="lookup-table" |
 | pysal/esda |  Moran_Local() without Numba (No multi-threading) |
 | pysal/esda |  Moran_Local() with Numba (multi-threading) |
-| spedp |  localmoran_perm() |
+| spedp |  localmoran_perm() using Multi-Processing |
 
 * NOTE: permutation_method="complete" vs "lookup-table"
 
@@ -138,6 +138,23 @@ The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeo
 
 Each test function will be executed 3 times, and the average executing time (in seconds with 6 digital decimals) will be recorded.
 
+Note: The GeoDe desktop app for Mac OSX used for this test can be downloaded from here: https://github.com/GeoDaCenter/libgeoda_paper/releases/download/v0.1/GeoDa-GPU-test.zip
+One needs to check the box "Use GPU to accelerate computation" in GeoDa->Preference dialog. 
+The running time of Univariate Local Moran feature can be found in the log file located at: GeoDa.app/Contents/Resources/logger.txt
+Please check the running time (by reopening the log file) after each run since it doesn't print other information other than the GPU running time.
+The content will be like:
+
+```
+Entering LisaCoordinator::Calc()
+Exiting LisaCoordinator::Calc()
+GPU took 231 ms
+...
+In OnRanOtherPer()
+99999
+GPU took 4073 ms
+...
+```
+
 **Test results:**
 
 
@@ -175,7 +192,7 @@ Each test function will be executed 3 times, and the average executing time (in 
 |--------------|---------------|---------------|----------------|
 | 999    | 4.20540714263916  | 8.051929950714111  | 11.0227689743042  | 
 | 9999  | 5.640074968338013 | 9.817737817764282 | 12.505669832229614 | 
-| 99999 | | | | 
+| 99999 | ??? | | | 
 
 * rgeoda (permutation_method="complete")
 
@@ -228,14 +245,14 @@ spdep uses multi-processing programming to parallel the local moran computation
 |--------------|----------|
 | 999  | 25.053487062454224 |
 | 9999  | 77.59662580490112 |
-| 99999  | (>64GB Memory usage) |
+| 99999  | ??? (crash: >64GB Memory usage) |
 
 * rgeoda (permutation_method="complete")
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
 | 999  | 27.756  | 2.760 | 2.195  | 
-| 9999  | | | | 
+| 9999  | 185.212 | 25.342 | 17.780 | 
 | 99999  | 1910.860    | 253.879  | 185.140  | 
 
 * spdep
@@ -272,11 +289,11 @@ spdep uses multi-processing programming to parallel the local moran computation
 | 9999  | 37.25004291534424 | 5.340345859527588 | 4.245307922363281  | |
 | 99999  | 656.4548988342285 | 62.88683271408081 | 48.3938422203064 | |
 
-* PySAL/ESDA without Numba (No multi-threading)
+* PySAL/ESDA 
 
 | Permutations | No Numba |
 |--------------|----------|
-| 999  ||
+| 999  | ???|
 | 9999  | |
 | 99999  | |
 
@@ -304,27 +321,17 @@ spdep uses multi-processing programming to parallel the local moran computation
 | 9999  | 37.748    | 5.500     | 4.387     | 
 | 99999  | 735.241     | 68.873     | 48.744     | 
 
-### 4. Chicago (knn=20)
+### 4. Chicago (knn=10)
 
 * pygeoda (permutation_method="complete")
-
-(knn=20)
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 389.7134437561035  | 57.798383951187134| 43.7291738986969  | |
-| 9999 | 3842.998600959778 | 556.979868888855 | 436.6491787433624 | |
-| 99999  | 53586.285209178925 | 1964.156000137329 | 1349.4739561080933  | |
 
 (knn=10)
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
-| 999   | | | | |
-| 9999 | | | | |
-| 99999  |  13525.546596050262 | 1605.97736287117 |  | |
-
-
+| 999   | 119.42543983459473 | 16.434907913208008  |12.032907962799072 | |
+| 9999  | | | | |
+| 99999  |  13525.546596050262 | 1605.97736287117 | 1161.3201611042023   | |
 
 * pygeoda (permutation_method="lookup-table")
 
@@ -332,15 +339,15 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
-| 999  | | | | |
-| 9999  | | | | |
-| 99999  | | 191.051757812  | 164.23768401145935 | |
+| 999  | 14.267882108688354| 2.284726142883301| 1.8891620635986328 | |
+| 9999 | 140.48916697502136 | 19.4720401763916 | 16.17879605293274 | |
+| 99999  | 1449.7298228740692 | 191.051757812  | 164.23768401145935 | |
 
-* PySAL/ESDA without Numba (No multi-threading)
+* PySAL/ESDA 
 
 | Permutations | No Numba |
 |--------------|----------|
-| 999  ||
+| 999  | ??? |
 | 9999  | |
 | 99999  | |
 
@@ -356,6 +363,6 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
-| 999  | 1296.269 | 563.027 | |
-| 9999  | | | |
+| 999  | 1296.269 | 563.027 | 407.151 |
+| 9999  | ??? | | |
 | 99999  | | | |

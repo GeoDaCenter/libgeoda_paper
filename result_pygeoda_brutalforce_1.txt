@@ -42,3 +42,6 @@ Test pyGeoDa local moran with Chicago_Parcels using permutation_method=brutal-fo
 ./data/Chicago_parcels_points.shp 99999 brutal-force 1: 13525.546596050262 seconds
 ./data/Chicago_parcels_points.shp 99999 brutal-force 8: 1605.97736287117 seconds
 ./data/Chicago_parcels_points.shp 99999 brutal-force 16: 1161.3201611042023 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 1: 119.42543983459473 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 8: 16.434907913208008 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 16: 12.032907962799072 seconds

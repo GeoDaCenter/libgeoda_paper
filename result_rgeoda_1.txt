@@ -382,3 +382,36 @@ CRS:            4326
 [5] "16"                               
      user    system   elapsed 
 20849.042    24.735  1318.064 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "1"                      
+   user  system elapsed 
+185.100   0.077 185.212 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "8"                      
+   user  system elapsed 
+199.228   0.065  25.342 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "16"                     
+   user  system elapsed 
+274.347   0.225  17.780 
