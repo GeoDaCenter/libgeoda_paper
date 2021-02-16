@@ -260,11 +260,13 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 * PySAL/ESDA without Numba (No multi-threading)
 
+NOTE: `keep_simulations=False` to avoid out of memory issue
+
 | Permutations | No Numba |
 |--------------|----------|
 | 999  | 25.053487062454224 |
 | 9999  | 77.59662580490112 |
-| 99999  | ??? (crash: >64GB Memory usage) |
+| 99999  |  (~1.5GB) |
 
 * rgeoda (permutation_method="complete")
 

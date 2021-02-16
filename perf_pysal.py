@@ -22,6 +22,11 @@ np.random.seed(12345)
 gdf = gpd.read_file(data_path)
 x = gdf[var_name]
 
+try:
+    import numba
+    print(f"Numba version installed: {numba.__version__}")
+except:
+    print("Numba not installed")
 
 if data_path == './data/Chicago_parcels_points.shp':
     w = lps.weights.KNN.from_dataframe(gdf, k=10)
@@ -29,6 +34,7 @@ else:
     w = lps.weights.Queen.from_dataframe(gdf)
     # remove islands
     if len(w.islands) > 0:
+        print("Remove islands...")
         df_noi = gdf[~gdf.index.isin(w.islands)]
         w = lps.weights.w_subset(w, df_noi.index.tolist())
         x = df_noi[var_name]
@@ -37,7 +43,7 @@ w.transform = 'r'
 
 # function to execute and time
 start_time = time.time()
-li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads)
+li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads, keep_simulations=False)
 run_time = time.time() - start_time
 
 print("{0} {1} {2}: {3} seconds".format(data_path, perms, cpu_threads, run_time))
