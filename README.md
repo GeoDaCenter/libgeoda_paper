@@ -141,7 +141,7 @@ Each test function will be executed 3 times, and the average executing time (in 
 Note: The GeoDe desktop app for Mac OSX used for this test can be downloaded from here: https://github.com/GeoDaCenter/libgeoda_paper/releases/download/v0.1/GeoDa-GPU-test.zip
 One needs to check the box "Use GPU to accelerate computation" in GeoDa->Preference dialog. 
 The running time of Univariate Local Moran feature can be found in the log file located at: GeoDa.app/Contents/Resources/logger.txt
-Please check the running time (by reopening the log file) after each run since it doesn't print other information other than the GPU running time.
+Please check the running time (**by reopening the log file each time**) after each run since it doesn't print other information other than the GPU running time.
 The content will be like:
 
 ```
@@ -160,6 +160,15 @@ GPU took 4073 ms
 
 
 ### 1. Natregimes
+
+
+* Desktop GeoDa using GPU (permutation_method="complete")
+
+| Permutations | GPU |
+|--------------|-----|
+| 999  | 0.069 |
+| 9999  | 0.429 |
+| 99999  | 4.085 |
 
 * pygeoda (permutation_method="complete")
 
@@ -224,6 +233,14 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 ### 2. US-SDOH
 
+* Desktop GeoDa using GPU (permutation_method="complete")
+
+| Permutations | GPU |
+|--------------|-----|
+| 999  | 0.420 |
+| 9999  | 2.790|
+| 99999  | 28.089|
+
 * pygeoda (permutation_method="complete")
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
@@ -277,6 +294,14 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 ### 3. NYC
 
+* Desktop GeoDa using GPU (permutation_method="complete")
+
+| Permutations | GPU |
+|--------------|-----|
+| 999  | 1.691 |
+| 9999  | 17.506|
+| 99999  | 46.120|
+
 * pygeoda (permutation_method="complete")
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
@@ -329,6 +354,14 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 ### 4. Chicago (knn=10)
 
+* Desktop GeoDa using GPU (permutation_method="complete")
+
+| Permutations | GPU |
+|--------------|-----|
+| 999  | 0.933 |
+| 9999  | 5.456|
+| 99999  | 52.452|
+
 * pygeoda (permutation_method="complete")
 
 (knn=10)
@@ -336,7 +369,7 @@ spdep uses multi-processing programming to parallel the local moran computation
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
 |--------------|---------------|---------------|----------------|---------|
 | 999   | 119.42543983459473 | 16.434907913208008  |12.032907962799072 | |
-| 9999  | | 162.7958836555481 | 120.59185600280762| |
+| 9999  | 1222.1919560432434 | 162.7958836555481 | 120.59185600280762| |
 | 99999  |  13525.546596050262 | 1605.97736287117 | 1161.3201611042023   | |
 
 * pygeoda (permutation_method="lookup-table")

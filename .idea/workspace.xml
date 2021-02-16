@@ -4,7 +4,6 @@
     <list default="true" id="3f3b7d89-913e-4b26-9fef-91ae1905c5d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +50,17 @@
           <entry key="Python Console" value="36" />
           <entry key="R" value="1309" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="5143" />
+          <entry key="md" value="5462" />
           <entry key="py" value="2590" />
           <entry key="sh" value="1270" />
-          <entry key="txt" value="106" />
+          <entry key="txt" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="1270" />
-          <entry key="Markdown" value="5143" />
-          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="Markdown" value="5462" />
+          <entry key="PLAIN_TEXT" value="114" />
           <entry key="Python" value="2626" />
           <entry key="R" value="1309" />
         </counts>
@@ -86,7 +85,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="190">
-                    <caret line="338" column="50" selection-start-line="338" selection-start-column="50" selection-end-line="338" selection-end-column="50" />
+                    <caret line="371" column="29" selection-start-line="371" selection-start-column="29" selection-end-line="371" selection-end-column="29" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -177,7 +176,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="278">
-                    <caret line="203" selection-start-line="203" selection-end-line="203" />
+                    <caret line="212" selection-start-line="212" selection-end-line="212" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -217,8 +216,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+                <state relative-caret-position="705">
+                  <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
                 </state>
               </provider>
             </entry>
@@ -341,10 +340,10 @@
         <option value="$PROJECT_DIR$/perf_pygeoda.py" />
         <option value="$PROJECT_DIR$/perf_rgeoda.R" />
         <option value="$PROJECT_DIR$/result_pygeoda_lookup_1.txt" />
-        <option value="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" />
         <option value="$PROJECT_DIR$/perf_pysal.py" />
         <option value="$PROJECT_DIR$/run_rgeoda_perf.sh" />
         <option value="$PROJECT_DIR$/run_rgeoda_perf_lookup.sh" />
+        <option value="$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -356,7 +355,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="519" />
+    <option name="x" value="729" />
     <option name="y" value="23" />
     <option name="width" value="1872" />
     <option name="height" value="1401" />
@@ -475,7 +474,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="519" y="23" width="1872" height="1401" extended-state="0" />
+    <frame x="729" y="23" width="1872" height="1401" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17431694" />
@@ -788,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/result_pygeoda_brutalforce_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+        <state relative-caret-position="705">
+          <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -797,7 +796,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="190">
-            <caret line="338" column="50" selection-start-line="338" selection-start-column="50" selection-end-line="338" selection-end-column="50" />
+            <caret line="371" column="29" selection-start-line="371" selection-start-column="29" selection-end-line="371" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>
