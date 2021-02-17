@@ -326,7 +326,7 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 |--------------|----------|
 | 999  |47.61773729324341 |
 | 9999  | 125.48144698143005 |
-| 99999  | |
+| 99999  | 1302.5638799667358 |
 
 * rgeoda (permutation_method="complete")
 
@@ -388,8 +388,8 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 | Permutations | No Numba |
 |--------------|----------|
-| 999  | ??? |
-| 9999  | |
+| 999  |  488.52151322364807 |
+| 9999  | 727.2412669658661 |
 | 99999  | |
 
 * rgeoda (permutation_method="complete")
