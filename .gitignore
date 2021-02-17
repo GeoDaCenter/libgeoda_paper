@@ -1,6 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+__pycache__/ *.py[cod]
 *$py.class
 
 # C extensions
@@ -126,3 +125,6 @@ dmypy.json
 
 .vscode/
 .DS_Store
+venv_nonumba/
+*.swp
+.idea/dictionaries/xun.xml

@@ -264,9 +264,9 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 | Permutations | No Numba |
 |--------------|----------|
-| 999  | 25.053487062454224 |
-| 9999  | 77.59662580490112 |
-| 99999  |  (~1.5GB) |
+| 999  | 22.939248085021973 |
+| 9999  | 68.79567408561707|
+| 99999  |  664.0670731067657 |
 
 * rgeoda (permutation_method="complete")
 
@@ -324,8 +324,8 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 | Permutations | No Numba |
 |--------------|----------|
-| 999  | ???|
-| 9999  | |
+| 999  |47.61773729324341 |
+| 9999  | 125.48144698143005 |
 | 99999  | |
 
 * rgeoda (permutation_method="complete")
@@ -407,5 +407,5 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 1296.269 | 563.027 | 407.151 |
-| 9999  | ??? > 5 hours | | |
+| 9999  | ??? > 5 hours | | 683.451  |
 | 99999  | | | |

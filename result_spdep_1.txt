@@ -338,3 +338,8 @@ geometry type:  POINT
 dimension:      XY
 bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
 CRS:            4326
+NULL
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "16"                               
+    user   system  elapsed 
+4695.379  638.100  683.451 

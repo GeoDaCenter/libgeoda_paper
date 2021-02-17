@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Test pysal local moran with Natregimes without Numba"
-python perf_pysal.py ./data/natregimes.shp HR60 999 1 
+python perf_pysal.py ./data/natregimes.shp HR60 999 1
 python perf_pysal.py ./data/natregimes.shp HR60 9999 1
 python perf_pysal.py ./data/natregimes.shp HR60 99999 1
 echo "Test pysal local moran with SDOH without Numba"
