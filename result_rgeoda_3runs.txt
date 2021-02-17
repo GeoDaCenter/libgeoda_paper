@@ -1,0 +1,223 @@
+====Run rgeoda local_moran using Natregimes and permutation_method=complete
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "1"                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   1.792        1      1.79    0.001          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "8"                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   0.326        1     2.018    0.004          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "16"                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   0.238        1     2.474    0.006          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "brutal-force"          "1"                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  17.702        1    17.697    0.004          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "brutal-force"          "8"                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   2.727        1    19.707    0.009          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "brutal-force"          "16"                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   1.755        1    24.029    0.015          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "brutal-force"          "1"                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 171.589        1   171.551    0.032          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "brutal-force"          "8"                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  25.495        1   197.025    0.031          0         0
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "brutal-force"          "16"                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  17.317        1   250.747    0.118          0         0
+====Run rgeoda local_moran using SDOH and permutation_method=complete
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "brutal-force"           
+[5] "1"                      
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  51.563        1    51.545    0.016          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "brutal-force"           
+[5] "8"                      
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   8.282        1    60.678    0.019          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "brutal-force"           
+[5] "16"                     
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   5.581        1     74.28    0.043          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "1"                      
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 524.281        1    524.09    0.147          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "8"                      
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  77.781        1   606.195    0.133          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "brutal-force"           
+[5] "16"                     
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  51.238        1   760.593    0.362          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "brutal-force"           
+[5] "1"                      
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications  elapsed relative user.self sys.self user.child sys.child
+1            3 5202.726        1  5200.712    1.299          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "brutal-force"           
+[5] "8"                      
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 759.117        1  5962.961    1.772          0         0
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "brutal-force"           
+[5] "16"                     

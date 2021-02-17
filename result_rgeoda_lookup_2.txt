@@ -1,0 +1,376 @@
+====Run rgeoda local_moran using Natregimes and permutation_method=lookup-table
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "lookup-table"          "1"                    
+[1] "0.0500000000" "0.0010000000" "0.0500000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "lookup-table"          "8"                    
+[1] "0.0570000000" "0.0020000000" "0.0150000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "lookup-table"          "16"                   
+[1] "0.0730000000" "0.0030000000" "0.0140000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "lookup-table"          "1"                    
+[1] "0.4660000000" "0.0010000000" "0.4670000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "lookup-table"          "8"                    
+[1] "0.5050000000" "0.0030000000" "0.0740000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "lookup-table"          "16"                   
+[1] "0.6220000000" "0.0090000000" "0.0570000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "lookup-table"          "1"                    
+[1] "4.2520000000" "0.0040000000" "4.2560000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "lookup-table"          "8"                    
+[1] "4.9280000000" "0.0110000000" "0.6480000000" "0.0000000000" "0.0000000000"
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+CRS:            4326
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "lookup-table"          "16"                   
+[1] "6.1510000000" "0.0350000000" "0.4680000000" "0.0000000000" "0.0000000000"
+====Run rgeoda local_moran using SDOH and permutation_method=lookup-table
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "lookup-table"           
+[5] "1"                      
+[1] "2.7110000000" "0.0030000000" "2.7150000000" "0.0000000000" "0.0000000000"
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "lookup-table"           
+[5] "8"                      
+[1] "2.2310000000" "0.0050000000" "0.3740000000" "0.0000000000" "0.0000000000"
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "lookup-table"           
+[5] "16"                     
+[1] "2.6800000000" "0.0070000000" "0.2910000000" "0.0000000000" "0.0000000000"
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "lookup-table"           
+[5] "1"                      
+[1] "18.1490000000" "0.0050000000"  "18.1540000000" "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "lookup-table"           
+[5] "8"                      
+[1] "21.5680000000" "0.0090000000"  "2.8310000000"  "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "lookup-table"           
+[5] "16"                     
+[1] "26.5790000000" "0.0260000000"  "1.9520000000"  "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "lookup-table"           
+[5] "1"                      
+[1] "186.3040000000" "0.0450000000"   "186.3590000000" "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "lookup-table"           
+[5] "8"                      
+[1] "217.7450000000" "0.0690000000"   "27.7880000000"  "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+CRS:            4326
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "lookup-table"           
+[5] "16"                     
+[1] "291.1910000000" "0.1750000000"   "19.7560000000"  "0.0000000000"  
+[5] "0.0000000000"  
+====Run rgeoda local_moran using NYC and permutation_method=lookup-table
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "lookup-table"                 
+[5] "1"                            
+[1] "3.4670000000" "0.0050000000" "3.4720000000" "0.0000000000" "0.0000000000"
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "lookup-table"                 
+[5] "8"                            
+[1] "4.0490000000" "0.0050000000" "0.6660000000" "0.0000000000" "0.0000000000"
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "lookup-table"                 
+[5] "16"                           
+[1] "5.0000000000" "0.0080000000" "0.5160000000" "0.0000000000" "0.0000000000"
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "lookup-table"                 
+[5] "1"                            
+[1] "33.2880000000" "0.0090000000"  "33.2980000000" "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "lookup-table"                 
+[5] "8"                            
+[1] "39.2180000000" "0.0130000000"  "5.3040000000"  "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "lookup-table"                 
+[5] "16"                           
+[1] "50.5460000000" "0.0290000000"  "3.7620000000"  "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "lookup-table"                 
+[5] "1"                            
+[1] "357.4100000000" "0.1060000000"   "357.5210000000" "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "lookup-table"                 
+[5] "8"                            
+[1] "430.9890000000" "0.1930000000"   "56.2340000000"  "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+CRS:            102003
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "lookup-table"                 
+[5] "16"                           
+[1] "571.6830000000" "0.4820000000"   "38.6860000000"  "0.0000000000"  
+[5] "0.0000000000"  
+====Run rgeoda local_moran using Chicago_Parcels and permutation_method=lookup-table
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "lookup-table"                     
+[5] "1"                                
+[1] "16.6640000000" "0.0100000000"  "16.6750000000" "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "lookup-table"                     
+[5] "8"                                
+[1] "17.5350000000" "0.0170000000"  "2.7010000000"  "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "lookup-table"                     
+[5] "16"                               
+[1] "21.0510000000" "0.0300000000"  "1.9740000000"  "0.0000000000" 
+[5] "0.0000000000" 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "lookup-table"                     
+[5] "1"                                
+[1] "133.7050000000" "0.0410000000"   "133.7570000000" "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "lookup-table"                     
+[5] "8"                                
+[1] "160.2610000000" "0.0410000000"   "20.6270000000"  "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "lookup-table"                     
+[5] "16"                               
+[1] "230.4910000000" "0.1870000000"   "15.9160000000"  "0.0000000000"  
+[5] "0.0000000000"  
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "lookup-table"                     
+[5] "1"                                
+[1] "1324.9120000000" "0.3560000000"    "1325.4920000000" "0.0000000000"   
+[5] "0.0000000000"   
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "lookup-table"                     
+[5] "8"                                
+[1] "1537.1900000000" "0.3370000000"    "193.2830000000"  "0.0000000000"   
+[5] "0.0000000000"   
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "lookup-table"                     
+[5] "16"                               
+[1] "2270.8310000000" "1.1330000000"    "149.6020000000"  "0.0000000000"   
+[5] "0.0000000000"   

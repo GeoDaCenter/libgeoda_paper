@@ -42,8 +42,12 @@ w.transform = 'r'
 
 
 # function to execute and time
-start_time = time.time()
-li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads, keep_simulations=False)
-run_time = time.time() - start_time
+times = []
+j = 3
+for i in range(j):
+    start_time = time.time()
+    li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads, keep_simulations=False)
+    run_time = time.time() - start_time
+    times.append(run_time)
 
-print("{0} {1} {2}: {3} seconds".format(data_path, perms, cpu_threads, run_time))
+print("{0} {1} {2}: {3} seconds (average of 3 runs)".format(data_path, perms, cpu_threads, sum(times)/3.0))

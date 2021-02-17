@@ -4,6 +4,8 @@
 #
 library(sf)
 library(spdep)
+library(rbenchmark)
+options(digits.secs = 6)
 
 args = commandArgs(trailingOnly=TRUE)
 file_path <- args[1]
@@ -25,4 +27,6 @@ if (cpu_threads > 1) {
     set.coresOption(as.integer(cpu_threads/2)) # 1 core = 2 threads
 }
 args
-system.time(lm <- localmoran_perm(dt[[variable_name]], listw=w, alternative="two.sided", nsim=perms, zero.policy=TRUE))
+# run localmoran_perm() 3 times
+tm <- benchmark(lm <- localmoran_perm(dt[[variable_name]], listw=w, alternative="two.sided", nsim=perms, zero.policy=TRUE), replications=3)
+tm

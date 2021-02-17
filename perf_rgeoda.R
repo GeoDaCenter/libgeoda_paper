@@ -4,7 +4,8 @@
 #
 library(rgeoda)
 library(sf)
-
+library(rbenchmark)
+options(digits.secs = 6)
 args = commandArgs(trailingOnly=TRUE)
 file_path <- args[1]
 variable_name <- args[2]
@@ -19,5 +20,6 @@ if (file_path=='./data/Chicago_parcels_points.shp') {
     w <- queen_weights(dt)
 }
 args
-tm <- system.time(lm <- local_moran(w, dt[variable_name], permutations=perms, permutation_method=perm_method, cpu_threads=cpu_threads))
-sprintf("%.10f", tm)
+# run the local_moran() 3 times 
+tm <- benchmark(lm<-local_moran(w, dt[variable_name], permutations=perms, permutation_method=perm_method, cpu_threads=cpu_threads), replications=3)
+tm

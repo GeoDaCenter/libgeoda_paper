@@ -161,7 +161,9 @@ GPU took 4073 ms
 
 **Test results:**
 
+### Summary
 
+|  Data      | Permutations |  GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA (1) | 
 
 ### 1. Natregimes
 
