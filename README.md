@@ -139,9 +139,13 @@ The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeo
 Each test function will be executed 3 times, and the average executing time (in seconds with 6 digital decimals) will be recorded.
 
 Note: The GeoDe desktop app for Mac OSX used for this test can be downloaded from here: https://github.com/GeoDaCenter/libgeoda_paper/releases/download/v0.1/GeoDa-GPU-test.zip
+
 One needs to check the box "Use GPU to accelerate computation" in GeoDa->Preference dialog. 
+
 The running time of Univariate Local Moran feature can be found in the log file located at: GeoDa.app/Contents/Resources/logger.txt
+
 Please check the running time (**by reopening the log file each time**) after each run since it doesn't print other information other than the GPU running time.
+
 The content will be like:
 
 ```
@@ -390,7 +394,7 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 |--------------|----------|
 | 999  |  488.52151322364807 |
 | 9999  | 727.2412669658661 |
-| 99999  | |
+| 99999  | 3937.0313351154327 |
 
 * rgeoda (permutation_method="complete")
 
