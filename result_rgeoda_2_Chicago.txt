@@ -1,0 +1,9 @@
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "brutal-force"                     
+[5] "1"                                
