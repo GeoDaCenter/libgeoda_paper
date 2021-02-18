@@ -76,7 +76,7 @@ The outpu:
 |------|----------------|----------|
 |U.S. counties (natregimes.shp)| 3,085 | HR60 (homicide rates for 1960) |
 |U.S. census tracts (us-sdoh-2014.shp) | 72,329<sup>1</sup> | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
-|New York City census blocks (NYC Area2010_2data.shp) | 108,332 (155 islands)<sup>2</sup> | CE01_02 (employed persons earning less than $1250 per month in 2002) |
+|New York City census blocks (NYC Area2010_2data.shp) | 108,332<sup>2</sup> | CE01_02 (employed persons earning less than $1250 per month in 2002) |
 | Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> | EstBuild Board of Review final estimated market value of building from the prior tax year.|
 
 <sup>1</sup>The original dataset has 72,344 observations with 15 islands were removed.
@@ -189,9 +189,9 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 |NYC|999||28.45079025|||28.814|||
 |NYC|9999||282.0992463|||285.253|||
 |NYC|99999||2814.519481|||2850.638|||
-|Chicago|999|||||113.233|||
-|Chicago|9999|||||1137.660|||
-|Chicago|99999||||||||
+|Chicago|999||113.7595565|||113.233|||
+|Chicago|9999||1153.4873|||1137.660|||
+|Chicago|99999||13514.23282||||||
 
 <sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
 The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine.
@@ -209,12 +209,12 @@ The Numba package is not installed. The n_jobs=1 parameter is used to explicitly
 |NYC|999||4.287986279|||4.487|||
 |NYC|9999||42.35134069|||43.281|||
 |NYC|99999||424.6791393|||431.787|||
-|Chicago|999|||||17.137|||
-|Chicago|9999|||||164.331|||
-|Chicago|99999||||||||
+|Chicago|999||16.51535312|||17.137|||
+|Chicago|9999||161.4538433|||164.331|||
+|Chicago|99999||1629.589604||||||
 
 <sup>5</sup>spdep does multi-processing for parallalization instead of multi-threading that used in pygeoda/rgeoda. On this test machine, each CPU core has 2 CPU threads. For testing spdep, the function localmoran_perm() is called after setting up using 4 CPU cores and 8 CPU cores:
-```R
+```Rupdate 
 # using 4 CPU cores
 set.coresOption(4) 
 # using 8 CPU cores
@@ -233,9 +233,9 @@ set.coresOption(8)
 |NYC|999||2.897502263|||3.083|||
 |NYC|9999||28.33021959|||28.872|||
 |NYC|99999||280.0743279|||282.211|||
-|Chicago|999|||||11.701|||
-|Chicago|9999|||||111.078|||
-|Chicago|99999||||||||
+|Chicago|999||11.80314898|||11.701|||
+|Chicago|9999||113.620623|||111.078|||
+|Chicago|99999||1131.008971||||||
 
 ## 2.2 Detailed Information:
 
@@ -541,7 +541,13 @@ result_pygeoda_complete_2.txt
 | 9999  | 1105.2691671848297 | 161.012845993042 | 109.39576888084412| 
 | 99999  |  11064.583874940872 | 1635.1613550186157 | 1124.493618965149  | 
 
-result_pygeoda_complete_2.txt
+result_pygeoda_complete_3.txt
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 111.75905203819275 | 16.46783709526062  |11.62519097328186 | 
+| 9999  | 1133.0007779598236 | 160.55280017852783| 110.87424397468567| 
+| 99999  |  15952.567998170853 | 1647.6300950050354 | 1107.213131904602 | 
 
 * pygeoda (permutation_method="lookup-table")
 
@@ -579,7 +585,7 @@ result_pygeoda_complete_2.txt
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 1296.269 | 563.027 | 407.151 |
-| 9999  | ??? > 5 hours | | 683.451  |
+| 9999  | 3719.948 | | 683.451  |
 | 99999  | | | |
 
 * rgeoda (permutation_method="lookup-table")
