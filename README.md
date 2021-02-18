@@ -189,9 +189,9 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 |NYC|999|1.753666667|28.45079025||47.00624776|28.814|||
 |NYC|9999|17.41733333|282.0992463||129.1338846|285.253|||
 |NYC|99999|50.59|2814.519481||1352.874198|2850.638|||
-|Chicago|999|0.8403333333|113.7595565|||113.233|||
-|Chicago|9999|5.342666667|1153.4873|||1137.660|||
-|Chicago|99999|52.83633333|13514.23282||||||
+|Chicago|999|0.8403333333|113.7595565||471.7471529|113.233|||
+|Chicago|9999|5.342666667|1153.4873||720.8917576|1137.660|||
+|Chicago|99999|52.83633333|13514.23282||4456.907564||||
 
 <sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
 The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine.
@@ -322,6 +322,13 @@ result_spdep_1.txt
 | 9999  | 9.714  | 3.492  | 1.956  |
 | 99999  | 97.019  | 33.408  | 18.353 |
 
+result_spdep_2.txt
+| Permutations | No parallel   | 4 Cores       | 8 Cores        | 
+|--------------|---------------|---------------|----------------|
+| 999  |1.322   | 0.563  | 0.409 |
+| 9999  | 8.895   | 3.164  | 2.179  |
+| 99999  | 83.868  | 24.320   | 13.872  |
+
 * rgeoda (permutation_method="lookup")
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
@@ -409,12 +416,18 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 * spdep
 
 result_spdep_1.txt
-
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 78.861 | 28.678 | 17.504  |
 | 9999  | 394.205  | 159.013  | 86.205  |
 | 99999  | 3517.074  | 1435.823  | 766.686 |
+
+result_spdep_2.txt
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999  | | | |
+| 9999  | | | |
+| 99999  | | | |
 
 * rgeoda (permutation_method="lookup")
 
@@ -579,7 +592,7 @@ result_pygeoda_lookup_2.txt
 |--------------|----------|---------|---------|
 | 999  |  488.52151322364807 | 421.1374022960663| 505.58254313468933|
 | 9999  | 727.2412669658661 | 646.2213499546051| 789.2126560211182|
-| 99999  | 3937.0313351154327 | 5037.343729972839| |
+| 99999  | 3937.0313351154327 | 5037.343729972839| 4396.347628116608 |
 
 * rgeoda (permutation_method="complete")
 
