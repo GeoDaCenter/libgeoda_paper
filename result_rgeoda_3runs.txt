@@ -221,3 +221,207 @@ geographic CRS: WGS 84
 [1] "./data/us-sdoh-2014.shp" "ep_unem"                
 [3] "99999"                   "brutal-force"           
 [5] "16"                     
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 498.445        1  7768.571    5.011          0         0
+====Run rgeoda local_moran using NYC and permutation_method=complete
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "brutal-force"                 
+[5] "1"                            
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  86.442        1    86.407     0.03          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "brutal-force"                 
+[5] "8"                            
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   13.46        1   100.208    0.039          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "brutal-force"                 
+[5] "16"                           
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3    9.25        1   125.912    0.088          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "brutal-force"                 
+[5] "1"                            
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 855.758        1   855.512    0.187          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "brutal-force"                 
+[5] "8"                            
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 129.844        1   985.287    0.201          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "brutal-force"                 
+[5] "16"                           
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  86.615        1  1290.427    0.742          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "brutal-force"                 
+[5] "1"                            
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications  elapsed relative user.self sys.self user.child sys.child
+1            3 8551.914        1    8547.6    2.422          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "brutal-force"                 
+[5] "8"                            
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications  elapsed relative user.self sys.self user.child sys.child
+1            3 1295.362        1  9870.895    4.564          0         0
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "brutal-force"                 
+[5] "16"                           
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 846.632        1  12922.61    7.824          0         0
+====Run rgeoda local_moran using Chicago_Parcels and permutation_method=complete
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "1"                                
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 339.699        1   339.579    0.088          0         0
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "8"                                
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   51.41        1   395.467    0.106          0         0
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "16"                               
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  35.104        1   506.142    0.461          0         0
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "brutal-force"                     
+[5] "1"                                
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 3412.98        1  3409.976    1.445          0         0
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "brutal-force"                     
+[5] "8"                                
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 492.993        1  3912.468     0.89          0         0
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "brutal-force"                     
+[5] "16"                               
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 333.233        1  5172.692     2.75          0         0
+Rscript perf_rgeoda.R ./data/Chicago_parcels_points.shp EstBuild 99999 brutal-force 1
+Rscript perf_rgeoda.R ./data/Chicago_parcels_points.shp EstBuild 99999 brutal-force 8
+Rscript perf_rgeoda.R ./data/Chicago_parcels_points.shp EstBuild 99999 brutal-force 16
