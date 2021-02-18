@@ -75,9 +75,16 @@ The outpu:
 | Name | # observations | variable |
 |------|----------------|----------|
 |U.S. counties (natregimes.shp)| 3,085 | HR60 (homicide rates for 1960) |
-|U.S. census tracts (us-sdoh-2014.shp) | 72,344 | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
-|New York City census blocks (NYC Area2010_2data.shp) | 108,487 | CE01_02 (employed persons earning less than $1250 per month in 2002) |
-| Chicago parcels (Chicago_parcels_points.shp) | 592,521 | EstBuild Board of Review final estimated market value of building from the prior tax year.|
+|U.S. census tracts (us-sdoh-2014.shp) | 72,344 (15 islands)<sup>1</sup> | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
+|New York City census blocks (NYC Area2010_2data.shp) | 108,487 (155 islands)<sup>2</sup> | CE01_02 (employed persons earning less than $1250 per month in 2002) |
+| Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> | EstBuild Board of Review final estimated market value of building from the prior tax year.|
+
+<sup>1</sup>The islands are removed when creating a queen contiguity weights for PySAL and spdep. The number of islands in us-sdoh-2014.shp is 15.
+
+<sup>2</sup>The islands are removed when creating a queen contiguity weights for PySAL and spdep. The number of islands in NYC_Area2010_2data.shp is 155. 
+
+<sup>3</sup>The Chicago_parcels_points.shp is create using the dataset download from https://datacatalog.cookcountyil.gov/Property-Taxation/Archive-Cook-County-Assessor-s-Residential-Sales-D/5pge-nu6u, and the duplicate points are removed.
+
 
 **Test function:**
 
@@ -228,7 +235,7 @@ set.coresOption(8)
 |Chicago|9999||||||||
 |Chicago|99999||||||||
 
-## 2.2 Supplementary Information:
+## 2.2 Detailed Information:
 
 ### Test results
 
