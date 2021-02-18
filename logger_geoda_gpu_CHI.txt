@@ -1,0 +1,335 @@
+
+os: 1-10-14
+vs: 1-18-0-0
+/Users/xun/Desktop/GeoDa.app/Contents/MacOS/../Resources/logger.txt
+Click GdaFrame::OnNewProject
+ConnectDatasourceDlg::InitSamplePanel()
+Entering ConnectDatasourceDlg::OnOkClick
+ConnectDatasourceDlg::CreateDataSource()
+Entering ConnectDatasourceDlg::SaveRecentDataSource
+Exiting ConnectDatasourceDlg::SaveRecentDataSource
+Exiting ConnectDatasourceDlg::OnOkClick
+Entering Project::Project (new project)
+Project::CommonProjectInit()
+Entering Project::InitFromOgrLayer
+Datasource name:
+Entering OGRTable::OGRTable
+Project::GetSpatialReference()
+Exiting Project::Project
+Click GdaFrame::InitWithProject()
+Open TableFrame.
+Open MapFrame.
+MapCanvas::MapCanvas()
+MapCanvas::ChangeMapType()
+MapCanvas::VarInfoAttributeChange()
+MapCanvas::CreateAndUpdateCategories()
+Click GdaFrame::OnToolsWeightsManager
+Entering WeightsManFrame::WeightsManFrame
+In WeightsManFrame::SetDetailsForItem
+In WeightsManFrame::OnActivate
+Exiting WeightsManFrame::WeightsManFrame
+In WeightsManFrame::OnLoadBtn
+In WeightsManFrame::OnActivate
+In WeightsManFrame::OnActivate
+In WeightsManFrame::update(WeightsManState* o)
+In WeightsManFrame::update(WeightsManState* o)
+In WeightsManFrame::OnWListItemSelect
+In WeightsManFrame::SetDetailsForItem
+In WeightsManFrame::SetDetailsForItem
+In WeightsManFrame::OnLoadBtn
+In WeightsManFrame::OnActivate
+In WeightsManFrame::OnActivate
+In WeightsManFrame::OnActivate
+Open LisaMapFrame (OnOpenUniLisa).
+Open VariableSettingsDlg
+Click VariableSettingsDlg::OnOkClick:
+Entering AbstractCoordinator::AbstractCoordinator().
+Entering AbstractCoordinator::SetSignificanceFilter()
+Exiting AbstractCoordinator::SetSignificanceFilter()
+Exiting AbstractCoordinator::AbstractCoordinator().
+Entering LisaCoordinator::LisaCoordinator().
+Entering AbstractCoordinator::InitFromVarInfo()
+Entering LisaCoordinator::Init()
+Entering LisaCoordinator::DeallocateVectors()
+Exiting LisaCoordinator::DeallocateVectors()
+Entering LisaCoordinator::AllocateVectors()
+Exiting LisaCoordinator::AllocateVectors()
+Entering LisaCoordinator::StandardizeData()
+Exiting LisaCoordinator::StandardizeData()
+Exiting LisaCoordinator::Init()
+Entering AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::DeallocateVectors()
+Entering AbstractCoordinator::AllocateVectors()
+Exiting AbstractCoordinator::AllocateVectors()
+Entering LisaCoordinator::Calc()
+Exiting LisaCoordinator::Calc()
+GPU took 1728 ms
+Exiting AbstractCoordinator::InitFromVarInfo()
+Exiting LisaCoordinator::LisaCoordinator().
+Entering LisaMapFrame::LisaMapFrame
+MapCanvas::MapCanvas()
+MapCanvas::ChangeMapType()
+MapCanvas::VarInfoAttributeChange()
+MapCanvas::CreateAndUpdateCategories()
+Entering AbstractMapCanvas::AbstractMapCanvas
+Exiting AbstractMapCanvas::AbstractMapCanvas
+Entering LisaMapCanvas::LisaMapCanvas
+Exiting LisaMapCanvas::LisaMapCanvas
+In AbstractCoordinator::registerObserver()
+Exiting LisaMapFrame::LisaMapFrame
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+999
+GPU took 1787 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9999
+GPU took 17322 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+99999
+GPU took 46099 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+999
+GPU took 1740 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9990
+GPU took 17622 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9999
+GPU took 17625 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+99999
+GPU took 52831 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+999
+GPU took 1734 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9999
+GPU took 17308 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+99999
+GPU took 52840 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Open LisaMapFrame (OnOpenUniLisa).
+Open VariableSettingsDlg
+Click VariableSettingsDlg::OnOkClick:
+Entering AbstractCoordinator::AbstractCoordinator().
+Entering AbstractCoordinator::SetSignificanceFilter()
+Exiting AbstractCoordinator::SetSignificanceFilter()
+Exiting AbstractCoordinator::AbstractCoordinator().
+Entering LisaCoordinator::LisaCoordinator().
+Entering AbstractCoordinator::InitFromVarInfo()
+Entering LisaCoordinator::Init()
+Entering LisaCoordinator::DeallocateVectors()
+Exiting LisaCoordinator::DeallocateVectors()
+Entering LisaCoordinator::AllocateVectors()
+Exiting LisaCoordinator::AllocateVectors()
+Entering LisaCoordinator::StandardizeData()
+Exiting LisaCoordinator::StandardizeData()
+Exiting LisaCoordinator::Init()
+Entering AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::DeallocateVectors()
+Entering AbstractCoordinator::AllocateVectors()
+Exiting AbstractCoordinator::AllocateVectors()
+Entering LisaCoordinator::Calc()
+Exiting LisaCoordinator::Calc()
+Entering AbstractCoordinator::CalcPseudoP_threaded()
+Exiting AbstractCoordinator::CalcPseudoP_threaded()
+GPU took 2604 ms
+Exiting AbstractCoordinator::InitFromVarInfo()
+Exiting LisaCoordinator::LisaCoordinator().
+Entering LisaMapFrame::LisaMapFrame
+MapCanvas::MapCanvas()
+MapCanvas::ChangeMapType()
+MapCanvas::VarInfoAttributeChange()
+MapCanvas::CreateAndUpdateCategories()
+Entering AbstractMapCanvas::AbstractMapCanvas
+Exiting AbstractMapCanvas::AbstractMapCanvas
+Entering LisaMapCanvas::LisaMapCanvas
+Exiting LisaMapCanvas::LisaMapCanvas
+In AbstractCoordinator::registerObserver()
+Exiting LisaMapFrame::LisaMapFrame
+Click GdaFrame::OnCloseProjectEvt
+Project::GetProjectFullPath()
+In TableFrame::OnClose and actually closing.
+Project::CleanupPairsHLState()
+Entering Project::~Project
+Exiting Project::~Project
+In LisaMapFrame::~LisaMapFrame
+Entering AbstractCoordinator::removeObserver
+In LisaCoordinator::~LisaCoordinator().
+Entering LisaCoordinator::DeallocateVectors()
+Exiting LisaCoordinator::DeallocateVectors()
+In AbstractCoordinator::~AbstractCoordinator().
+Entering AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::removeObserver
+In LisaMapCanvas::~LisaMapCanvas
+In AbstractMapCanvas::~AbstractMapCanvas
+MapCanvas::~MapCanvas()
+In LisaMapFrame::~LisaMapFrame
+Entering AbstractCoordinator::removeObserver
+In LisaCoordinator::~LisaCoordinator().
+Entering LisaCoordinator::DeallocateVectors()
+Exiting LisaCoordinator::DeallocateVectors()
+In AbstractCoordinator::~AbstractCoordinator().
+Entering AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::removeObserver
+In LisaMapCanvas::~LisaMapCanvas
+In AbstractMapCanvas::~AbstractMapCanvas
+MapCanvas::~MapCanvas()
+MapCanvas::~MapCanvas()
+Click GdaFrame::OnNewProject
+ConnectDatasourceDlg::InitSamplePanel()
+Entering ConnectDatasourceDlg::OnOkClick
+ConnectDatasourceDlg::CreateDataSource()
+Entering ConnectDatasourceDlg::SaveRecentDataSource
+Exiting ConnectDatasourceDlg::SaveRecentDataSource
+Exiting ConnectDatasourceDlg::OnOkClick
+Entering Project::Project (new project)
+Project::CommonProjectInit()
+Entering Project::InitFromOgrLayer
+Datasource name:
+Entering OGRTable::OGRTable
+Project::GetSpatialReference()
+Exiting Project::Project
+Click GdaFrame::InitWithProject()
+Open TableFrame.
+Open MapFrame.
+MapCanvas::MapCanvas()
+MapCanvas::ChangeMapType()
+MapCanvas::VarInfoAttributeChange()
+MapCanvas::CreateAndUpdateCategories()
+Click GdaFrame::OnToolsWeightsManager
+Entering WeightsManFrame::WeightsManFrame
+In WeightsManFrame::SetDetailsForItem
+In WeightsManFrame::OnActivate
+Exiting WeightsManFrame::WeightsManFrame
+In WeightsManFrame::OnLoadBtn
+In WeightsManFrame::OnActivate
+In WeightsManFrame::OnActivate
+In WeightsManFrame::update(WeightsManState* o)
+In WeightsManFrame::update(WeightsManState* o)
+In WeightsManFrame::OnWListItemSelect
+In WeightsManFrame::SetDetailsForItem
+In WeightsManFrame::SetDetailsForItem
+In WeightsManFrame::OnActivate
+Open LisaMapFrame (OnOpenUniLisa).
+Open VariableSettingsDlg
+Click VariableSettingsDlg::OnOkClick:
+Entering AbstractCoordinator::AbstractCoordinator().
+Entering AbstractCoordinator::SetSignificanceFilter()
+Exiting AbstractCoordinator::SetSignificanceFilter()
+Exiting AbstractCoordinator::AbstractCoordinator().
+Entering LisaCoordinator::LisaCoordinator().
+Entering AbstractCoordinator::InitFromVarInfo()
+Entering LisaCoordinator::Init()
+Entering LisaCoordinator::DeallocateVectors()
+Exiting LisaCoordinator::DeallocateVectors()
+Entering LisaCoordinator::AllocateVectors()
+Exiting LisaCoordinator::AllocateVectors()
+Entering LisaCoordinator::StandardizeData()
+Exiting LisaCoordinator::StandardizeData()
+Exiting LisaCoordinator::Init()
+Entering AbstractCoordinator::DeallocateVectors()
+Exiting AbstractCoordinator::DeallocateVectors()
+Entering AbstractCoordinator::AllocateVectors()
+Exiting AbstractCoordinator::AllocateVectors()
+Entering LisaCoordinator::Calc()
+Exiting LisaCoordinator::Calc()
+GPU took 823 ms
+Exiting AbstractCoordinator::InitFromVarInfo()
+Exiting LisaCoordinator::LisaCoordinator().
+Entering LisaMapFrame::LisaMapFrame
+MapCanvas::MapCanvas()
+MapCanvas::ChangeMapType()
+MapCanvas::VarInfoAttributeChange()
+MapCanvas::CreateAndUpdateCategories()
+Entering AbstractMapCanvas::AbstractMapCanvas
+Exiting AbstractMapCanvas::AbstractMapCanvas
+Entering LisaMapCanvas::LisaMapCanvas
+Exiting LisaMapCanvas::LisaMapCanvas
+In AbstractCoordinator::registerObserver()
+Exiting LisaMapFrame::LisaMapFrame
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+999
+GPU took 850 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9999
+GPU took 5143 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+99999
+GPU took 52836 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+999
+GPU took 845 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9999
+GPU took 5413 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+99999
+GPU took 52836 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+999
+GPU took 826 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+9999
+GPU took 5472 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu
+Entering AbstractMapCanvas::DisplayRightClickMenu
+In OnRanOtherPer()
+99999
+GPU took 52837 ms
+In AbstractCoordinator::notifyObservers
+Exiting AbstractMapCanvas::DisplayRightClickMenu

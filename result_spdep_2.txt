@@ -8,3 +8,44 @@ geographic CRS: WGS 84
 [3] "9999"                              "1"                                
     user   system  elapsed 
 3375.543  296.006 3671.529 
+====Run spdep localmoran_perm using Natregimes
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "1"                    
+   user  system elapsed 
+  1.238   0.085   1.322 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "8"                    
+   user  system elapsed 
+  1.326   0.316   0.563 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+NULL
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "16"                   
+   user  system elapsed 
+  1.466   0.557   0.409 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "1"                    

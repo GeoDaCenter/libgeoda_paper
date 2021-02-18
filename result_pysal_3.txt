@@ -30,3 +30,5 @@ Numba not installed
 ./data/Chicago_parcels_points.shp 999 1: 505.58254313468933 seconds
 Numba not installed
 ./data/Chicago_parcels_points.shp 9999 1: 789.2126560211182 seconds
+Numba not installed
+./data/Chicago_parcels_points.shp 99999 1: 4396.347628116608 seconds
