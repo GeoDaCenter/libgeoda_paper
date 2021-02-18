@@ -23,12 +23,8 @@ else:
 x = dt.GetRealCol(var_name)
 
 # time it
-times = []
-j = 3
-for i in range(j):
-    start_time = time.time()
-    lisa = pygeoda.local_moran(w, x, permutations=perms, permutation_method=perm_method, cpu_threads=cpu_threads)
-    run_time = time.time() - start_time
-    times.append(run_time)
+start_time = time.time()
+lisa = pygeoda.local_moran(w, x, permutations=perms, permutation_method=perm_method, cpu_threads=cpu_threads)
+run_time = time.time() - start_time
 
-print("{0} {1} {2} {3}: {4} seconds (average of 3 runs)".format(data_path, perms, perm_method, cpu_threads, sum(times)/3.0))
+print("{0} {1} {2} {3}: {4} seconds".format(data_path, perms, perm_method, cpu_threads, run_time))

@@ -1,0 +1,100 @@
+====Run rgeoda local_moran using Chicago_Parcels and permutation_method=brutal-force
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "1"                                
+   user  system elapsed 
+128.653   0.058 128.734 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "8"                                
+   user  system elapsed 
+129.874   0.075  16.890 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "16"                               
+   user  system elapsed 
+200.916   0.217  13.451 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "brutal-force"                     
+[5] "1"                                
+    user   system  elapsed 
+1269.245    0.427 1269.854 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "brutal-force"                     
+[5] "8"                                
+    user   system  elapsed 
+1292.439    0.570  162.848 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "brutal-force"                     
+[5] "16"                               
+    user   system  elapsed 
+1915.589    2.028  121.514 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "brutal-force"                     
+[5] "1"                                
+     user    system   elapsed 
+12491.688     4.097 12497.949 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "brutal-force"                     
+[5] "8"                                
+     user    system   elapsed 
+12869.904     4.523  1613.119 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+CRS:            4326
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "brutal-force"                     
+[5] "16"                               
+     user    system   elapsed 
+20849.042    24.735  1318.064 

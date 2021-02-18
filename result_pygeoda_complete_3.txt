@@ -1,0 +1,34 @@
+Test pyGeoDa local moran with Natregimes using permutation_method=complete
+./data/natregimes.shp 999 brutal-force 1: 0.5847840309143066 seconds
+./data/natregimes.shp 999 brutal-force 8: 0.08836102485656738 seconds
+./data/natregimes.shp 999 brutal-force 16: 0.059365034103393555 seconds
+./data/natregimes.shp 9999 brutal-force 1: 5.793680191040039 seconds
+./data/natregimes.shp 9999 brutal-force 8: 0.843595027923584 seconds
+./data/natregimes.shp 9999 brutal-force 16: 0.5897808074951172 seconds
+./data/natregimes.shp 99999 brutal-force 1: 59.09543991088867 seconds
+./data/natregimes.shp 99999 brutal-force 8: 8.67935585975647 seconds
+./data/natregimes.shp 99999 brutal-force 16: 5.657692193984985 seconds
+Test pyGeoDa local moran with SDOH using permutation_method=complete
+./data/us-sdoh-2014.shp 999 brutal-force 1: 17.502448081970215 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 8: 2.5014519691467285 seconds
+./data/us-sdoh-2014.shp 999 brutal-force 16: 1.7071490287780762 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 1: 173.4839301109314 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 8: 25.050606966018677 seconds
+./data/us-sdoh-2014.shp 9999 brutal-force 16: 16.99281597137451 seconds
+./data/us-sdoh-2014.shp 99999 brutal-force 1: 1714.141450881958 seconds
+./data/us-sdoh-2014.shp 99999 brutal-force 8: 250.3467538356781 seconds
+./data/us-sdoh-2014.shp 99999 brutal-force 16: 166.0921552181244 seconds
+Test pyGeoDa local moran with NYC using permutation_method=complete
+./data/NYC_Area2010_2data.shp 999 brutal-force 1: 28.082438707351685 seconds
+./data/NYC_Area2010_2data.shp 999 brutal-force 8: 4.318675994873047 seconds
+./data/NYC_Area2010_2data.shp 999 brutal-force 16: 2.9111387729644775 seconds
+./data/NYC_Area2010_2data.shp 9999 brutal-force 1: 283.06440019607544 seconds
+./data/NYC_Area2010_2data.shp 9999 brutal-force 8: 41.97059607505798 seconds
+./data/NYC_Area2010_2data.shp 9999 brutal-force 16: 28.48815107345581 seconds
+./data/NYC_Area2010_2data.shp 99999 brutal-force 1: 2798.241266965866 seconds
+./data/NYC_Area2010_2data.shp 99999 brutal-force 8: 428.10169768333435 seconds
+./data/NYC_Area2010_2data.shp 99999 brutal-force 16: 276.2261140346527 seconds
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=complete
+./data/Chicago_parcels_points.shp 999 brutal-force 1: 111.75905203819275 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 8: 16.46783709526062 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 16: 11.62519097328186 seconds
