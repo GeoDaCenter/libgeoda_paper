@@ -75,15 +75,15 @@ The outpu:
 | Name | # observations | variable |
 |------|----------------|----------|
 |U.S. counties (natregimes.shp)| 3,085 | HR60 (homicide rates for 1960) |
-|U.S. census tracts (us-sdoh-2014.shp) | 72,344 (15 islands)<sup>1</sup> | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
-|New York City census blocks (NYC Area2010_2data.shp) | 108,487 (155 islands)<sup>2</sup> | CE01_02 (employed persons earning less than $1250 per month in 2002) |
+|U.S. census tracts (us-sdoh-2014.shp) | 72,329<sup>1</sup> | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
+|New York City census blocks (NYC Area2010_2data.shp) | 108,332 (155 islands)<sup>2</sup> | CE01_02 (employed persons earning less than $1250 per month in 2002) |
 | Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> | EstBuild Board of Review final estimated market value of building from the prior tax year.|
 
-<sup>1</sup>The islands are removed when creating a queen contiguity weights for PySAL and spdep. The number of islands in us-sdoh-2014.shp is 15.
+<sup>1</sup>The original dataset has 72,344 observations with 15 islands were removed.
 
-<sup>2</sup>The islands are removed when creating a queen contiguity weights for PySAL and spdep. The number of islands in NYC_Area2010_2data.shp is 155. 
+<sup>2</sup>The original dataset has 108,487 observations with 155 islands were removed.
 
-<sup>3</sup>The Chicago_parcels_points.shp is create using the dataset download from https://datacatalog.cookcountyil.gov/Property-Taxation/Archive-Cook-County-Assessor-s-Residential-Sales-D/5pge-nu6u, and the duplicate points are removed.
+<sup>3</sup>The Chicago_parcels_points.shp is create using the dataset download from https://datacatalog.cookcountyil.gov/Property-Taxation/Archive-Cook-County-Assessor-s-Residential-Sales-D/5pge-nu6u (Feb 14, 2021), and the duplicate points are removed.
 
 
 **Test function:**
@@ -174,65 +174,67 @@ GPU took 4073 ms
 
 (Unit: seconds; Average running time for 3 runs)
 
-### 2.1.1 No parallelization<sup>*</sup>
+See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing
+
+### 2.1.1 No parallelization<sup>4</sup>
 
 | Data | Permutations | GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA | rgeoda (complete) | spdep | rgeoda (lookup-table) |
 |------|--------------|-----------|--------------------|------------------------|------------|-------------------|-------|-----------------------|
-|Natregimes|999|||||0.597|||
-|Natregimes|9999|||||5.90|||
-|Natregimes|99999|||||57.196|||
-|US-SDOH|999|||||17.188|||
-|US-SDOH|9999|||||174.760|||
-|US-SDOH|99999|||||1734.242|||
-|NYC|999|||||28.814|||
-|NYC|9999|||||285.253|||
-|NYC|99999|||||2850.638|||
-|Chicago|999||||||||
-|Chicago|9999||||||||
+|Natregimes|999||0.5861863295|||0.597|||
+|Natregimes|9999||5.894174417|||5.90|||
+|Natregimes|99999||58.42296004|||57.196|||
+|US-SDOH|999||17.30434664|||17.188|||
+|US-SDOH|9999||172.4183534|||174.760|||
+|US-SDOH|99999||1709.570349|||1734.242|||
+|NYC|999||28.45079025|||28.814|||
+|NYC|9999||282.0992463|||285.253|||
+|NYC|99999||2814.519481|||2850.638|||
+|Chicago|999|||||113.233|||
+|Chicago|9999|||||1137.660|||
 |Chicago|99999||||||||
 
-* <sup>*</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
+<sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
 The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine.
 
-### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>*</sup>
+### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>5</sup>
 
 | Data | Permutations | GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA | rgeoda (complete) | spdep | rgeoda (lookup-table) |
 |------|--------------|-----------|--------------------|------------------------|------------|-------------------|-------|-----------------------|
-|Natregimes|999|||||0.109|||
-|Natregimes|9999|||||0.909|||
-|Natregimes|99999|||||9.498|||
-|US-SDOH|999|||||2.760|||
-|US-SDOH|9999|||||25.927|||
-|US-SDOH|99999|||||253.039|||
-|NYC|999|||||4.486666667|||
-|NYC|9999|||||43.28133333|||
-|NYC|99999||||||||
-|Chicago|999||||||||
-|Chicago|9999||||||||
+|Natregimes|999||0.08737667402|||0.109|||
+|Natregimes|9999||0.8471396764|||0.909|||
+|Natregimes|99999||8.611579974|||8.498|||
+|US-SDOH|999||2.524351994|||2.760|||
+|US-SDOH|9999||24.97697441|||25.927|||
+|US-SDOH|99999||249.5261346|||253.039|||
+|NYC|999||4.287986279|||4.487|||
+|NYC|9999||42.35134069|||43.281|||
+|NYC|99999||424.6791393|||431.787|||
+|Chicago|999|||||17.137|||
+|Chicago|9999|||||164.331|||
 |Chicago|99999||||||||
 
-* <sup>*</sup>spdep does multi-processing for parallalization instead of hyper-threading that used in pygeoda/rgeoda. Therefore, the function localmoran_perm() is called after setting up using 4 CPU cores and 8 CPU cores:
+<sup>5</sup>spdep does multi-processing for parallalization instead of multi-threading that used in pygeoda/rgeoda. On this test machine, each CPU core has 2 CPU threads. For testing spdep, the function localmoran_perm() is called after setting up using 4 CPU cores and 8 CPU cores:
 ```R
 # using 4 CPU cores
 set.coresOption(4) 
 # using 8 CPU cores
 set.coresOption(8) 
 ``` 
-### 2.1.3 Using 8 CPU cores or 16 CPU threads (hyper-threading)<sup>*</sup>
+### 2.1.3 Using 8 CPU cores or 16 CPU threads (hyper-threading)
 
 | Data | Permutations | GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA | rgeoda (complete) | spdep | rgeoda (lookup-table) |
 |------|--------------|-----------|--------------------|------------------------|------------|-------------------|-------|-----------------------|
-|Natregimes|999|||||0.0793|||
-|Natregimes|9999|||||0.585|||
-|Natregimes|99999|||||5.772|||
-|US-SDOH|999|||||1.860|||
-|US-SDOH|9999|||||17.079|||
-|US-SDOH|99999|||||166.148|||
-|NYC|999|||||3.083|||
-|NYC|9999|||||28.872|||
-|NYC|99999||||||||
-|Chicago|999||||||||
-|Chicago|9999||||||||
+|Natregimes|999||0.05985840162|||0.0793|||
+|Natregimes|9999||0.5781105359|||0.585|||
+|Natregimes|99999||5.664550781|||5.772|||
+|US-SDOH|999||1.726169745|||1.860|||
+|US-SDOH|9999||16.95118411|||17.079|||
+|US-SDOH|99999||165.9426964|||166.148|||
+|NYC|999||2.897502263|||3.083|||
+|NYC|9999||28.33021959|||28.872|||
+|NYC|99999||280.0743279|||282.211|||
+|Chicago|999|||||11.701|||
+|Chicago|9999|||||111.078|||
 |Chicago|99999||||||||
 
 ## 2.2 Detailed Information:
@@ -266,6 +268,13 @@ result_pygeoda_complete_2.txt
 | 9999  | 5.851770877838135 | 0.8463799953460693 | 0.5798778533935547 | 
 | 99999 | 57.246336936950684 | 8.669429063796997 | 5.765250205993652 | 
 
+result_pygeoda_complete_3.txt
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999    | 0.5847840309143066  | 0.08836102485656738 | 0.059365034103393555| 
+| 9999  | 5.793680191040039 | 0.843595027923584 | 0.5897808074951172 | 
+| 99999 | 59.09543991088867 | 8.67935585975647 |  5.657692193984985 | 
+
 * Pygeoda using permutation_method="lookup-table"
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
@@ -292,11 +301,13 @@ result_pygeoda_complete_2.txt
 
 * rgeoda (permutation_method="complete")
 
+(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
-| 999  | 0.643  |  0.104 | 0.079  | 
-| 9999  | 6.419  | 0.891  | 0.673  | 
-| 99999  | 65.327  | 9.141  | 6.844  | 
+| 999  | 0.5973333333  |  0.1086666667 | 0.07933333333  | 
+| 9999  | 5.900666667  | 0.909  | 0.585  | 
+| 99999  | 57.19633333  | 8.498333333  | 5.772333333 | 
 
 * spdep 
 
@@ -338,25 +349,37 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 * pygeoda (permutation_method="complete")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 17.454599857330322  | 2.4892380237579346| 1.6712172031402588| |
-| 9999 | 175.07298302650452 | 25.021250009536743 | 16.907100200653076| |
-| 99999  | 1727.7120940685272| 248.83428502082825| 166.1402678489685| |
+result_pygeoda_complete_1.txt
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 16.955991983413696  | 2.5823659896850586| 1.8001430034637451| |
-| 9999 | 168.69814705848694 | 24.859066247940063 | 16.953636169433594| |
-| 99999  | 1686.857502937317| 249.39736485481262| 165.59566617012024| |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999   | 17.454599857330322  | 2.4892380237579346| 1.6712172031402588|
+| 9999 | 175.07298302650452 | 25.021250009536743 | 16.907100200653076|
+| 99999  | 1727.7120940685272| 248.83428502082825| 166.1402678489685|
+
+result_pygeoda_complete_2.txt
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 16.955991983413696  | 2.5823659896850586| 1.8001430034637451|
+| 9999 | 168.69814705848694 | 24.859066247940063 | 16.953636169433594|
+| 99999  | 1686.857502937317| 249.39736485481262| 165.59566617012024|
+
+result_pygeoda_complete_3.txt
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 17.502448081970215  | 2.5014519691467285| 1.7071490287780762| 
+| 9999 | 173.4839301109314 | 25.050606966018677 | 16.99281597137451|
+| 99999  | 1714.141450881958| 250.3467538356781| 166.0921552181244|
 
 * pygeoda (permutation_method="lookup-table")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 2.0331978797912598 | 0.30008673667907715| 0.23631691932678223 | |
-| 9999 | 20.22104287147522 | 2.7842931747436523 | 2.2208046913146973| |
-| 99999  | 278.66816306114197 | 29.182877779006958  | 23.67146110534668  | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999   | 2.0331978797912598 | 0.30008673667907715| 0.23631691932678223 |
+| 9999 | 20.22104287147522 | 2.7842931747436523 | 2.2208046913146973|
+| 99999  | 278.66816306114197 | 29.182877779006958  | 23.67146110534668  |
 
 
 * PySAL/ESDA without Numba (No multi-threading)
@@ -371,11 +394,14 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * rgeoda (permutation_method="complete")
 
+
+(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
-| 999  | 27.756  | 2.760 | 2.195  | 
-| 9999  | 185.212 | 25.342 | 17.780 | 
-| 99999  | 1910.860    | 253.879  | 185.140  | 
+| 999  | 17.18766667 | 2.760666667 | 1.860333333  | 
+| 9999  | 174.7603333 | 25.927 | 17.07933333 | 
+| 99999  | 1734.242  | 253.039 | 166.1483333  | 
 
 * spdep
 
@@ -413,25 +439,37 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * pygeoda (permutation_method="complete")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 28.46846580505371  | 4.277080059051514 | 2.896711826324463 | |
-| 9999 | 282.76479601860046| 42.7974419593811| 28.276558876037598  | |
-| 99999  | 2821.240134000778 | 422.4912781715393 | 283.2045419216156 | |
+result_pygeoda_complete_1.txt
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 28.80146622657776  | 4.268202781677246 | 2.8846561908721924 | |
-| 9999 | 280.46854281425476| 42.28598403930664 | 28.225948810577393  | |
-| 99999  | 2824.0770411491394 | 423.4444420337677 | 280.7923278808594  | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 28.46846580505371  | 4.277080059051514 | 2.896711826324463 | 
+| 9999 | 282.76479601860046| 42.7974419593811| 28.276558876037598  | 
+| 99999  | 2821.240134000778 | 422.4912781715393 | 283.2045419216156 | 
+
+result_pygeoda_complete_2.txt
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 28.80146622657776  | 4.268202781677246 | 2.8846561908721924 | 
+| 9999 | 280.46854281425476| 42.28598403930664 | 28.225948810577393  | 
+| 99999  | 2824.0770411491394 | 423.4444420337677 | 280.7923278808594  | 
+
+result_pygeoda_complete_3.txt
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 28.082438707351685  | 4.318675994873047 | 2.9111387729644775 | 
+| 9999 | 283.06440019607544| 41.97059607505798 | 28.48815107345581  | 
+| 99999  | 2798.241266965866 | 428.10169768333435 | 276.2261140346527 | 
 
 * pygeoda (permutation_method="lookup-table")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | 3.9321858882904053 | 0.5913081169128418  | 0.45052385330200195 | |
-| 9999  | 37.25004291534424 | 5.340345859527588 | 4.245307922363281  | |
-| 99999  | 656.4548988342285 | 62.88683271408081 | 48.3938422203064 | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
+|--------------|---------------|---------------|----------------|
+| 999  | 3.9321858882904053 | 0.5913081169128418  | 0.45052385330200195 | 
+| 9999  | 37.25004291534424 | 5.340345859527588 | 4.245307922363281  | 
+| 99999  | 656.4548988342285 | 62.88683271408081 | 48.3938422203064 | 
 
 * PySAL/ESDA 
 
@@ -443,11 +481,13 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * rgeoda (permutation_method="complete")
 
+(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
-| 999  | 32.052  | 4.582 | 3.203  | 
-| 9999  | 319.400 | 43.551  | 31.251  | 
-| 99999  | 3262.898    | 432.714  | 319.074 | 
+| 999  | 28.814  | 4.486666667 | 3.083333333  | 
+| 9999  | 285.2526667 | 43.28133333 | 28.87166667 | 
+| 99999  | 2850.638  | 431.7873333|282.2106667 | 
 
 * spdep
 
@@ -485,25 +525,31 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * pygeoda (permutation_method="complete")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 119.42543983459473 | 16.434907913208008  |12.032907962799072 | |
-| 9999  | 1222.1919560432434 | 162.7958836555481 | 120.59185600280762| |
-| 99999  |  13525.546596050262 | 1605.97736287117 | 1161.3201611042023   | |
+result_pygeoda_complete_1.txt
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999   | 110.09417772293091 | 16.643314361572266  |11.75134801864624 | |
-| 9999  | 1105.2691671848297 | 161.012845993042 | 109.39576888084412| |
-| 99999  |  11064.583874940872 | 1635.1613550186157 | 1124.493618965149  | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 119.42543983459473 | 16.434907913208008  |12.032907962799072 | 
+| 9999  | 1222.1919560432434 | 162.7958836555481 | 120.59185600280762| 
+| 99999  |  13525.546596050262 | 1605.97736287117 | 1161.3201611042023   | 
+
+result_pygeoda_complete_2.txt
+
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999   | 110.09417772293091 | 16.643314361572266  |11.75134801864624 | 
+| 9999  | 1105.2691671848297 | 161.012845993042 | 109.39576888084412| 
+| 99999  |  11064.583874940872 | 1635.1613550186157 | 1124.493618965149  | 
+
+result_pygeoda_complete_2.txt
 
 * pygeoda (permutation_method="lookup-table")
 
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | Average |
-|--------------|---------------|---------------|----------------|---------|
-| 999  | 14.267882108688354| 2.284726142883301| 1.8891620635986328 | |
-| 9999 | 140.48916697502136 | 19.4720401763916 | 16.17879605293274 | |
-| 99999  | 1449.7298228740692 | 191.051757812  | 164.23768401145935 | |
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999  | 14.267882108688354| 2.284726142883301| 1.8891620635986328 | 
+| 9999 | 140.48916697502136 | 19.4720401763916 | 16.17879605293274 | 
+| 99999  | 1449.7298228740692 | 191.051757812  | 164.23768401145935 | 
 
 * PySAL/ESDA 
 
@@ -515,10 +561,15 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * rgeoda (permutation_method="complete")
 
+(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
-| 999  | 128.734   | 16.890 | 13.451  | 
-| 9999  | 1269.854 | 162.848 | 121.514  | 
+| 999  | 113.233  | 17.13666667 | 11.70133333 | 
+| 9999  | 1137.66 | 164.331 | 111.0776667 | 
+| 99999 | | | |
+
+1st 99999 Chicago run
 | 99999  | 12497.949 | 1613.119 | 1318.064 | 
 
 * spdep 
