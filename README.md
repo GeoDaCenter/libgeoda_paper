@@ -180,18 +180,18 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 
 | Data | Permutations | GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA | rgeoda (complete) | spdep | rgeoda (lookup-table) |
 |------|--------------|-----------|--------------------|------------------------|------------|-------------------|-------|-----------------------|
-|Natregimes|999||0.5861863295||0.5129142602|0.597|||
-|Natregimes|9999||5.894174417||2.478509982|5.90|||
-|Natregimes|99999||58.42296004||28.37590798|57.196|||
-|US-SDOH|999||17.30434664||23.15247003|17.188|||
-|US-SDOH|9999||172.4183534||69.00951242|174.760|||
-|US-SDOH|99999||1709.570349||702.7699699|1734.242|||
-|NYC|999||28.45079025||47.00624776|28.814|||
-|NYC|9999||282.0992463||129.1338846|285.253|||
-|NYC|99999||2814.519481||1352.874198|2850.638|||
-|Chicago|999||113.7595565|||113.233|||
-|Chicago|9999||1153.4873|||1137.660|||
-|Chicago|99999||13514.23282||||||
+|Natregimes|999|0.06666666667|0.5861863295||0.5129142602|0.597|||
+|Natregimes|9999|0.4303333333|5.894174417||2.478509982|5.90|||
+|Natregimes|99999|4.077333333|58.42296004||28.37590798|57.196|||
+|US-SDOH|999|0.309|17.30434664||23.15247003|17.188|||
+|US-SDOH|9999|2.897666667|172.4183534||69.00951242|174.760|||
+|US-SDOH|99999|28.05333333|1709.570349||702.7699699|1734.242|||
+|NYC|999|1.753666667|28.45079025||47.00624776|28.814|||
+|NYC|9999|17.41733333|282.0992463||129.1338846|285.253|||
+|NYC|99999|50.59|2814.519481||1352.874198|2850.638|||
+|Chicago|999|0.8403333333|113.7595565|||113.233|||
+|Chicago|9999|5.342666667|1153.4873|||1137.660|||
+|Chicago|99999|52.83633333|13514.23282||||||
 
 <sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
 The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine.
@@ -200,18 +200,18 @@ The Numba package is not installed. The n_jobs=1 parameter is used to explicitly
 
 | Data | Permutations | GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA | rgeoda (complete) | spdep | rgeoda (lookup-table) |
 |------|--------------|-----------|--------------------|------------------------|------------|-------------------|-------|-----------------------|
-|Natregimes|999||0.08737667402||0.5129142602|0.109|||
-|Natregimes|9999||0.8471396764||2.478509982|0.909|||
-|Natregimes|99999||8.611579974||28.37590798|8.498|||
-|US-SDOH|999||2.524351994||23.15247003|2.760|||
-|US-SDOH|9999||24.97697441||69.00951242|25.927|||
-|US-SDOH|99999||249.5261346||702.7699699|253.039|||
-|NYC|999||4.287986279||47.00624776|4.487|||
-|NYC|9999||42.35134069||129.1338846|43.281|||
-|NYC|99999||424.6791393||1352.874198|431.787|||
-|Chicago|999||16.51535312|||17.137|||
-|Chicago|9999||161.4538433|||164.331|||
-|Chicago|99999||1629.589604||||||
+|Natregimes|999|0.06666666667|0.08737667402||0.5129142602|0.109|||
+|Natregimes|9999|0.4303333333|0.8471396764||2.478509982|0.909|||
+|Natregimes|99999|4.077333333|8.611579974||28.37590798|8.498|||
+|US-SDOH|999|0.309|2.524351994||23.15247003|2.760|||
+|US-SDOH|9999|2.897666667|24.97697441||69.00951242|25.927|||
+|US-SDOH|99999|28.05333333|249.5261346||702.7699699|253.039|||
+|NYC|999|1.753666667|4.287986279||47.00624776|4.487|||
+|NYC|9999|17.41733333|42.35134069||129.1338846|43.281|||
+|NYC|99999|50.59|424.6791393||1352.874198|431.787|||
+|Chicago|999|0.8403333333|16.51535312|||17.137|||
+|Chicago|9999|5.342666667|161.4538433|||164.331|||
+|Chicago|99999|52.83633333|1629.589604||||||
 
 <sup>5</sup>spdep does multi-processing for parallalization instead of multi-threading that used in pygeoda/rgeoda. On this test machine, each CPU core has 2 CPU threads. For testing spdep, the function localmoran_perm() is called after setting up using 4 CPU cores and 8 CPU cores:
 ```Rupdate 
@@ -224,18 +224,18 @@ set.coresOption(8)
 
 | Data | Permutations | GeoDa GPU | pygeoda (complete) | pygeoda (lookup-table) | PySAL/ESDA | rgeoda (complete) | spdep | rgeoda (lookup-table) |
 |------|--------------|-----------|--------------------|------------------------|------------|-------------------|-------|-----------------------|
-|Natregimes|999||0.05985840162||0.5129142602|0.0793|||
-|Natregimes|9999||0.5781105359||2.478509982|0.585|||
-|Natregimes|99999||5.664550781||28.37590798|5.772|||
-|US-SDOH|999||1.726169745||23.15247003|1.860|||
-|US-SDOH|9999||16.95118411||69.00951242|17.079|||
-|US-SDOH|99999||165.9426964||702.7699699|166.148|||
-|NYC|999||2.897502263||47.00624776|3.083|||
-|NYC|9999||28.33021959||129.1338846|28.872|||
-|NYC|99999||280.0743279||1352.874198|282.211|||
-|Chicago|999||11.80314898|||11.701|||
-|Chicago|9999||113.620623|||111.078|||
-|Chicago|99999||1131.008971||||||
+|Natregimes|999|0.06666666667|0.05985840162||0.5129142602|0.0793|||
+|Natregimes|9999|0.4303333333|0.5781105359||2.478509982|0.585|||
+|Natregimes|99999|4.077333333|5.664550781||28.37590798|5.772|||
+|US-SDOH|999|0.309|1.726169745||23.15247003|1.860|||
+|US-SDOH|9999|2.897666667|16.95118411||69.00951242|17.079|||
+|US-SDOH|99999|28.05333333|165.9426964||702.7699699|166.148|||
+|NYC|999|1.753666667|2.897502263||47.00624776|3.083|||
+|NYC|9999|17.41733333|28.33021959||129.1338846|28.872|||
+|NYC|99999|50.59|280.0743279||1352.874198|282.211|||
+|Chicago|999|0.8403333333|11.80314898|||11.701|||
+|Chicago|9999|5.342666667|113.620623|||111.078|||
+|Chicago|99999|52.83633333|1131.008971||||||
 
 ## 2.2 Detailed Information:
 
@@ -246,11 +246,13 @@ set.coresOption(8)
 
 * Desktop GeoDa using GPU (permutation_method="complete")
 
-| Permutations | GPU |
-|--------------|-----|
-| 999  | 0.069 |
-| 9999  | 0.429 |
-| 99999  | 4.085 |
+logger_geoda_gpu_NAT.txt
+
+| Permutations | 1st run | 2nd run | 3rd run |
+|--------------|---------|---------|---------|
+| 999  | 0.069 | 0.065 | 0.066 |
+| 9999  | 0.431 | 0.430 | 0.430 |
+| 99999  | 4.072 | 4.074 | 4.086 |
 
 * pygeoda (permutation_method="complete")
 
@@ -301,7 +303,7 @@ result_pygeoda_complete_3.txt
 
 * rgeoda (permutation_method="complete")
 
-(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+(Average from 3 rounds test)
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
@@ -311,10 +313,9 @@ result_pygeoda_complete_3.txt
 
 * spdep 
 
-(Using multi-processing, so no hyper-threading)
+(spdep uses multi-processing programming to parallel the local moran computation)
 
-spdep uses multi-processing programming to parallel the local moran computation
-
+result_spdep_1.txt
 | Permutations | No parallel   | 4 Cores       | 8 Cores        | 
 |--------------|---------------|---------------|----------------|
 | 999  |1.271  | 0.618 | 0.434 |
@@ -341,11 +342,13 @@ spdep uses multi-processing programming to parallel the local moran computation
 
 * Desktop GeoDa using GPU (permutation_method="complete")
 
-| Permutations | GPU |
-|--------------|-----|
-| 999  | 0.420 |
-| 9999  | 2.790|
-| 99999  | 28.089|
+logger_geoda_gpu_SDOH.txt
+
+| Permutations | 1st run | 2nd run | 3rd run |
+|--------------|---------|---------|---------|
+| 999  | 0.306 | 0.310 | 0.311 |
+| 9999  | 2.783| 2.974 | 2.936 |
+| 99999  | 28.222| 28.019 | 27.919|
 
 * pygeoda (permutation_method="complete")
 
@@ -395,7 +398,7 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 * rgeoda (permutation_method="complete")
 
 
-(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+(Average from 3 rounds test)
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
@@ -405,7 +408,7 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * spdep
 
-(Using multi-processing, so no hyper-threading)
+result_spdep_1.txt
 
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
@@ -431,11 +434,13 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * Desktop GeoDa using GPU (permutation_method="complete")
 
-| Permutations | GPU |
-|--------------|-----|
-| 999  | 1.691 |
-| 9999  | 17.506|
-| 99999  | 46.120|
+logger_geoda_gpu_NYC.txt
+
+| Permutations | 1st run | 2nd run | 3rd run |
+|--------------|---------|---------|---------|
+| 999  | 1.787 | 1.740 | 1.734 |
+| 9999  | 17.322| 17.622 | 17.308 |
+| 99999  | 46.099| 52.831 | 52.840 |
 
 * pygeoda (permutation_method="complete")
 
@@ -494,8 +499,7 @@ result_rgeoda_3runs_noChicago.txt
 
 * spdep
 
-(Using multi-processing, so no hyper-threading)
-
+result_spdep_1.txt
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 143.273 | 49.197 | 30.782  |
@@ -520,11 +524,13 @@ result_rgeoda_3runs_noChicago.txt
 
 * Desktop GeoDa using GPU (permutation_method="complete")
 
-| Permutations | GPU |
-|--------------|-----|
-| 999  | 0.933 |
-| 9999  | 5.456|
-| 99999  | 52.452|
+logger_geoda_gpu_CHI.txt
+
+| Permutations | 1st run | 2nd run | 3rd run |
+|--------------|---------|---------|---------|
+| 999  | 0.850 | 0.845 | 0.826 |
+| 9999  | 5.143 | 5.413 | 5.472 |
+| 99999  | 52.836| 52.836 | 52.837 |
 
 * pygeoda (permutation_method="complete")
 
@@ -560,25 +566,24 @@ result_pygeoda_complete_3.txt
 | 9999 | 140.48916697502136 | 19.4720401763916 | 16.17879605293274 | 
 | 99999  | 1449.7298228740692 | 191.051757812  | 164.23768401145935 | 
 
+result_pygeoda_lookup_2.txt
+| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads |
+|--------------|---------------|---------------|----------------|
+| 999  | | | |
+| 9999 |  | | |
+| 99999  | 1618.4626460075378 | | | 
+
 * PySAL/ESDA 
 
-| Permutations | No Numba |
-|--------------|----------|
-| 999  |  488.52151322364807 |
-| 9999  | 727.2412669658661 |
-| 99999  | 3937.0313351154327 |
-
-result_pysal_2.txt
-
-| Permutations | No Numba |
-|--------------|----------|
-| 999  | 421.1374022960663 |
-| 9999  | 646.2213499546051 |
-| 99999  | 5037.343729972839 |
+| Permutations | 1st run  | 2nd run | 3rd run |
+|--------------|----------|---------|---------|
+| 999  |  488.52151322364807 | 421.1374022960663| 505.58254313468933|
+| 9999  | 727.2412669658661 | 646.2213499546051| 789.2126560211182|
+| 99999  | 3937.0313351154327 | 5037.343729972839| |
 
 * rgeoda (permutation_method="complete")
 
-(Average from 3 rounds test: see: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing)
+(Average from 3 rounds test)
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
@@ -591,12 +596,17 @@ result_pysal_2.txt
 
 * spdep 
 
-(Using multi-processing, so no hyper-threading)
-
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 1296.269 | 563.027 | 407.151 |
 | 9999  | 3719.948 | | 683.451  |
+| 99999  | | | |
+
+result_spdep_2.txt
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999  | | | |
+| 9999  | 3671.529 | | |
 | 99999  | | | |
 
 * rgeoda (permutation_method="lookup-table")
