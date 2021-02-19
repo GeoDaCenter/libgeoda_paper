@@ -31,6 +31,7 @@ except:
 w_start_time = time.time()
 if data_path == './data/Chicago_parcels_points.shp':
     w = lps.weights.KNN.from_dataframe(gdf, k=10)
+    w_run_time1 = time.time() - w_start_time
 else:
     w = lps.weights.Queen.from_dataframe(gdf)
     w_run_time1 = time.time() - w_start_time
@@ -43,8 +44,7 @@ else:
 w.transform = 'r'
 w_run_time2 = time.time() - w_start_time
 
-if cpu_threads==1:
-    print("Weights creation took {0} seconds, with transform and remove islands it took {1} seconds".format(w_run_time1, w_run_time2))
+print("Weights creation took {0} seconds, with transform and remove islands it took {1} seconds".format(w_run_time1, w_run_time2))
 
 
 # function to execute and time

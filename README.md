@@ -114,7 +114,17 @@ compute a pseudo-p value. The (N-1) indices in the "lookup-table" will be reorde
 so to create a "conditional" permutation test. Therefore, the total number of permutation computation is: 999 x max_neighbors
 
 The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeoda/rgeoda (version 0.0.8).
+
+In this test, the weights creation function is also tested among pygeoda, rgeoda, pysal and spdep
  
+| Software | Test Function |
+|----------|---------------|
+| pygeoda | Weights.queen_weights(), Weights.knn_weights() |
+| rgeoda | queen_weights(), knn_weights() |
+| pysal | libpysal.weights.Queen.from_dataframe(), libpysal.weights.KNN.from_dataframe() |
+| spdep | poly2nb()+nb2list2(), knearneigh()+knn2nb()+nb2listw() |
+
+
 **Test machine:**
 
 * Mac Pro (Later 2013)
@@ -171,6 +181,7 @@ GPU took 4073 ms
 * 2.1.1 No parallelization
 * 2.1.2 Using 4 CPU cores or 8 CPU threads
 * 2.1.3 Using 8 CPU cores or 16 CPU threads
+* 2.1.4 Weights creation
 
 (Unit: seconds; Average running time for 3 runs)
 
@@ -236,6 +247,50 @@ set.coresOption(8)
 |Chicago|999|0.8403333333|11.80314898|||11.701|||
 |Chicago|9999|5.342666667|113.620623|||111.078|||
 |Chicago|99999|52.83633333|1131.008971||||||
+
+### 2.1.4 Weights Creation
+
+| Data | pygeoda | PySAL | rgeoda | spdep |
+|------|---------|-------|--------|-------|
+| Natregimes | | | | |
+
+pygeoda
+| Data | 1st | 2nd | 3rd |
+|------|-----|-----|-----|
+| Natregimes | 0.026614904403686523 | 0.0269010066986084| 0.027131080627441406 |  
+| US_SDOH | 0.9127089977264404|0.8969571590423584|0.9040257930755615|
+| NYC | 1.2957468032836914 | 1.2584800720214844 | 1.2635910511016846 |
+| Chicago | 3.445451021194458 | 3.462280035018921 | 3.6452078819274902 |
+
+PySAL
+
+| Data | 1st | 2nd | 3rd |
+|------|-----|-----|-----|
+| Natregimes | 0.6798999309539795 | 0.7444601058959961 | 0.7191867828369141 |
+| US-SDOH | 34.027106046676636 |  34.312164068222046 | 34.68988633155823 |
+| NYC |  19.808083057403564 | 19.361562252044678 | 19.4339919090271|
+| Chicago | 28.692863941192627 | 30.992489337921143 | 31.282639265060425|
+
+rgeoda
+
+NOTE: The first-time call of queen_weights() or knn_weights() includes a procedure to convert sf geometry objects (wkb) to rgeoda internally used object. The conversion only needs to be execute once, and the results will be cached for other weights creation functions.
+
+| Data | 1st | 2nd | 3rd |
+|------|-----|-----|-----|
+| Natregimes | 0.494 | 0.486 | 0.514|
+| US_SDOH | 40.279 | 39.845 | 40.061|
+| NYC | 3.459 | 3.505 | 3.524 |
+| Chicago | 6.428 |  6.578 |  6.393|
+
+
+spdep
+
+| Data | 1st | 2nd | 3rd |
+|------|-----|-----|-----|
+| Natregimes | 2.676 | 2.661 | 2.666|
+| US_SDOH | 
+| NYC |
+| Chicago |
 
 ## 2.2 Detailed Information:
 

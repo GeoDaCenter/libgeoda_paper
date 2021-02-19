@@ -262,3 +262,18 @@ geometry type:  MULTIPOLYGON
 dimension:      XY
 bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
 projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "16"                           
+   user  system elapsed 
+556.652  69.540  87.095 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+    user   system  elapsed 
+1853.340  186.650 2040.303 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "1"                            

@@ -25,3 +25,22 @@ Numba not installed
 Remove islands...
 Weights creation took 19.361562252044678 seconds, with removing islands it took 21.222999095916748 seconds
 ./data/NYC_Area2010_2data.shp 9999 1: 110.37568807601929 seconds
+Numba not installed
+Remove islands...
+Weights creation took 19.4339919090271 seconds, with removing islands it took 21.272098779678345 seconds
+./data/NYC_Area2010_2data.shp 99999 1: 1252.8061990737915 seconds
+Test pysal local moran with Chicago_Parcels without Numba
+Numba not installed
+Numba not installed
+Numba not installed
+export OPENBLAS_NUM_THREADS=1
+Test pysal local moran with Chicago_Parcels without Numba
+Numba not installed
+export OPENBLAS_NUM_THREADS=1
+Test pysal local moran with Chicago_Parcels without Numba
+Numba not installed
+Weights creation took 28.692863941192627 seconds, with transform and remove islands it took 29.702588081359863 seconds
+./data/Chicago_parcels_points.shp 999 1: 298.8557651042938 seconds
+Numba not installed
+Weights creation took 29.569955110549927 seconds, with transform and remove islands it took 30.632391214370728 seconds
+./data/Chicago_parcels_points.shp 9999 1: 520.6965279579163 seconds
