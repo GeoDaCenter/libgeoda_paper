@@ -304,6 +304,41 @@ spdep
 | NYC |2020.326 | 2054.080  | 2141.948|
 | Chicago | 13181.457 | | |
 
+### 2.1.5 Memory Usage
+
+The `/usr/bin/time -l` command is used to get the "**maximum resident set size**" (the peak memory used by the process on the test machine).
+
+result_memory_usage.txt
+
+Natregimes:
+
+| Software | Permutations | Single Thread | 
+|----------|--------------|---------------|
+| pygeoda  | 999 | 72.75 Mb |
+| pysal    | 999 | 173.0664063 Mb |
+| rgeoda   | 999 | 151.3710938 Mb |
+| spdep    | 999 | 468.3359375 Mb <sup>6</sup>|
+| pygeoda  | 9999 | 199.2578125 Mb |
+| pysal    | 9999 | 163.4492188 Mb |
+| rgeoda   | 9999 | 151.3710938 Mb |
+| spdep    | 9999 | 684.8046875 Mb |
+| pygeoda  | 99999 | 84.0625 Mb |
+| pysal    | 99999 | 440.2929688 Mb |
+| rgeoda   | 99999 | 155.4882813 Mb |
+| spdep    | 99999 | 1314.460938 Mb |
+
+<sup>6</sup>Since spdep uses multiple-processing for parallization, 
+each spawn process will have a separated (copied) memeory space. When running the spdep with 4 CPU cores, the total peak memory usage will be 4 x ~460Mb = 1840Mb.
+
+US-SDOH:
+
+| Software | Permutations | Single Thread | 
+|----------|--------------|---------------|
+| pygeoda  | 999 | 409.3867188 Mb |
+| pysal    | 999 | 1786.71875 Mb |
+| rgeoda   | 999 | 747.8476563 Mb |
+| spdep    | 999 | 4150.246094 Mb |
+
 ## 2.2 Detailed Information:
 
 ### Test results
