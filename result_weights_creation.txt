@@ -430,3 +430,21 @@ projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
 [3] "99"                            "1"                            
    user  system elapsed 
  84.129  28.363 112.491 
+
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 9 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+     user    system   elapsed 
+13177.018     4.018 13181.457 
+Warning message:
+In st_centroid.sfc(st_geometry(dt)) :
+  st_centroid does not give correct centroids for longitude/latitude data
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9"                                 "1"          

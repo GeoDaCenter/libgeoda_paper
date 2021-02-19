@@ -86,3 +86,57 @@ geographic CRS: WGS 84
 3856.103  158.612 1018.332 
 [1] "./data/us-sdoh-2014.shp" "ep_unem"                
 [3] "99999"                   "8-cores"                
+    user   system  elapsed 
+3893.992  171.937  528.814 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "weights creation"
+    user   system  elapsed 
+1879.017  172.447 2051.502 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "no-core"                      
+   user  system elapsed 
+112.423  28.005 140.430 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "4-cores"                      
+   user  system elapsed 
+125.370  37.136  45.175 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "8-cores"                      
+   user  system elapsed 
+136.421  53.132  28.540 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "no-core"                      
+   user  system elapsed 
+466.579  46.465 513.050 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "4-cores"                      
+   user  system elapsed 
+528.883  60.709 155.466 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "9999"                          "8-cores"                      
+   user  system elapsed 
+551.269  84.506  88.144 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "no-core"                      
+    user   system  elapsed 
+4130.492  206.845 4337.490 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "4-cores"                      
+    user   system  elapsed 
+4562.215  228.311 1248.399 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "8-cores"                      
+    user   system  elapsed 
+4619.718  276.331  663.023 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+[1] "weights creation"

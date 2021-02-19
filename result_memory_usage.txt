@@ -1,0 +1,131 @@
+Weights creation took 0.028196096420288086 seconds
+./data/natregimes.shp 999 brutal-force 1: 0.623711109161377 seconds
+        1.59 real         2.20 user         0.61 sys
+  76283904  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     28859  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+         4  voluntary context switches
+     12221  involuntary context switches
+
+/usr/bin/time -l python perf_pysal.py ./data/natregimes.shp HR60 999 1
+Numba not installed
+Weights creation took 0.7980890274047852 seconds, with transform and remove islands it took 0.8030571937561035 seconds
+./data/natregimes.shp 999 1: 0.6306629180908203 seconds
+        4.79 real        11.15 user         1.78 sys
+ 181473280  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     59051  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+        17  messages sent
+        53  messages received
+         0  signals received
+        26  voluntary context switches
+      5783  involuntary context switches
+
+/usr/bin/time -l Rscript perf_rgeoda.R ./data/natregimes.shp HR60 999 brutal-force 1
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+   user  system elapsed 
+  0.481   0.013   0.498 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "brutal-force"          "1"                    
+   user  system elapsed 
+  0.615   0.000   0.615 
+        2.16 real         2.03 user         0.11 sys
+ 158724096  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     43264  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+        82  voluntary context switches
+        34  involuntary context switches
+
+/usr/bin/time -l Rscript perf_spdep.R ./data/natregimes.shp HR60 999 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+   user  system elapsed 
+  2.583   0.121   2.704 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "1"                    
+   user  system elapsed 
+  1.344   0.080   1.423 
+        7.85 real         7.41 user         0.43 sys
+ 491085824  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    132313  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+        17  voluntary context switches
+        41  involuntary context switches
+
+/usr/bin/time -l Rscript perf_rgeoda.R ./data/natregimes.shp HR60 999 lookup-table 1
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+   user  system elapsed 
+  0.479   0.012   0.491 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "lookup-table"          "1"                    
+   user  system elapsed 
+  0.056   0.000   0.056 
+        1.58 real         1.46 user         0.10 sys
+ 168402944  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     45650  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+        10  voluntary context switches
+        39  involuntary context switches

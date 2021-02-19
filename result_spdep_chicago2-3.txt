@@ -4,10 +4,4 @@ geometry type:  POINT
 dimension:      XY
 bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
 geographic CRS: WGS 84
-   user  system elapsed 
-  5.477   0.106   5.588 
-[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
-[3] "99999"                             "brutal-force"                     
-[5] "1"                                
-     user    system   elapsed 
-13910.755     4.859 13916.134 
+[1] "weights creation"
