@@ -1,0 +1,27 @@
+export OPENBLAS_NUM_THREADS=1
+Test pysal local moran with Natregimes without Numba
+Numba not installed
+./data/natregimes.shp 999 1: 0.48375511169433594 seconds
+Numba not installed
+./data/natregimes.shp 9999 1: 2.2957041263580322 seconds
+Numba not installed
+./data/natregimes.shp 99999 1: 26.682212829589844 seconds
+Test pysal local moran with SDOH without Numba
+Numba not installed
+Remove islands...
+./data/us-sdoh-2014.shp 999 1: 20.901641845703125 seconds
+Numba not installed
+Remove islands...
+./data/us-sdoh-2014.shp 9999 1: 59.844501972198486 seconds
+Numba not installed
+Remove islands...
+./data/us-sdoh-2014.shp 99999 1: 641.9509239196777 seconds
+Test pysal local moran with NYC without Numba
+Numba not installed
+Remove islands...
+Weights creation took 19.808083057403564 seconds, with removing islands it took 21.650374174118042 seconds
+./data/NYC_Area2010_2data.shp 999 1: 40.278960943222046 seconds
+Numba not installed
+Remove islands...
+Weights creation took 19.361562252044678 seconds, with removing islands it took 21.222999095916748 seconds
+./data/NYC_Area2010_2data.shp 9999 1: 110.37568807601929 seconds

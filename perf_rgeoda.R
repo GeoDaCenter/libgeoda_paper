@@ -15,9 +15,17 @@ cpu_threads <- as.integer(args[5])
 
 dt <- st_read(file_path)
 if (file_path=='./data/Chicago_parcels_points.shp') {
-    w <- knn_weights(dt, 10)
+    if (cpu_threads==1) { 
+        system.time(w <- knn_weights(dt, 10))
+    } else {
+        w <- knn_weights(dt, 10)
+    }
 } else {
-    w <- queen_weights(dt)
+    if (cpu_threads==1) { 
+        system.time(w <- queen_weights(dt))
+    } else {
+        w <- queen_weights(dt)
+    }
 }
 args
 # run the local_moran() 3 times 
