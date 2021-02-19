@@ -1,0 +1,88 @@
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "weights creation"
+   user  system elapsed 
+  2.604   0.086   2.689 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "no-core"              
+   user  system elapsed 
+  1.298   0.051   1.349 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "4-cores"              
+   user  system elapsed 
+  1.342   0.293   0.543 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "8-cores"              
+   user  system elapsed 
+  1.433   0.552   0.394 
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "no-core"              
+   user  system elapsed 
+  8.420   0.630   9.051 
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "4-cores"              
+   user  system elapsed 
+  8.919   0.900   2.596 
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "8-cores"              
+   user  system elapsed 
+  9.208   1.139   1.491 
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "no-core"              
+   user  system elapsed 
+ 83.277   4.028  87.309 
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "4-cores"              
+   user  system elapsed 
+ 91.883   6.198  24.993 
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "8-cores"              
+   user  system elapsed 
+ 96.076   8.246  13.661 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "weights creation"
+   user  system elapsed 
+718.315  73.171 791.513 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "no-core"                
+   user  system elapsed 
+ 65.247  13.170  78.421 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "4-cores"                
+   user  system elapsed 
+ 73.407  20.616  25.904 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "8-cores"                
+   user  system elapsed 
+ 79.157  26.487  16.120 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "no-core"                
+   user  system elapsed 
+360.531  23.926 384.470 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "4-cores"                
+   user  system elapsed 
+411.640  34.589 115.868 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "8-cores"                
+   user  system elapsed 
+429.551  39.375  62.472 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "no-core"                
+    user   system  elapsed 
+3403.550  130.740 3534.427 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "4-cores"                
+    user   system  elapsed 
+3856.103  158.612 1018.332 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "8-cores"                

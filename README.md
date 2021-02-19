@@ -74,10 +74,10 @@ The outpu:
 
 | Name | # observations | variable |
 |------|----------------|----------|
-|U.S. counties (natregimes.shp)| 3,085 | HR60 (homicide rates for 1960) |
-|U.S. census tracts (us-sdoh-2014.shp) | 72,329<sup>1</sup> | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
-|New York City census blocks (NYC Area2010_2data.shp) | 108,332<sup>2</sup> | CE01_02 (employed persons earning less than $1250 per month in 2002) |
-| Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> | EstBuild Board of Review final estimated market value of building from the prior tax year.|
+|U.S. counties (natregimes.shp)| 3,085 (.shp 1.5MB)| HR60 (homicide rates for 1960) |
+|U.S. census tracts (us-sdoh-2014.shp) | 72,329<sup>1</sup> (.shp 72.1MB) | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
+|New York City census blocks (NYC Area2010_2data.shp) | 108,332<sup>2</sup> (.shp 34.1MB)| CE01_02 (employed persons earning less than $1250 per month in 2002) |
+| Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> (.shp 9MB)| EstBuild Board of Review final estimated market value of building from the prior tax year.|
 
 <sup>1</sup>The original dataset has 72,344 observations with 15 islands were removed.
 
@@ -273,7 +273,7 @@ PySAL
 
 rgeoda
 
-NOTE: The first-time call of queen_weights() or knn_weights() includes a procedure to convert sf geometry objects (wkb) to rgeoda internally used object. The conversion only needs to be execute once, and the results will be cached for other weights creation functions.
+NOTE: The first-time call of queen_weights() or knn_weights() includes a procedure to convert sf geometry objects (wkb) to an internally used object of rgeoda. The conversion only needs to be execute once, and the results will be cached for other weights creation functions.
 
 | Data | 1st | 2nd | 3rd |
 |------|-----|-----|-----|
@@ -288,9 +288,9 @@ spdep
 | Data | 1st | 2nd | 3rd |
 |------|-----|-----|-----|
 | Natregimes | 2.676 | 2.661 | 2.666|
-| US_SDOH | 
-| NYC |
-| Chicago |
+| US_SDOH | 791.513| | |
+| NYC |2020.326 | 2054.080  | 2141.948|
+| Chicago | | | |
 
 ## 2.2 Detailed Information:
 
@@ -360,6 +360,7 @@ result_pygeoda_complete_3.txt
 
 (Average from 3 rounds test)
 
+result_rgeoda_3runs_noChicago.txt
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
 | 999  | 0.5973333333  |  0.1086666667 | 0.07933333333  | 
@@ -383,6 +384,13 @@ result_spdep_2.txt
 | 999  |1.322   | 0.563  | 0.409 |
 | 9999  | 8.895   | 3.164  | 2.179  |
 | 99999  | 83.868  | 24.320   | 13.872  |
+
+result_spdep_4.txt
+| Permutations | No parallel   | 4 Cores       | 8 Cores        | 
+|--------------|---------------|---------------|----------------|
+| 999  | 1.349  |0.543  | 0.394 |
+| 9999  | 9.051 |2.596 |1.491 | 
+| 99999  | 87.309|24.993 |13.661 | 
 
 * rgeoda (permutation_method="lookup")
 
@@ -451,6 +459,7 @@ result_pygeoda_complete_3.txt
 
 NOTE: `keep_simulations=False` to avoid out of memory issue
 
+result_pysal_1/2/3.txt
 | Permutations | 1st run  | 2nd run | 3rd run |
 |--------------|----------|---------|---------|
 | 999  | 22.939248085021973 | 23.320177793502808 |23.197984218597412 |
@@ -459,7 +468,7 @@ NOTE: `keep_simulations=False` to avoid out of memory issue
 
 * rgeoda (permutation_method="complete")
 
-
+result_rgeoda_3runs_noChicago.txt
 (Average from 3 rounds test)
 
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
@@ -483,6 +492,13 @@ result_spdep_2.txt
 | 999  | 75.336|23.962  |15.469  |
 | 9999  |370.892 | 110.437  | 62.620  |
 | 99999  |3346.190  |978.384 |530.585  |
+
+result_spdep_4.txt
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999 |78.421 |25.904 |16.120 |
+| 9999|384.470 |115.868 |62.472 |
+|99999|3534.427  |1018.332 | |
 
 * rgeoda (permutation_method="lookup")
 
@@ -578,8 +594,8 @@ result_spdep_2.txt
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  |132.710  |42.543 | 26.720 |
-| 9999  | 477.047|149.024 | |
-| 99999  | | | |
+| 9999  | 477.047|149.024 | 87.095 |
+| 99999  |4235.111 | 1225.555 | 687.102 |
 
 * rgeoda (permutation_method="lookup")
 

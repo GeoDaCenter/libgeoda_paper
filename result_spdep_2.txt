@@ -277,3 +277,41 @@ projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
 1853.340  186.650 2040.303 
 [1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
 [3] "99999"                         "1"                            
+    user   system  elapsed 
+4025.026  209.948 4235.111 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+    user   system  elapsed 
+1871.308  182.716 2054.080 
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "8"                            
+    user   system  elapsed 
+4479.008  229.280 1225.555 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+    user   system  elapsed 
+1848.777  171.489 2020.326 
+NULL
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "99999"                         "16"                           
+    user   system  elapsed 
+4814.068  248.266  687.102 
+====Run spdep localmoran_perm using Chicago_Parcels
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 999 1
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 999 8
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 999 16
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 9999 16
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 9999 8
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 9999 1
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 99999 16
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 99999 8
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 99999 1

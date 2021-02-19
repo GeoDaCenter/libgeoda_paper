@@ -44,3 +44,6 @@ Weights creation took 28.692863941192627 seconds, with transform and remove isla
 Numba not installed
 Weights creation took 29.569955110549927 seconds, with transform and remove islands it took 30.632391214370728 seconds
 ./data/Chicago_parcels_points.shp 9999 1: 520.6965279579163 seconds
+Numba not installed
+Weights creation took 28.79238510131836 seconds, with transform and remove islands it took 29.833359241485596 seconds
+./data/Chicago_parcels_points.shp 99999 1: 3597.985806941986 seconds
