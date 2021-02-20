@@ -40,3 +40,5 @@ geographic CRS: WGS 84
 [1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
 [3] "99999"                             "brutal-force"                     
 [5] "16"                               
+     user    system   elapsed 
+17238.387    12.200  1088.575 
