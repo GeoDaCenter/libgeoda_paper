@@ -99,9 +99,8 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 | pygeoda  |  local_moran() with permutation_method="lookup-table" |
 | rgeoda   |  local_moran() with permutation_method="complete" |
 | rgeoda   |  local_moran() with permutation_method="lookup-table" |
-| pysal/esda |  Moran_Local() without Numba (No multi-threading) |
-| pysal/esda |  Moran_Local() with Numba (multi-threading) |
-| spedp |  localmoran_perm() using Multi-Processing |
+| pysal/esda |  Moran_Local() without Numba |
+| spedp |  localmoran_perm() with Multi-Processing |
 
 * NOTE: permutation_method="complete" vs "lookup-table"
 
@@ -113,7 +112,7 @@ from a pool of (N-1) indices will be created as a "lookup-table". Then, each obs
 compute a pseudo-p value. The (N-1) indices in the "lookup-table" will be reordered by removing the index of current observation,
 so to create a "conditional" permutation test. Therefore, the total number of permutation computation is: 999 x max_neighbors
 
-The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeoda/rgeoda (version 0.0.8).
+The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeoda/rgeoda (version 0.0.8 with parameter: permutation_method="lookup-table").
 
 In this test, the weights creation function is also tested among pygeoda, rgeoda, pysal and spdep
  
@@ -182,6 +181,7 @@ GPU took 4073 ms
 * 2.1.2 Using 4 CPU cores or 8 CPU threads
 * 2.1.3 Using 8 CPU cores or 16 CPU threads
 * 2.1.4 Weights creation
+* 2.1.5 Memory Usage
 
 (Unit: seconds; Average running time for 3 runs)
 
