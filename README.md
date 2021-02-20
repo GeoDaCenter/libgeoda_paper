@@ -189,40 +189,40 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 
 ### 2.1.1 No parallelization<sup>4</sup>
 
-| Data | Permutations | GeoDa GPU | pygeoda | PySAL/ESDA | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
-|------|--------------|-----------|---------|------------|--------|-------|------------------------|-----------------------|
-|Natregimes|999|0.06666666667|0.5861863295|0.5129142602|0.597|1.314|||
-|Natregimes|9999|0.4303333333|5.894174417|2.478509982|5.90|9.22|||
-|Natregimes|99999|4.077333333|58.42296004|28.37590798|57.196|89.39866667|||
-|US-SDOH|999|0.309|17.30434664|23.15247003|17.188|77.53933333|||
-|US-SDOH|9999|2.897666667|172.4183534|69.00951242|174.760|383.189|||
-|US-SDOH|99999|28.05333333|1709.570349|702.7699699|1734.242|3465.897|||
-|NYC|999|1.753666667|28.45079025|47.00624776|28.814|138.8043333|||
-|NYC|9999|17.41733333|282.0992463|129.1338846|285.253|502.8656667|||
-|NYC|99999|50.59|2814.519481|1352.874198|2850.638|4275.771333|||
-|Chicago|999|0.8403333333|113.7595565|471.7471529|113.233||||
-|Chicago|9999|5.342666667|1153.4873|720.8917576|1137.660||||
-|Chicago|99999|52.83633333|13514.23282|4456.907564|||||
+| Data | Permutations | GeoDa GPU | pygeoda | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
+|------|--------------|-----------|---------|--------|-------|------------------------|-----------------------|
+|Natregimes|999|0.06666666667|0.5861863295|0.597|1.314|||
+|Natregimes|9999|0.4303333333|5.894174417|5.90|9.22|||
+|Natregimes|99999|4.077333333|58.42296004|57.196|89.39866667|||
+|US-SDOH|999|0.309|17.30434664|17.188|77.53933333|||
+|US-SDOH|9999|2.897666667|172.4183534|174.760|383.189|||
+|US-SDOH|99999|28.05333333|1709.570349|1734.242|3465.897|||
+|NYC|999|1.753666667|28.45079025|28.814|138.8043333|||
+|NYC|9999|17.41733333|282.0992463|285.253|502.8656667|||
+|NYC|99999|50.59|2814.519481|2850.638|4275.771333|||
+|Chicago|999|0.8403333333|113.7595565|113.233|1339.121333|||
+|Chicago|9999|5.342666667|1153.4873|1137.660|3503.14|||
+|Chicago|99999|52.83633333|13514.23282|13189.34033||||
 
 <sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
-The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine.
+The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine. Therefore, the running time of PySAL/ESDA is moved to table in 2.1.3
 
 ### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>5</sup>
 
-| Data | Permutations | GeoDa GPU | pygeoda | PySAL/ESDA | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
-|------|--------------|-----------|---------|------------|--------|-------|------------------------|-----------------------|
-|Natregimes|999|0.06666666667|0.08737667402|0.5129142602|0.109|0.5746666667|||
-|Natregimes|9999|0.4303333333|0.8471396764|2.478509982|0.909|3.084|||
-|Natregimes|99999|4.077333333|8.611579974|28.37590798|8.498|27.57366667|||
-|US-SDOH|999|0.309|2.524351994|23.15247003|2.760|26.18133333|||
-|US-SDOH|9999|2.897666667|24.97697441|69.00951242|25.927|128.4393333|||
-|US-SDOH|99999|28.05333333|249.5261346|702.7699699|253.039|1144.179667|||
-|NYC|999|1.753666667|4.287986279|47.00624776|4.487|45.63833333|||
-|NYC|9999|17.41733333|42.35134069|129.1338846|43.281|170.3116667|||
-|NYC|99999|50.59|424.6791393|1352.874198|431.787|1406.528667|||
-|Chicago|999|0.8403333333|16.51535312||17.137||||
-|Chicago|9999|5.342666667|161.4538433||164.331||||
-|Chicago|99999|52.83633333|1629.589604||||||
+| Data | Permutations | GeoDa GPU | pygeoda | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
+|------|--------------|-----------|---------|--------|-------|------------------------|-----------------------|
+|Natregimes|999|0.06666666667|0.08737667402|0.109|0.5746666667|||
+|Natregimes|9999|0.4303333333|0.8471396764|0.909|3.084|||
+|Natregimes|99999|4.077333333|8.611579974|8.498|27.57366667|||
+|US-SDOH|999|0.309|2.524351994|2.760|26.18133333|||
+|US-SDOH|9999|2.897666667|24.97697441|25.927|128.4393333|||
+|US-SDOH|99999|28.05333333|249.5261346|253.039|1144.179667|||
+|NYC|999|1.753666667|4.287986279|4.487|45.63833333|||
+|NYC|9999|17.41733333|42.35134069|43.281|170.3116667|||
+|NYC|99999|50.59|424.6791393|431.787|1406.528667|||
+|Chicago|999|0.8403333333|16.51535312|17.137|348.2476667|||
+|Chicago|9999|5.342666667|161.4538433|164.331|949.7773333|||
+|Chicago|99999|52.83633333|1629.589604|1640.682||||
 
 <sup>5</sup>spdep does multi-processing for parallalization instead of multi-threading that used in pygeoda/rgeoda. On this test machine, each CPU core has 2 CPU threads. For testing spdep, the function localmoran_perm() is called after setting up using 4 CPU cores and 8 CPU cores:
 ```Rupdate 
@@ -244,9 +244,9 @@ set.coresOption(8)
 |NYC|999|1.753666667|2.897502263|47.00624776|3.083|28.68066667|||
 |NYC|9999|17.41733333|28.33021959|129.1338846|28.872|96.24366667|||
 |NYC|99999|50.59|280.0743279|1352.874198|282.211|761.3146667|||
-|Chicago|999|0.8403333333|11.80314898||11.701||||
-|Chicago|9999|5.342666667|113.620623||111.078||||
-|Chicago|99999|52.83633333|1131.008971||||||
+|Chicago|999|0.8403333333|11.80314898|471.7471529|11.701|234.4463333|||
+|Chicago|9999|5.342666667|113.620623|720.8917576|111.078|560.1833333|||
+|Chicago|99999|52.83633333|1131.008971|4456.907564|||||
 
 ### 2.1.4 Weights Creation
 
@@ -302,7 +302,7 @@ spdep
 | Natregimes | 2.676 | 2.661 | 2.666|
 | US_SDOH | 791.513| | |
 | NYC |2020.326 | 2054.080  | 2141.948|
-| Chicago | 13181.457 | | |
+| Chicago | 13181.457 | 12974.014  | |
 
 ### 2.1.5 Memory Usage
 
@@ -328,7 +328,7 @@ Natregimes:
 | spdep    | 99999 | 1314.460938 Mb |
 
 <sup>6</sup>Since spdep uses multiple-processing for parallization, 
-each spawn process will have a separated (copied) memeory space. When running the spdep with 4 CPU cores, the total peak memory usage will be 4 x ~460Mb = 1840Mb.
+each spawn process will have a separated (copied) memeory space. When running the spdep with 4 CPU cores, the total peak memory usage could be 4 x ~460Mb = ~1840Mb.
 
 US-SDOH:
 
@@ -738,22 +738,31 @@ result_rgeoda_3runs_noChicago.txt
 | Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
 |--------------|---------------|---------------|----------------|
 | 99999  | 12497.949 | 1613.119 | 1318.064 | 
-| 99999  | 13916.134 | | |
-| 99999  | 13153.938 | | |
-
+| 99999  | 13916.134 | 1610.862 | |
+| 99999  | 13153.938 | 1698.065 | |
+ 
 * spdep 
+
+result_spdep_1.txt
 
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
 | 999  | 1296.269 | 563.027 | 407.151 |
-| 9999  | 3719.948 | | 683.451  |
+| 9999  | 3471.978| 929.183 | 490.794  |
 | 99999  | | | |
 
-result_spdep_2.txt
+result_spdep_chicago2-3.txt
 | Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
 |--------------|--------------|---------|------------|
-| 999  | | | |
-| 9999  | 3671.529 | | |
+| 999  | 1111.817| 328.786 | 209.526|
+| 9999  | 3534.302 |959.811 |593.189 |
+| 99999  | | | |
+
+result_spdep_chicago2-3.txt
+| Permutations | Not Use Core | 4 Cores | 8 CPU Cores|
+|--------------|--------------|---------|------------|
+| 999  | 1252.801| 331.334| 210.196 |
+| 9999  | 3531.298 | 960.338|596.567 |
 | 99999  | | | |
 
 * rgeoda (permutation_method="lookup-table")
