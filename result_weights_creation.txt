@@ -447,4 +447,52 @@ Warning message:
 In st_centroid.sfc(st_geometry(dt)) :
   st_centroid does not give correct centroids for longitude/latitude data
 [1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
-[3] "9"                                 "1"          
+[3] "9"                                 "1"    
+
+Rscript perf_spdep.R ./data/us-sdoh-2014.shp EstBuild 1 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+   user  system elapsed 
+809.976  97.109 907.075 
+[1] "./data/us-sdoh-2014.shp" "EstBuild"               
+[3] "1"                       "1"             
+      
+ Rscript perf_spdep.R ./data/us-sdoh-2014.shp EstBuild 1 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+   user  system elapsed 
+810.013  96.747 906.954 
+[1] "./data/us-sdoh-2014.shp" "EstBuild"               
+[3] "1"                       "1"            
+
+Rscript perf_spdep.R ./data/Chicago_parcels_points.shp Test 1 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+     user    system   elapsed 
+13779.772     4.204 13783.930 
+Warning message:
+In st_centroid.sfc(st_geometry(dt)) :
+  st_centroid does not give correct centroids for longitude/latitude data
+[1] "./data/Chicago_parcels_points.shp" "Test"                             
+[3] "1"                                 "1"                             

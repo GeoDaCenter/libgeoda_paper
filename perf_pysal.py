@@ -31,9 +31,11 @@ except:
 w_start_time = time.time()
 if data_path == './data/Chicago_parcels_points.shp':
     w = lps.weights.KNN.from_dataframe(gdf, k=10)
+    #w = lps.weights.KNN.from_shapefile(data_path, k=10)
     w_run_time1 = time.time() - w_start_time
 else:
     w = lps.weights.Queen.from_dataframe(gdf)
+    #w = lps.weights.Queen.from_shapefile(data_path)
     w_run_time1 = time.time() - w_start_time
     # remove islands
     if len(w.islands) > 0:

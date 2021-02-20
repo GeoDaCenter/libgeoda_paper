@@ -5,3 +5,69 @@ dimension:      XY
 bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
 geographic CRS: WGS 84
 [1] "weights creation"
+     user    system   elapsed 
+12971.069     2.627 12974.014 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "no-core"                          
+    user   system  elapsed 
+ 874.331  237.475 1111.817 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "no-core"                          
+    user   system  elapsed 
+ 949.387  303.380 1252.801 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "4-cores"                          
+   user  system elapsed 
+951.931 321.164 328.786 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "4-cores"                          
+   user  system elapsed 
+952.500 329.346 331.334 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "8-cores"                          
+    user   system  elapsed 
+1082.981  468.792  209.526 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "8-cores"                          
+    user   system  elapsed 
+1090.619  468.963  210.196 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "8-cores"                          
+    user   system  elapsed 
+3902.846  696.613  593.189 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "8-cores"                          
+    user   system  elapsed 
+3939.638  697.658  596.567 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "4-cores"                          
+    user   system  elapsed 
+3382.674  410.441  959.811 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "4-cores"                          
+    user   system  elapsed 
+3379.924  405.738  960.338 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "no-core"                          
+    user   system  elapsed 
+3102.397  431.764 3534.302 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "no-core"                          
+    user   system  elapsed 
+3102.764  428.026 3531.298 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "8-cores"                          
+     user    system   elapsed 
+28982.575  1265.696  3829.577 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "8-cores"                          
+     user    system   elapsed 
+27277.650  1195.234  3581.033 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "4-cores"                          
+     user    system   elapsed 
+26974.885  1131.480  7046.647 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "4-cores"                          
+     user    system   elapsed 
+27068.746  1140.952  7076.392 

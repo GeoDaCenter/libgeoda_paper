@@ -22,7 +22,8 @@ if (file_path=='./data/Chicago_parcels_points.shp') {
     }
 } else {
     if (cpu_threads==1) { 
-        system.time(w <- queen_weights(dt))
+        tm0 <- system.time(w <- queen_weights(dt))
+        tm0
     } else {
         w <- queen_weights(dt)
     }

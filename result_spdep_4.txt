@@ -140,3 +140,41 @@ dimension:      XY
 bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
 geographic CRS: WGS 84
 [1] "weights creation"
+     user    system   elapsed 
+14706.212     3.013 14709.526 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "no-core"                          
+    user   system  elapsed 
+1146.449  506.273 1652.746 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "4-cores"                          
+    user   system  elapsed 
+1112.707  365.169  384.623 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "8-cores"                          
+    user   system  elapsed 
+1380.114  744.989  283.617 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "no-core"                          
+    user   system  elapsed 
+3133.308  338.493 3471.978 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "4-cores"                          
+    user   system  elapsed 
+3296.866  369.117  929.183 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "9999"                              "8-cores"                          
+    user   system  elapsed 
+3407.876  410.170  490.794 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "no-core"                          
+     user    system   elapsed 
+26060.510  1157.114 27246.362 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "4-cores"                          
+     user    system   elapsed 
+25520.013  1010.186  6658.492 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "99999"                             "8-cores"                          
+     user    system   elapsed 
+27067.169  1113.086  3542.397 

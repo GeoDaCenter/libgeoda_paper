@@ -1,1 +1,52 @@
-./data/Chicago_parcels_points.shp 99999 lookup-table 1: 1618.4626460075378 seconds
+Test pyGeoDa local moran with Natregimes using permutation_method=lookup-table 
+Weights creation took 0.02381730079650879 seconds
+./data/natregimes.shp 999 lookup-table 1: 0.043720245361328125 seconds
+./data/natregimes.shp 999 lookup-table 8: 0.007912158966064453 seconds
+./data/natregimes.shp 999 lookup-table 16: 0.006490230560302734 seconds
+Weights creation took 0.024671316146850586 seconds
+./data/natregimes.shp 9999 lookup-table 1: 0.44381117820739746 seconds
+./data/natregimes.shp 9999 lookup-table 8: 0.06636810302734375 seconds
+./data/natregimes.shp 9999 lookup-table 16: 0.04943704605102539 seconds
+Weights creation took 0.02415299415588379 seconds
+./data/natregimes.shp 99999 lookup-table 1: 4.413371801376343 seconds
+./data/natregimes.shp 99999 lookup-table 8: 0.6548998355865479 seconds
+./data/natregimes.shp 99999 lookup-table 16: 0.44294190406799316 seconds
+Test pyGeoDa local moran with SDOH using permutation_method=lookup-table 
+Weights creation took 0.8540549278259277 seconds
+./data/us-sdoh-2014.shp 999 lookup-table 1: 1.8016300201416016 seconds
+./data/us-sdoh-2014.shp 999 lookup-table 8: 0.28637003898620605 seconds
+./data/us-sdoh-2014.shp 999 lookup-table 16: 0.20919442176818848 seconds
+Weights creation took 0.8840658664703369 seconds
+./data/us-sdoh-2014.shp 9999 lookup-table 1: 18.03659701347351 seconds
+./data/us-sdoh-2014.shp 9999 lookup-table 8: 2.678987741470337 seconds
+./data/us-sdoh-2014.shp 9999 lookup-table 16: 1.8401479721069336 seconds
+Weights creation took 0.883922815322876 seconds
+./data/us-sdoh-2014.shp 99999 lookup-table 1: 188.99081778526306 seconds
+./data/us-sdoh-2014.shp 99999 lookup-table 8: 26.508763074874878 seconds
+./data/us-sdoh-2014.shp 99999 lookup-table 16: 19.8468918800354 seconds
+Test pyGeoDa local moran with NYC using permutation_method=lookup-table 
+Weights creation took 1.2342212200164795 seconds
+./data/NYC_Area2010_2data.shp 999 lookup-table 1: 3.389691114425659 seconds
+./data/NYC_Area2010_2data.shp 999 lookup-table 8: 0.5356402397155762 seconds
+./data/NYC_Area2010_2data.shp 999 lookup-table 16: 0.3721961975097656 seconds
+Weights creation took 1.2289559841156006 seconds
+./data/NYC_Area2010_2data.shp 9999 lookup-table 1: 33.0835177898407 seconds
+./data/NYC_Area2010_2data.shp 9999 lookup-table 8: 4.975275993347168 seconds
+./data/NYC_Area2010_2data.shp 9999 lookup-table 16: 3.612794876098633 seconds
+Weights creation took 1.2481939792633057 seconds
+./data/NYC_Area2010_2data.shp 99999 lookup-table 1: 359.7893280982971 seconds
+./data/NYC_Area2010_2data.shp 99999 lookup-table 8: 53.48566174507141 seconds
+./data/NYC_Area2010_2data.shp 99999 lookup-table 16: 37.71713399887085 seconds
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=lookup-table
+Weights creation took 3.16920804977417 seconds
+./data/Chicago_parcels_points.shp 999 lookup-table 1: 13.469430923461914 seconds
+./data/Chicago_parcels_points.shp 999 lookup-table 8: 2.273153066635132 seconds
+./data/Chicago_parcels_points.shp 999 lookup-table 16: 1.832197904586792 seconds
+Weights creation took 3.2018980979919434 seconds
+./data/Chicago_parcels_points.shp 9999 lookup-table 1: 132.1586151123047 seconds
+./data/Chicago_parcels_points.shp 9999 lookup-table 8: 19.551851987838745 seconds
+./data/Chicago_parcels_points.shp 9999 lookup-table 16: 15.13193130493164 seconds
+Weights creation took 3.042473316192627 seconds
+./data/Chicago_parcels_points.shp 99999 lookup-table 1: 1305.104752779007 seconds
+./data/Chicago_parcels_points.shp 99999 lookup-table 8: 190.86125826835632 seconds
+./data/Chicago_parcels_points.shp 99999 lookup-table 16: 147.06435203552246 seconds
