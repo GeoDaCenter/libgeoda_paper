@@ -205,7 +205,7 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 |Chicago|99999|52.83633333|13514.23282|13189.34033||||
 
 <sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
-The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes all 12 cores to run its sub-function `_prepare_univariate()` in parallel on the testing machine. Therefore, the running time of PySAL/ESDA is moved to table in 2.1.3
+The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes 12 CPU cores (specifically 12 CPU threads) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. Therefore, the running time of PySAL/ESDA is moved to table in 2.1.3
 
 ### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>5</sup>
 
@@ -233,20 +233,20 @@ set.coresOption(8)
 ``` 
 ### 2.1.3 Using 8 CPU cores or 16 CPU threads (hyper-threading)
 
-| Data | Permutations | GeoDa GPU | pygeoda | PySAL/ESDA | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
-|------|--------------|-----------|---------|------------|--------|-------|------------------------|-----------------------|
-|Natregimes|999|0.06666666667|0.05985840162|0.5129142602|0.0793|0.4123333333|||
-|Natregimes|9999|0.4303333333|0.5781105359|2.478509982|0.585|1.875333333|||
-|Natregimes|99999|4.077333333|5.664550781|28.37590798|5.772|15.29533333|||
-|US-SDOH|999|0.309|1.726169745|23.15247003|1.860|16.36433333|||
-|US-SDOH|9999|2.897666667|16.95118411|69.00951242|17.079|70.43233333|||
-|US-SDOH|99999|28.05333333|165.9426964|702.7699699|166.148|608.695|||
-|NYC|999|1.753666667|2.897502263|47.00624776|3.083|28.68066667|||
-|NYC|9999|17.41733333|28.33021959|129.1338846|28.872|96.24366667|||
-|NYC|99999|50.59|280.0743279|1352.874198|282.211|761.3146667|||
-|Chicago|999|0.8403333333|11.80314898|471.7471529|11.701|234.4463333|||
-|Chicago|9999|5.342666667|113.620623|720.8917576|111.078|560.1833333|||
-|Chicago|99999|52.83633333|1131.008971|4456.907564|||||
+| Data | Permutations | GeoDa GPU | pygeoda | rgeoda | spdep | PySAL/ESDA | pygeoda (lookup-table) | rgeoda (lookup-table) |
+|------|--------------|-----------|---------|--------|-------|------------|------------------------|-----------------------|
+|Natregimes|999|0.06666666667|0.05985840162|0.0793|0.4123333333|0.5129142602|||
+|Natregimes|9999|0.4303333333|0.5781105359|0.585|1.875333333|2.478509982|||
+|Natregimes|99999|4.077333333|5.664550781|5.772|15.29533333|28.37590798|||
+|US-SDOH|999|0.309|1.726169745|1.860|16.36433333|23.15247003|||
+|US-SDOH|9999|2.897666667|16.95118411|17.079|70.43233333|69.00951242|||
+|US-SDOH|99999|28.05333333|165.9426964|166.148|608.695|702.7699699|||
+|NYC|999|1.753666667|2.897502263|3.083|28.68066667|47.00624776|||
+|NYC|9999|17.41733333|28.33021959|28.872|96.24366667|129.1338846|||
+|NYC|99999|50.59|280.0743279|282.211|761.3146667|1352.874198|||
+|Chicago|999|0.8403333333|11.80314898|11.701|234.4463333|471.7471529|||
+|Chicago|9999|5.342666667|113.620623|111.078|560.1833333|720.8917576|||
+|Chicago|99999|52.83633333|1131.008971|||4456.907564|||
 
 ### 2.1.4 Weights Creation
 
