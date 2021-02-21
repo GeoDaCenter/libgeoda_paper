@@ -1,0 +1,2 @@
+export OPENBLAS_NUM_THREADS=8
+Test pysal local moran with Natregimes without Numba
