@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-echo "export OPENBLAS_NUM_THREADS=1"
-export OPENBLAS_NUM_THREADS=1
+echo "export OPENBLAS_NUM_THREADS=8"
+export OPENBLAS_NUM_THREADS=8
 echo "Test pysal local moran with Natregimes without Numba"
 python perf_pysal_3runs.py ./data/natregimes.shp HR60
 echo "Test pysal local moran with SDOH without Numba"
