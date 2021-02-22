@@ -1,2 +1,27 @@
 export OPENBLAS_NUM_THREADS=8
 Test pysal local moran with Natregimes without Numba
+Numba not installed
+Weights creation took 0.6558518409729004 seconds, with transform and remove islands it took 0.6600868701934814 seconds
+./data/natregimes.shp 999 1: 0.4871175289154053 seconds
+./data/natregimes.shp 9999 1: 2.2182816664377847 seconds
+./data/natregimes.shp 99999 1: 24.473278760910034 seconds
+Test pysal local moran with SDOH without Numba
+Numba not installed
+Remove islands...
+Weights creation took 31.99650812149048 seconds, with transform and remove islands it took 33.08566617965698 seconds
+./data/us-sdoh-2014.shp 999 1: 22.453564405441284 seconds
+./data/us-sdoh-2014.shp 9999 1: 70.45605874061584 seconds
+./data/us-sdoh-2014.shp 99999 1: 661.24587059021 seconds
+Test pysal local moran with NYC without Numba
+Numba not installed
+Remove islands...
+Weights creation took 18.999875783920288 seconds, with transform and remove islands it took 20.77377486228943 seconds
+./data/NYC_Area2010_2data.shp 999 1: 45.25632572174072 seconds
+./data/NYC_Area2010_2data.shp 9999 1: 126.60391362508138 seconds
+./data/NYC_Area2010_2data.shp 99999 1: 1277.2141166528065 seconds
+Test pysal local moran with Chicago_Parcels without Numba
+Numba not installed
+Weights creation took 27.04023027420044 seconds, with transform and remove islands it took 28.023348331451416 seconds
+./data/Chicago_parcels_points.shp 999 1: 404.72697734832764 seconds
+./data/Chicago_parcels_points.shp 9999 1: 624.1111563046774 seconds
+./data/Chicago_parcels_points.shp 99999 1: 3648.8032484054565 seconds
