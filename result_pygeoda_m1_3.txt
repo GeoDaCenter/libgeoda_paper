@@ -1,0 +1,64 @@
+Test pyGeoDa local moran with Natregimes using permutation_method=complete
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.016253948211669922 seconds
+./data/natregimes.shp 999 complete 1: 0.1700599193572998 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/natregimes.shp 999 complete 8: 0.04333686828613281 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.012828826904296875 seconds
+./data/natregimes.shp 9999 complete 1: 1.565782070159912 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/natregimes.shp 9999 complete 8: 0.34244513511657715 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.012576103210449219 seconds
+./data/natregimes.shp 99999 complete 1: 15.671540021896362 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/natregimes.shp 99999 complete 8: 3.6028993129730225 seconds
+Test pyGeoDa local moran with SDOH using permutation_method=complete
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.4291810989379883 seconds
+./data/us-sdoh-2014.shp 999 complete 1: 4.125024080276489 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/us-sdoh-2014.shp 999 complete 8: 0.9539549350738525 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.42740488052368164 seconds
+./data/us-sdoh-2014.shp 9999 complete 1: 41.817299127578735 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/us-sdoh-2014.shp 9999 complete 8: 9.721543312072754 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.4261140823364258 seconds
+./data/us-sdoh-2014.shp 99999 complete 1: 444.6232330799103 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/us-sdoh-2014.shp 99999 complete 8: 98.69272494316101 seconds
+Test pyGeoDa local moran with NYC using permutation_method=complete
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.5717158317565918 seconds
+./data/NYC_Area2010_2data.shp 999 complete 1: 8.013323068618774 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/NYC_Area2010_2data.shp 999 complete 8: 1.9311327934265137 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.5764832496643066 seconds
+./data/NYC_Area2010_2data.shp 9999 complete 1: 80.07869911193848 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/NYC_Area2010_2data.shp 9999 complete 8: 19.550902128219604 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 0.5716071128845215 seconds
+./data/NYC_Area2010_2data.shp 99999 complete 1: 840.6849112510681 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/NYC_Area2010_2data.shp 99999 complete 8: 208.07030391693115 seconds
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=complete
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.7597630023956299 seconds
+./data/Chicago_parcels_points.shp 999 complete 1: 26.825634002685547 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/Chicago_parcels_points.shp 999 complete 8: 7.753553867340088 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.7742860317230225 seconds
+./data/Chicago_parcels_points.shp 9999 complete 1: 278.19009494781494 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/Chicago_parcels_points.shp 9999 complete 8: 73.48305201530457 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.7955279350280762 seconds
+./data/Chicago_parcels_points.shp 99999 complete 1: 2822.825684070587 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+./data/Chicago_parcels_points.shp 99999 complete 8: 720.4570119380951 seconds
