@@ -95,10 +95,9 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 | Software | Test Function |
 |----------|---------------|
 | GeoDa    |  Local Moran using GPU |
-| pygeoda  |  local_moran() with permutation_method="complete" |
-| pygeoda  |  local_moran() with permutation_method="lookup-table" |
-| rgeoda   |  local_moran() with permutation_method="complete" |
-| rgeoda   |  local_moran() with permutation_method="lookup-table" |
+| libgeoda |  gda_localmoran() with permutation_method="complete" and "lookup-table" |
+| pygeoda  |  local_moran() with permutation_method="complete" and "lookup-table" |
+| rgeoda   |  local_moran() with permutation_method="complete" and "lookup-table" |
 | pysal/esda |  Moran_Local() without Numba |
 | spedp |  localmoran_perm() with Multi-Processing |
 
@@ -118,6 +117,7 @@ In this test, the weights creation function is also tested among pygeoda, rgeoda
  
 | Software | Test Function |
 |----------|---------------|
+| libgeoda | gda_knn_weights(), gda_queen_weights() |
 | pygeoda | Weights.queen_weights(), Weights.knn_weights() |
 | rgeoda | queen_weights(), knn_weights() |
 | pysal | libpysal.weights.Queen.from_dataframe(), libpysal.weights.KNN.from_dataframe(), libpysal.weights.Queen.from_shapefile(), libpysal.weights.KNN.from_shapefile() |
@@ -126,10 +126,19 @@ In this test, the weights creation function is also tested among pygeoda, rgeoda
 
 **Test machine:**
 
+For most testing jobs:
+
 * Mac Pro (Later 2013)
 * Processor: 2.7 GHz 12-Core Intel Xeon E5
 * Memory: 64 GB 1866 MHz DDR3
 * Graphic: AMD FirePro D700 6 GB
+
+For pygeoda(arm64) on Apple Sillicon M1 chip
+
+* MacBook Pro (13-inch, M1, 2020)
+* Chip: Apple M1
+* Memory: 16Gb
+
 
 **Test environment:**
 
@@ -141,15 +150,23 @@ In this test, the weights creation function is also tested among pygeoda, rgeoda
 |R | R 4.0.3 |
 |clang | Apple clang version 11.0.0|
 
+pygeoda (arm64)
+
+| Software  | Version |
+|--|---------------------|
+|macOS| Big Sur Version 11.2.1 (20D74)| 
+|Python| Python3.9.1 arm64 |
+|clang | Apple clang version 12.0.0 (clang-1200.0.32.29)|
+
 **Test implementations:**
 
 |  | Software/Library | version |
 |--|------------------|---------|
 | 1 | GeoDa desktop (using GPU) | 1.18 |
-| 2 | libgeoda C++ API | 0.0.8 |
-| 3 | rgeoda | 0.0.8 |
+| 2 | libgeoda C++ API | "geodacenter/libgeoda" (v0.0.8) |
+| 3 | rgeoda | "geodacenter/rgeoda" (v0.0.8) |
 | 4 | spdep |  remotes::install_github("r-spatial/spdep") |
-| 5 | pygeoda | 0.0.8 |
+| 5 | pygeoda | "geodacenter/pygeoda" (v0.0.8) |
 | 6 | PySAL | libpysal 4.4.0, esda-2.3.6 |
 
 Each test function will be executed 3 times, and the average executing time (in seconds with 6 digital decimals) will be recorded.
@@ -182,82 +199,7 @@ The testing code for libgeoda C++ is compiled as a binary file: `libgeoda_perf`.
 ./libgeoda_perf ./data/natregimes HR60 complete
 ```
 
-The source code of this testing code:
-
-```C++
-#include <iostream>
-#include <vector>
-#include <chrono>
-
-#include <libgeoda/libgeoda.h>
-#include <libgeoda/weights/GeodaWeight.h>
-#include <libgeoda/sa/LISA.h>
-#include <libgeoda/gda_weights.h>
-#include <libgeoda/gda_sa.h>
-
-
-int main(int argc, char *argv[])
-{
-    if (argc < 4) {
-        std::cout << "Usage: perf_libgeoda ./data/natregimes.shp HR60 complete" << std::endl;
-        return 0;
-    }
-
-    std::string file_path = argv[1];
-    std::string var_name = argv[2];
-    std::string method = argv[3];
-
-    GeoDa gda(file_path.c_str());
-
-    GeoDaWeight* w = 0;
-
-    // create weights
-    auto t1 = std::chrono::high_resolution_clock::now();
-    if (file_path.compare("./data/Chicago_parcels_points.shp") == 0) {
-        w = gda_knn_weights(&gda, 10, 1.0, false, false, false, "", 0.0, false, false, "");
-    } else {
-        w = gda_queen_weights(&gda, 1, false, 0);
-    }
-    auto t2 = std::chrono::high_resolution_clock::now();
-
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>( t2 - t1 ).count();
-    std::cout << "Weights creation takes: " << duration << " milliseconds." << std::endl;
-
-    // get data
-    std::vector<double> vals = gda.GetNumericCol(var_name);
-    std::vector<bool> undefs;
-    double significance_cutoff = 0.01;
-    int seed = 123456789;
-    int permutations[3]  = {999, 9999, 99999};
-    int threads[3] = {1, 8, 16};
-
-    for (int p = 0; p < 3; ++p) {
-        int perm = permutations[p];
-        for (int t=0; t < 3; ++t) {
-            int thread = threads[t];
-            double run_time = 0;
-            for (int i = 0; i < 3; ++i) {
-                auto t1 = std::chrono::high_resolution_clock::now();
-                LISA *lisa = gda_localmoran(w, vals, undefs, 0.01, thread, perm, method, seed);
-                auto t2 = std::chrono::high_resolution_clock::now();
-                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>( t2 - t1 ).count();
-                run_time += duration;
-                // check results
-                //std::vector<double> pvals = lisa->GetLocalSignificanceValues();
-                //std::vector<double> lmvals = lisa->GetLISAValues();
-                //std::cout << "p[0]= " << pvals[0] << std::endl;>>
-                //std::cout << "lm[0]= " << lmvals[0] << std::endl;>>
-                delete lisa;
-            }
-            std::cout << "perm: " << perm << " threads: " << thread << " avg of 3 runs: " << run_time /3.0 <<
-            " milliseconds." << std::endl;
-        }
-    }
-
-    delete w;
-}
-```
-
+The source code of this testing code: `perf_local_moran.cpp`
 
 ## 2.1 Summary of Test Results
 
@@ -269,44 +211,46 @@ int main(int argc, char *argv[])
 
 (Unit: seconds; Average running time for 3 runs)
 
+NOTE: for pygeoda(arm64) on Apple M1 chip, there are results only "no parallelization" and "using 8 CPU threads" since Apple M1 chip has 8 total cores (4 performance and 4 efficiency).
+
 See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing
 
 ### 2.1.1 No parallelization<sup>4</sup>
 
-| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
-|------|--------------|-----------|----------|---------|--------|-------|------------------------|-----------------------|
-|Natregimes|999|0.06666666667|0.570333|0.5861863295|0.597|1.314|0.04602972666|0.054|
-|Natregimes|9999|0.4303333333|5.76967|5.894174417|5.90|9.22|0.4580373764|0.478|
-|Natregimes|99999|4.077333333|56.616|58.42296004|57.196|89.39866667|4.580973943|4.477666667|
-|US-SDOH|999|0.309|16.849|17.30434664|17.188|77.53933333|1.876623313|2.525|
-|US-SDOH|9999|2.897666667|166.898|172.4183534|174.760|383.189|18.74490062|19.428|
-|US-SDOH|99999|28.05333333|1675.58|1709.570349|1734.242|3465.897|215.611668|248.4403333|
-|NYC|999|1.753666667|27.6187|28.45079025|28.814|138.8043333|3.535606623|3.68|
-|NYC|9999|17.41733333|273.915|282.0992463|285.253|502.8656667|34.31966758|34.90566667|
-|NYC|99999|50.59|2782.88|2814.519481|2850.638|4275.771333|453.8002907|492.5203333|
-|Chicago|999|0.8403333333|108.819|113.7595565|113.233|1339.121333|13.85470406|14.99833333|
-|Chicago|9999|5.342666667|1088.7|1153.4873|1137.660|3503.14|134.816866|134.4793333|
-|Chicago|99999|52.83633333|10830.4|13514.23282|13189.34033|>5hours|1354.542644|1337.711333|
+| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) | pygeoda-M1 (complete) |
+|------|--------------|-----------|----------|---------|--------|-------|------------------------|----------------------|-----------------------|
+|Natregimes|999|0.06666666667|0.570333|0.5861863295|0.597|1.314|0.04602972666|0.054|0.1605165799|
+|Natregimes|9999|0.4303333333|5.76967|5.894174417|5.90|9.22|0.4580373764|0.478|1.556330681|
+|Natregimes|99999|4.077333333|56.616|58.42296004|57.196|89.39866667|4.580973943|4.477666667|15.68434167|
+|US-SDOH|999|0.309|16.849|17.30434664|17.188|77.53933333|1.876623313|2.525|4.108779351|
+|US-SDOH|9999|2.897666667|166.898|172.4183534|174.760|383.189|18.74490062|19.428|41.89048203|
+|US-SDOH|99999|28.05333333|1675.58|1709.570349|1734.242|3465.897|215.611668|248.4403333|426.1011527|
+|NYC|999|1.753666667|27.6187|28.45079025|28.814|138.8043333|3.535606623|3.68|8.06589365|
+|NYC|9999|17.41733333|273.915|282.0992463|285.253|502.8656667|34.31966758|34.90566667|80.29664334|
+|NYC|99999|50.59|2782.88|2814.519481|2850.638|4275.771333|453.8002907|492.5203333|838.5820987|
+|Chicago|999|0.8403333333|108.819|113.7595565|113.233|1339.121333|13.85470406|14.99833333|27.22306705|
+|Chicago|9999|5.342666667|1088.7|1153.4873|1137.660|3503.14|134.816866|134.4793333|276.7192132|
+|Chicago|99999|52.83633333|10830.4|13514.23282|13189.34033|>5hours|1354.542644|1337.711333|2826.268243|
 
 <sup>4</sup>PySAL/ESDA uses Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
 The Numba package is not installed. The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes 12 CPU cores (specifically 12 CPU threads) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. Therefore, the running time of PySAL/ESDA is moved to table in 2.1.3
 
 ### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>5</sup>
 
-| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) |
-|------|--------------|-----------|----------|---------|--------|-------|------------------------|-----------------------|
-|Natregimes|999|0.06666666667|0.084|0.08737667402|0.109|0.5746666667|0.008454958598|0.01633333333|
-|Natregimes|9999|0.4303333333|0.830333|0.8471396764|0.909|3.084|0.06996099154|0.078|
-|Natregimes|99999|4.077333333|8.37|8.611579974|8.498|27.57366667|0.6632655462|0.6653333333|
-|US-SDOH|999|0.309|2.521|2.524351994|2.760|26.18133333|0.2906908989|0.4236666667|
-|US-SDOH|9999|2.897666667|24.654|24.97697441|25.927|128.4393333|2.727758964|2.943|
-|US-SDOH|99999|28.05333333|248.595|249.5261346|253.039|1144.179667|27.48555231|29.12133333|
-|NYC|999|1.753666667|4.31167|4.287986279|4.487|45.63833333|0.5528754393|0.6826666667|
-|NYC|9999|17.41733333|42.0707|42.35134069|43.281|170.3116667|5.123643319|5.388666667|
-|NYC|99999|50.59|424.6791393|418.525|431.787|1406.528667|56.57580392|60.02066667|
-|Chicago|999|0.8403333333|16.5197|16.51535312|17.137|407.7156667|2.2724394|2.587333333|
-|Chicago|9999|5.342666667|159.269|161.4538433|164.331|949.7773333|19.51306844|20.197|
-|Chicago|99999|52.83633333|1589.36|1629.589604|1640.682|6927.177|191.0071477|193.1073333|
+| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | pygeoda (lookup-table) | rgeoda (lookup-table) | pygeoda-M1 (complete) |
+|------|--------------|-----------|----------|---------|--------|-------|------------------------|---------------|-----------------------|
+|Natregimes|999|0.06666666667|0.084|0.08737667402|0.109|0.5746666667|0.008454958598|0.01633333333|0.03832832972|
+|Natregimes|9999|0.4303333333|0.830333|0.8471396764|0.909|3.084|0.06996099154|0.078|0.3403144677|
+|Natregimes|99999|4.077333333|8.37|8.611579974|8.498|27.57366667|0.6632655462|0.6653333333|3.408513467|
+|US-SDOH|999|0.309|2.521|2.524351994|2.760|26.18133333|0.2906908989|0.4236666667|0.9343883991|
+|US-SDOH|9999|2.897666667|24.654|24.97697441|25.927|128.4393333|2.727758964|2.943|9.552996079|
+|US-SDOH|99999|28.05333333|248.595|249.5261346|253.039|1144.179667|27.48555231|29.12133333|98.13868761|
+|NYC|999|1.753666667|4.31167|4.287986279|4.487|45.63833333|0.5528754393|0.6826666667|1.937014182|
+|NYC|9999|17.41733333|42.0707|42.35134069|43.281|170.3116667|5.123643319|5.388666667|19.60354439|
+|NYC|99999|50.59|424.6791393|418.525|431.787|1406.528667|56.57580392|60.02066667|206.378281|
+|Chicago|999|0.8403333333|16.5197|16.51535312|17.137|407.7156667|2.2724394|2.587333333|7.576208989|
+|Chicago|9999|5.342666667|159.269|161.4538433|164.331|949.7773333|19.51306844|20.197|72.33786313|
+|Chicago|99999|52.83633333|1589.36|1629.589604|1640.682|6927.177|191.0071477|193.1073333|809.6136088|
 
 <sup>5</sup>spdep does multi-processing for parallalization instead of multi-threading that used in pygeoda/rgeoda. On this test machine, each CPU core has 2 CPU threads. For testing spdep, the function localmoran_perm() is called after setting up using 4 CPU cores and 8 CPU cores:
 ```Rupdate 
