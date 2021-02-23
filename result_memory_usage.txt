@@ -129,3 +129,114 @@ geographic CRS: WGS 84
          1  signals received
         10  voluntary context switches
         39  involuntary context switches
+
+
+/usr/bin/time -l Rscript perf_spdep.R ./data/NYC_Area2010_2data.shp CE01_02 999 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+    user   system  elapsed 
+1948.731  216.487 2165.408 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "1"                            
+   user  system elapsed 
+111.733  30.680 142.426 
+     2315.69 real      2067.10 user       247.91 sys
+4634091520  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+   6085227  page reclaims
+      1718  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+       637  voluntary context switches
+     17896  involuntary context switches
+
+/usr/bin/time -l Rscript perf_rgeoda.R ./data/NYC_Area2010_2data.shp CE01_02 999 brutal-force 1
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+   user  system elapsed 
+  3.271   0.126   3.411 
+[1] "./data/NYC_Area2010_2data.shp" "CE01_02"                      
+[3] "999"                           "brutal-force"                 
+[5] "1"                            
+   user  system elapsed 
+  31.95    0.02   31.98 
+       39.16 real        38.65 user         0.43 sys
+ 675368960  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    195556  page reclaims
+       111  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+       305  voluntary context switches
+       620  involuntary context switches
+
+Weights creation took 1.3009519577026367 seconds
+./data/NYC_Area2010_2data.shp 999 brutal-force 1: 30.663637161254883 seconds
+       34.01 real        34.19 user         0.73 sys
+ 345739264  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     94822  page reclaims
+      3540  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+       882  voluntary context switches
+      9514  involuntary context switches
+
+/usr/bin/time -l python perf_pysal.py ./data/NYC_Area2010_2data.shp CE01_02 999 1
+Numba not installed
+/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/libpysal/weights/weights.py:172: UserWarning: The weights matrix is not fully connected: 
+ There are 215 disconnected components.
+ There are 155 islands with ids: 441, 1956, 2064, 2083, 2084, 2085, 2087, 2088, 2253, 2698, 2847, 3810, 3811, 3967, 4113, 4200, 4786, 5431, 5432, 6270, 6271, 6282, 7128, 7189, 8823, 8824, 10116, 10117, 11116, 11168, 12825, 13093, 13347, 15126, 15851, 15907, 16537, 17079, 18053, 19206, 20103, 20408, 20891, 23259, 23636, 25499, 25500, 25502, 25995, 26120, 26853, 26854, 27335, 27336, 27337, 28381, 28707, 31391, 31786, 31881, 31895, 32912, 32913, 32918, 33423, 33424, 35479, 35818, 35822, 36496, 37606, 38385, 40568, 41139, 42676, 46359, 46558, 46562, 48834, 49546, 53435, 53788, 53789, 57407, 59705, 65315, 66158, 66209, 66326, 66464, 67913, 68066, 69174, 71183, 71650, 71919, 72148, 72238, 72240, 72322, 72323, 72324, 72325, 72861, 73206, 73406, 73637, 73780, 74435, 74512, 74869, 75628, 76047, 76968, 77224, 77373, 78972, 80314, 80555, 80581, 81668, 81720, 83817, 84359, 85702, 86135, 86451, 86683, 86744, 87311, 87313, 87336, 88496, 89361, 89362, 89600, 89876, 90132, 90368, 91050, 91360, 91464, 91522, 91571, 91939, 92915, 94224, 97113, 97114, 97366, 99511, 102944, 106618, 107198, 108332.
+  warnings.warn(message)
+Remove islands...
+/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/libpysal/weights/weights.py:172: UserWarning: The weights matrix is not fully connected: 
+ There are 60 disconnected components.
+  warnings.warn(message)
+Weights creation took 20.145065307617188 seconds, with transform and remove islands it took 22.02610731124878 seconds
+./data/NYC_Area2010_2data.shp 999 1: 46.72153282165527 seconds
+       81.69 real       459.24 user        94.60 sys
+1103413248  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    312286  page reclaims
+      2627  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+        17  messages sent
+        52  messages received
+         0  signals received
+      1251  voluntary context switches
+   1220494  involuntary context switches
