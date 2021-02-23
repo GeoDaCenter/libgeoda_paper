@@ -77,7 +77,7 @@ The outpu:
 |U.S. counties (natregimes.shp)| 3,085 (.shp 1.5MB)| HR60 (homicide rates for 1960) |
 |U.S. census tracts (us-sdoh-2014.shp) | 72,329<sup>1</sup> (.shp 72.1MB) | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
 |New York City census blocks (NYC Area2010_2data.shp) | 108,332<sup>2</sup> (.shp 34.1MB)| CE01_02 (employed persons earning less than $1250 per month in 2002) |
-| Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> (.shp 9MB)| EstBuild Board of Review final estimated market value of building from the prior tax year.|
+| Chicago parcels (Chicago_parcels_points.shp) | 321,701<sup>3</sup> (.shp 9MB)| EstBuild (Board of Review final estimated market value of building from the prior tax year)|
 
 <sup>1</sup>The original dataset has 72,344 observations with 15 islands were removed.
 
@@ -192,14 +192,12 @@ GPU took 4073 ms
 ...
 ```
 
-The testing code for libgeoda C++ is compiled as a binary file: `libgeoda_perf`. The usage is
+The testing code `perf_local_moran.cpp` for libgeoda C++ is compiled as a binary file: `libgeoda_perf`. The usage is
 
 ```
 #./libgeoda_perf DATA_PATH VARIABLE_NAME PERMUTATION_METHOD
 ./libgeoda_perf ./data/natregimes HR60 complete
 ```
-
-The source code of this testing code: `perf_local_moran.cpp`
 
 ## 2.1 Summary of Test Results
 
@@ -211,7 +209,7 @@ The source code of this testing code: `perf_local_moran.cpp`
 
 (Unit: seconds; Average running time for 3 runs)
 
-NOTE: for pygeoda(arm64) on Apple M1 chip, there are results only "no parallelization" and "using 8 CPU threads" since Apple M1 chip has 8 total cores (4 performance and 4 efficiency).
+NOTE: for pygeoda(arm64) on Apple M1 chip, there are results only for "no parallelization" and "using 8 CPU threads" since Apple M1 chip has 8 total cores (4 performance and 4 efficiency).
 
 See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing
 
