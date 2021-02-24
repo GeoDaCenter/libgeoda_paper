@@ -240,3 +240,61 @@ Weights creation took 20.145065307617188 seconds, with transform and remove isla
          0  signals received
       1251  voluntary context switches
    1220494  involuntary context switches
+
+ /usr/bin/time -l python perf_pysal.py ./data/Chicago_parcels_points.shp EstBuild 999 1
+Numba not installed
+/Users/xun/Github/libgeoda_paper/venv/lib/python3.6/site-packages/libpysal/weights/weights.py:172: UserWarning: The weights matrix is not fully connected: 
+ There are 73 disconnected components.
+  warnings.warn(message)
+Weights creation took 29.743753910064697 seconds, with transform and remove islands it took 30.804020881652832 seconds
+./data/Chicago_parcels_points.shp 999 1: 358.5050389766693 seconds
+      412.33 real      3461.79 user       730.23 sys
+1294110720  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    419264  page reclaims
+        48  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+        17  messages sent
+        52  messages received
+         0  signals received
+        27  voluntary context switches
+   7208091  involuntary context switches
+
+/usr/bin/time -l Rscript perf_spdep.R ./data/Chicago_parcels_points.shp EstBuild 999 1
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Loading required package: sp
+Loading required package: spData
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+     user    system   elapsed 
+12570.801     3.449 12575.317 
+Warning message:
+In st_centroid.sfc(st_geometry(dt)) :
+  st_centroid does not give correct centroids for longitude/latitude data
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "1"                                
+    user   system  elapsed 
+ 800.236  204.022 1004.287 
+    13589.42 real     13380.33 user       207.98 sys
+3610624000  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    983765  page reclaims
+        19  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+        23  voluntary context switches
+     86767  involuntary context switches
