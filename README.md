@@ -342,7 +342,7 @@ Chicago:
 | libgeoda | 999 | 246.2421875 Mb |
 | pygeoda  | 999 | 295.59375 Mb |
 | pysal    | 999 | 1234.16015625 Mb |
-| rgeoda   | 999 | Mb |
+| rgeoda   | 999 | 657.7265625 Mb |
 | spdep    | 999 | 3443.359375 Mb |
 
 ## 2.2 Detailed Information:

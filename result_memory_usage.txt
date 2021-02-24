@@ -410,3 +410,35 @@ Weights creation took 3.2569642066955566 seconds
          0  signals received
        394  voluntary context switches
       3112  involuntary context switches
+
+/usr/bin/time -l Rscript perf_rgeoda.R ./data/Chicago_parcels_points.shp EstBuild 999 brutal-force 1
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+   user  system elapsed 
+  5.774   0.128   5.920 
+[1] "./data/Chicago_parcels_points.shp" "EstBuild"                         
+[3] "999"                               "brutal-force"                     
+[5] "1"                                
+   user  system elapsed 
+117.271   0.113 117.432 
+      130.09 real       129.42 user         0.52 sys
+ 689676288  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    201179  page reclaims
+       126  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         1  signals received
+       212  voluntary context switches
+      1939  involuntary context switches
