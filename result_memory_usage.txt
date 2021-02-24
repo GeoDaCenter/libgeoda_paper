@@ -298,3 +298,115 @@ In st_centroid.sfc(st_geometry(dt)) :
          1  signals received
         23  voluntary context switches
      86767  involuntary context switches
+
+ /usr/bin/time -l ./perf_libgeoda ./data/natregimes.shp HR60 complete
+Weights creation takes: 27 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 562.667 milliseconds.
+        1.86 real         1.79 user         0.05 sys
+  12410880  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+      2968  page reclaims
+        76  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+         2  voluntary context switches
+        77  involuntary context switches
+xuns-black-pro:libgeoda_paper xun$ 
+
+ /usr/bin/time -l ./perf_libgeoda ./data/natregimes.shp HR60 complete
+Weights creation takes: 27 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 562.667 milliseconds.
+        1.86 real         1.79 user         0.05 sys
+  12410880  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+      2968  page reclaims
+        76  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+         2  voluntary context switches
+xuns-black-pro:libgeoda_paper xun$ /usr/bin/time -l ./perf_libgeoda ./data/NYC_Area2010_2data.shp CE01_02 complete
+Weights creation takes: 1209 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 28996.7 milliseconds.
+       88.96 real        88.76 user         0.17 sys
+ 274579456  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     69561  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+         3  voluntary context switches
+       626  involuntary context switches
+xuns-black-pro:libgeoda_paper xun$ /usr/bin/time -l ./perf_libgeoda ./data/us-sdoh-2014.shp ep_unem complete
+Weights creation takes: 915 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 17348.7 milliseconds.
+       54.73 real        54.08 user         0.62 sys
+ 375984128  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     91807  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+         3  voluntary context switches
+       514  involuntary context switches
+
+/usr/bin/time -l ./perf_libgeoda ./data/Chicago_parcels_points.shp EstBuild complete
+Weights creation takes: 3057 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 117637 milliseconds.
+      356.81 real       356.47 user         0.30 sys
+ 258203648  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     63310  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+         0  voluntary context switches
+      2199  involuntary context switches
+
+/usr/bin/time -l python perf_pygeoda.py ./data/Chicago_parcels_points.shp EstBuild 999 brutal-force 1
+Weights creation took 3.2569642066955566 seconds
+./data/Chicago_parcels_points.shp 999 brutal-force 1: 132.47705817222595 seconds
+      137.54 real       138.10 user         0.59 sys
+ 309952512  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     87477  page reclaims
+       975  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+         0  messages sent
+         0  messages received
+         0  signals received
+       394  voluntary context switches
+      3112  involuntary context switches
