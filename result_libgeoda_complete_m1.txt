@@ -1,0 +1,44 @@
+Test libgeoda C++ local moran-complete with Natregimes
+Weights creation takes: 12 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 147 milliseconds.
+perm: 999 threads: 8 avg of 3 runs: 32.6667 milliseconds.
+perm: 999 threads: 16 avg of 3 runs: 34.6667 milliseconds.
+perm: 9999 threads: 1 avg of 3 runs: 1541.33 milliseconds.
+perm: 9999 threads: 8 avg of 3 runs: 368.333 milliseconds.
+perm: 9999 threads: 16 avg of 3 runs: 336 milliseconds.
+perm: 99999 threads: 1 avg of 3 runs: 14999 milliseconds.
+perm: 99999 threads: 8 avg of 3 runs: 3545.33 milliseconds.
+perm: 99999 threads: 16 avg of 3 runs: 3266.33 milliseconds.
+Test libgeoda C++ local moran with SDOH
+Weights creation takes: 437 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 4075.67 milliseconds.
+perm: 999 threads: 8 avg of 3 runs: 932.667 milliseconds.
+perm: 999 threads: 16 avg of 3 runs: 915 milliseconds.
+perm: 9999 threads: 1 avg of 3 runs: 40253.7 milliseconds.
+perm: 9999 threads: 8 avg of 3 runs: 9521.33 milliseconds.
+perm: 9999 threads: 16 avg of 3 runs: 9611.33 milliseconds.
+perm: 99999 threads: 1 avg of 3 runs: 406263 milliseconds.
+perm: 99999 threads: 8 avg of 3 runs: 102395 milliseconds.
+perm: 99999 threads: 16 avg of 3 runs: 98185 milliseconds.
+Test libgeoda C++ local moran-complete with NYC
+Weights creation takes: 574 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 7778.67 milliseconds.
+perm: 999 threads: 8 avg of 3 runs: 1879.33 milliseconds.
+perm: 999 threads: 16 avg of 3 runs: 1865.33 milliseconds.
+perm: 9999 threads: 1 avg of 3 runs: 78045.7 milliseconds.
+perm: 9999 threads: 8 avg of 3 runs: 19952 milliseconds.
+perm: 9999 threads: 16 avg of 3 runs: 19338.3 milliseconds.
+perm: 99999 threads: 1 avg of 3 runs: 802617 milliseconds.
+perm: 99999 threads: 8 avg of 3 runs: 206218 milliseconds.
+perm: 99999 threads: 16 avg of 3 runs: 208955 milliseconds.
+Test libgeoda C++ local moran-complete with Chicago_Parcels
+Weights creation takes: 1749 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 25891.3 milliseconds.
+perm: 999 threads: 8 avg of 3 runs: 6698.33 milliseconds.
+perm: 999 threads: 16 avg of 3 runs: 6878.33 milliseconds.
+perm: 9999 threads: 1 avg of 3 runs: 252098 milliseconds.
+perm: 9999 threads: 8 avg of 3 runs: 71202.3 milliseconds.
+perm: 9999 threads: 16 avg of 3 runs: 74131.3 milliseconds.
+perm: 99999 threads: 1 avg of 3 runs: 2.54172e+06 milliseconds.
+perm: 99999 threads: 8 avg of 3 runs: 753725 milliseconds.
+perm: 99999 threads: 16 avg of 3 runs: 753249 milliseconds.
