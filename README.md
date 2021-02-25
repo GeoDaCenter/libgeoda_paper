@@ -219,7 +219,7 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 |------|--------------|-----------|----------|---------|--------|-------|-------|-----------------------|-----------------------|-------------------------|-----------------|------------------|----------------------|
 |Natregimes|999|0.06666666667|0.570333|0.5861863295|0.597|1.314|0.2019699415|0.04602972666|0.054|0.042|0.1605165799|0.147|0.023|
 |Natregimes|9999|0.4303333333|5.76967|5.894174417|5.90|9.22|1.366508245|0.4580373764|0.478|0.417|1.556330681|1.54133|0.234667|
-|Natregimes|99999|4.077333333|56.616|58.42296004|57.196|19.64209064|89.39866667|4.580973943|4.477666667|4.251|15.68434167|14.999|2.36767|
+|Natregimes|99999|4.077333333|56.616|58.42296004|57.196|89.39866667|19.64209064|4.580973943|4.477666667|4.251|15.68434167|14.999|2.36767|
 |US-SDOH|999|0.309|16.849|17.30434664|17.188|77.53933333|21.71543296|1.876623313|2.525|1.77233|4.108779351|4.07567|0.586|
 |US-SDOH|9999|2.897666667|166.898|172.4183534|174.760|383.189|63.2299273|18.74490062|19.428|17.8793|41.89048203|40.2537|5.677|
 |US-SDOH|99999|28.05333333|1675.58|1709.570349|1734.242|3465.897|569.366509|215.611668|248.4403333|177.241|426.1011527|406.263|58.2803|
@@ -231,8 +231,7 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 |Chicago|99999|52.83633333|10830.4|13514.23282|13189.34033|>5hours|3722.06271|1354.542644|1337.711333|1301.51|2826.268243|2541.72|355.573|
 
 <sup>4</sup>PySAL is running with Numba (version 0.52.0) by calling Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
-The Numba package will compile the python code into machine code when calling Moran_Local() the first time, and it takes extra 3-4 seconds which is not included in the testing results.
-The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes 12 CPU cores (specifically 12 CPU threads) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. 
+The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes 12 CPU cores (specifically 12 CPU threads) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. The Numba package will compile the python code into machine code when calling Moran_Local() the first time, and it takes extra 3-4 seconds which is not included in the testing results.
 
 ### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>5</sup>
 
