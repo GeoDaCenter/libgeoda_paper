@@ -183,3 +183,9 @@ Numba version installed: 0.52.0
 ./data/Chicago_parcels_points.shp 999 1: took 338.5173978805542 seconds
 ./data/Chicago_parcels_points.shp 999 1: took 334.85198307037354 seconds
 ./data/Chicago_parcels_points.shp 999 1: avg of 3 runs took 345.89150468508404 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 9999 1: took 535.7564451694489 seconds
+./data/Chicago_parcels_points.shp 9999 1: took 533.5145871639252 seconds
+./data/Chicago_parcels_points.shp 9999 1: took 525.2161259651184 seconds
+./data/Chicago_parcels_points.shp 9999 1: took 521.223876953125 seconds
+./data/Chicago_parcels_points.shp 9999 1: avg of 3 runs took 526.6515300273895 seconds
