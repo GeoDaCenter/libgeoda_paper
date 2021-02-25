@@ -231,7 +231,7 @@ See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0Nl
 |Chicago|99999|52.83633333|10830.4|13514.23282|13189.34033|>5hours|3722.06271|1354.542644|1337.711333|1301.51|2826.268243|2541.72|355.573|
 
 <sup>4</sup>PySAL is running with Numba (version 0.52.0) by calling Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
-The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes 12 CPU cores (specifically 12 CPU threads) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. The Numba package will compile the python code into machine code when calling Moran_Local() the first time, and it takes extra 3-4 seconds which is not included in the testing results.
+The n_jobs=1 parameter is used to explicitly set not using multi-threading on the function. However, the Moran_Local() function still takes 12 CPU cores (specifically 1200% CPU usage) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. The Numba package will compile the python code into machine code when calling Moran_Local() the first time, and it takes extra 3-4 seconds which is not included in the testing results.
 
 ### 2.1.2 Using 4 CPU cores or 8 CPU threads (hyper-threading)<sup>5</sup>
 
@@ -414,14 +414,6 @@ result_pygeoda_complete_3.txt
 | 999  |0.5763969421386719 |0.48716282844543457 |0.47518301010131836 |
 | 9999  | 2.856947898864746  |2.2893621921539307 |2.289219856262207 |
 | 99999  | 32.94658708572388 |26.458045959472656 |25.723090887069702 |
-
-* PySAL/ESDA with Numba cx
-
-| Permutations | Single Thread | 8 CPU Threads | 16 CPU Threads | 
-|--------------|---------------|---------------|----------------|
-| 999    | 4.20540714263916  | 8.051929950714111  | 11.0227689743042  | 
-| 9999  | 5.640074968338013 | 9.817737817764282 | 12.505669832229614 | 
-| 99999 | ??? | | | 
 
 * rgeoda (permutation_method="complete")
 
