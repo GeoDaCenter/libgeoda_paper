@@ -7,8 +7,8 @@ import time
 
 """
 Usage: 
-python3 perf_pysal.py FILE_PATH VARIABLE_NAME PERMUTATIONS CPU_THREADS
-python3 perf_pysal.py ./data/natregimes.shp HR60 999 1
+python3 perf_pysal_numba.py FILE_PATH VARIABLE_NAME PERMUTATIONS CPU_THREADS
+python3 perf_pysal_numba.py ./data/natregimes.shp HR60 999 1
 """
 data_path = sys.argv[1]
 var_name = sys.argv[2]
@@ -34,17 +34,21 @@ else:
         x = df_noi[var_name]
 w.transform = 'r'
 
-# trigger numba to compile
-test_ds = lps.examples.load_example("Nepal")
-test = gpd.read_file(lps.examples.get_path("nepal.shp"))
-c_w = lps.weights.Queen.from_dataframe(test)
-c_w.transform = 'r'
-esda.moran.Moran_Local(test["pcinc"], c_w, permutations=2, n_jobs=cpu_threads)
+try:
+    import numba
+    print(f"Numba version installed: {numba.__version__}")
+except:
+    print("Numba not installed")
 
-
+times = []
 # function to execute and time
-start_time = time.time()
-li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads)
-run_time = time.time() - start_time
+for i in range(4):
+    start_time = time.time()
+    li = esda.moran.Moran_Local(x, w, permutations=perms, n_jobs=cpu_threads, keep_simulations=False)
+    run_time = time.time() - start_time
+    print("{0} {1} {2}: took {3} seconds".format(data_path, perms, cpu_threads, run_time))
+    # first run to trigger numba to compile
+    if i > 0:
+        times.append(run_time)
 
-print("{0} {1} {2}: {3} seconds".format(data_path, perms, cpu_threads, run_time))
+print("{0} {1} {2}: avg of 3 runs took {3} seconds".format(data_path, perms, cpu_threads, sum(times)/3.0))

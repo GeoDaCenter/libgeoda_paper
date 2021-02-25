@@ -1,0 +1,77 @@
+Test pysal local moran with Natregimes with Numba
+Numba version installed: 0.52.0
+./data/natregimes.shp 999 1: took 3.917804002761841 seconds
+./data/natregimes.shp 999 1: took 0.18482589721679688 seconds
+./data/natregimes.shp 999 1: took 0.17122507095336914 seconds
+./data/natregimes.shp 999 1: took 0.24985885620117188 seconds
+./data/natregimes.shp 999 1: avg of 3 runs took 0.20196994145711264 seconds
+Numba version installed: 0.52.0
+./data/natregimes.shp 9999 1: took 5.2215049266815186 seconds
+./data/natregimes.shp 9999 1: took 1.3825998306274414 seconds
+./data/natregimes.shp 9999 1: took 1.3194007873535156 seconds
+./data/natregimes.shp 9999 1: took 1.397524118423462 seconds
+./data/natregimes.shp 9999 1: avg of 3 runs took 1.3665082454681396 seconds
+Numba version installed: 0.52.0
+./data/natregimes.shp 99999 1: took 23.77450919151306 seconds
+./data/natregimes.shp 99999 1: took 19.814448833465576 seconds
+./data/natregimes.shp 99999 1: took 19.581603050231934 seconds
+./data/natregimes.shp 99999 1: took 19.53022003173828 seconds
+./data/natregimes.shp 99999 1: avg of 3 runs took 19.642090638478596 seconds
+Test pysal local moran with SDOH with Numba
+Numba version installed: 0.52.0
+./data/us-sdoh-2014.shp 999 1: took 25.40302276611328 seconds
+./data/us-sdoh-2014.shp 999 1: took 21.846466064453125 seconds
+./data/us-sdoh-2014.shp 999 1: took 21.640183925628662 seconds
+./data/us-sdoh-2014.shp 999 1: took 21.659648895263672 seconds
+./data/us-sdoh-2014.shp 999 1: avg of 3 runs took 21.71543296178182 seconds
+Numba version installed: 0.52.0
+./data/us-sdoh-2014.shp 9999 1: took 67.90957999229431 seconds
+./data/us-sdoh-2014.shp 9999 1: took 64.08732581138611 seconds
+./data/us-sdoh-2014.shp 9999 1: took 62.16863203048706 seconds
+./data/us-sdoh-2014.shp 9999 1: took 63.43382406234741 seconds
+./data/us-sdoh-2014.shp 9999 1: avg of 3 runs took 63.22992730140686 seconds
+Numba version installed: 0.52.0
+./data/us-sdoh-2014.shp 99999 1: took 560.0656802654266 seconds
+./data/us-sdoh-2014.shp 99999 1: took 561.2734479904175 seconds
+./data/us-sdoh-2014.shp 99999 1: took 571.4613649845123 seconds
+./data/us-sdoh-2014.shp 99999 1: took 575.3647141456604 seconds
+./data/us-sdoh-2014.shp 99999 1: avg of 3 runs took 569.3665090401968 seconds
+Test pysal local moran with NYC with Numba
+Numba version installed: 0.52.0
+./data/NYC_Area2010_2data.shp 999 1: took 50.34994387626648 seconds
+./data/NYC_Area2010_2data.shp 999 1: took 46.65758419036865 seconds
+./data/NYC_Area2010_2data.shp 999 1: took 47.4833550453186 seconds
+./data/NYC_Area2010_2data.shp 999 1: took 47.33995795249939 seconds
+./data/NYC_Area2010_2data.shp 999 1: avg of 3 runs took 47.16029906272888 seconds
+Numba version installed: 0.52.0
+./data/NYC_Area2010_2data.shp 9999 1: took 146.24396681785583 seconds
+./data/NYC_Area2010_2data.shp 9999 1: took 143.65979599952698 seconds
+./data/NYC_Area2010_2data.shp 9999 1: took 144.11209177970886 seconds
+./data/NYC_Area2010_2data.shp 9999 1: took 143.0196259021759 seconds
+./data/NYC_Area2010_2data.shp 9999 1: avg of 3 runs took 143.59717122713724 seconds
+Numba version installed: 0.52.0
+./data/NYC_Area2010_2data.shp 99999 1: took 1058.8323521614075 seconds
+./data/NYC_Area2010_2data.shp 99999 1: took 1049.335648059845 seconds
+./data/NYC_Area2010_2data.shp 99999 1: took 1062.0861711502075 seconds
+./data/NYC_Area2010_2data.shp 99999 1: took 1075.9556050300598 seconds
+./data/NYC_Area2010_2data.shp 99999 1: avg of 3 runs took 1062.4591414133708 seconds
+Test pysal local moran with Chicago_Parcels with Numba
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 999 1: took 509.14521980285645 seconds
+./data/Chicago_parcels_points.shp 999 1: took 513.8598320484161 seconds
+./data/Chicago_parcels_points.shp 999 1: took 521.9401619434357 seconds
+./data/Chicago_parcels_points.shp 999 1: took 541.7572429180145 seconds
+./data/Chicago_parcels_points.shp 999 1: avg of 3 runs took 525.8524123032888 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 9999 1: took 695.8119812011719 seconds
+./data/Chicago_parcels_points.shp 9999 1: took 719.9724118709564 seconds
+./data/Chicago_parcels_points.shp 9999 1: took 719.4610087871552 seconds
+./data/Chicago_parcels_points.shp 9999 1: took 709.1343929767609 seconds
+./data/Chicago_parcels_points.shp 9999 1: avg of 3 runs took 716.1892712116241 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 99999 1: took 3805.876065015793 seconds
+./data/Chicago_parcels_points.shp 99999 1: took 3744.4564521312714 seconds
+./data/Chicago_parcels_points.shp 99999 1: took 3756.4923779964447 seconds
+./data/Chicago_parcels_points.shp 99999 1: took 3665.2392988204956 seconds
+./data/Chicago_parcels_points.shp 99999 1: avg of 3 runs took 3722.062709649404 seconds
+
