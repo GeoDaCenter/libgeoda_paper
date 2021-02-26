@@ -104,14 +104,14 @@ The number of permutations ranges from 999 (the default in GeoDa) to 9,999 and 9
 * NOTE: permutation_method="complete" vs "lookup-table"
 
 In "complete" permutation method, for example with 999 permutations,  each observation will find 999 groups of random neighbors which are used to compute a pseudo-p value.
-Therefore, the total number of permutation computation is: sum(999 x nbr_i)
+Therefore, the total number of permutation computation is: ~sum(999 x nbrs_i)
 
 In "lookup-table" permutation method, for example with 999 permutations, a 999 groups of random neighbors (size = max_neighbors) 
 from a pool of (N-1) indices will be created as a "lookup-table". Then, each observation will use this "lookup-table" to 
-compute a pseudo-p value. The (N-1) indices in the "lookup-table" will be reordered by removing the index of current observation,
+compute a pseudo-p value. The (N-1) indices in the "lookup-table" will be "reordered" by removing the index of current observation,
 so to create a "conditional" permutation test. Therefore, the total number of permutation computation is: 999 x max_neighbors
 
-The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeoda/rgeoda (version 0.0.8 with parameter: permutation_method="lookup-table").
+The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and libgeoda/pygeoda/rgeoda (version 0.0.8 with parameter: permutation_method="lookup-table").
 
 In this test, the weights creation function is also tested among libgeoda, pygeoda, rgeoda, pysal and spdep.
  
@@ -309,7 +309,7 @@ Natregimes:
 | rgeoda   | 99999 | 155.4882813 Mb |
 | spdep    | 99999 | 1314.460938 Mb |
 
-<sup>6</sup>Since spdep uses multiple-processing for parallization, 
+<sup>6</sup>Since spdep and pysal+numba uses multiple-processing for parallization, 
 each spawn process will have a separated (copied) memeory space. For example, when running the spdep with 4 CPU cores, the total peak memory usage could be 4 x ~460Mb = ~1840Mb.
 
 US-SDOH:
