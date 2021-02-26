@@ -1,15 +1,3 @@
-Numba version installed: 0.52.0
-./data/NYC_Area2010_2data.shp 99999 1: took 1058.8323521614075 seconds
-./data/NYC_Area2010_2data.shp 99999 1: took 1049.335648059845 seconds
-./data/NYC_Area2010_2data.shp 99999 1: took 1062.0861711502075 seconds
-./data/NYC_Area2010_2data.shp 99999 1: took 1075.9556050300598 seconds
-./data/NYC_Area2010_2data.shp 99999 1: avg of 3 runs took 1062.4591414133708 seconds
-Numba version installed: 0.52.0
-./data/Chicago_parcels_points.shp 99999 1: took 3805.876065015793 seconds
-./data/Chicago_parcels_points.shp 99999 1: took 3744.4564521312714 seconds
-./data/Chicago_parcels_points.shp 99999 1: took 3756.4923779964447 seconds
-./data/Chicago_parcels_points.shp 99999 1: took 3665.2392988204956 seconds
-./data/Chicago_parcels_points.shp 99999 1: avg of 3 runs took 3722.062709649404 seconds
 export OPENBLAS_NUM_THREADS=1
 Test pysal local moran with Natregimes with Numba
 Numba version installed: 0.52.0
