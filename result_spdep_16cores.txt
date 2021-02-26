@@ -1,0 +1,97 @@
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+[1] "weights creation"
+   user  system elapsed 
+  2.600   0.106   2.708 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "16-cores"             
+   user  system elapsed 
+  1.820   0.921   0.363 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "16-cores"             
+   user  system elapsed 
+  1.773   0.874   0.340 
+[1] "./data/natregimes.shp" "HR60"                  "999"                  
+[4] "16-cores"             
+   user  system elapsed 
+  1.722   0.761   0.326 
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "16-cores"             
+   user  system elapsed 
+ 12.022   2.791   1.110 
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "16-cores"             
+   user  system elapsed 
+ 12.572   2.848   1.152 
+[1] "./data/natregimes.shp" "HR60"                  "9999"                 
+[4] "16-cores"             
+   user  system elapsed 
+ 12.136   2.590   1.118 
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "16-cores"             
+   user  system elapsed 
+130.206  17.337   9.937 
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "16-cores"             
+   user  system elapsed 
+129.644  17.273   9.914 
+[1] "./data/natregimes.shp" "HR60"                  "99999"                
+[4] "16-cores"             
+   user  system elapsed 
+129.990  17.831   9.941 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+[1] "weights creation"
+   user  system elapsed 
+730.980 108.172 839.531 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "16-cores"               
+   user  system elapsed 
+109.664  58.012  14.493 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "16-cores"               
+   user  system elapsed 
+104.889  45.993  12.620 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "999"                     "16-cores"               
+   user  system elapsed 
+103.754  48.666  12.970 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "16-cores"               
+   user  system elapsed 
+553.645  55.234  41.923 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "16-cores"               
+   user  system elapsed 
+550.841  50.978  41.204 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "9999"                    "16-cores"               
+   user  system elapsed 
+553.263  55.233  41.876 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "16-cores"               
+    user   system  elapsed 
+5064.967  215.015  343.388 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "16-cores"               
+    user   system  elapsed 
+5106.407  213.346  345.438 
+[1] "./data/us-sdoh-2014.shp" "ep_unem"                
+[3] "99999"                   "16-cores"               
+    user   system  elapsed 
+5014.665   64.409  331.200 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+[1] "weights creation"

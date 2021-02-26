@@ -189,3 +189,45 @@ Numba version installed: 0.52.0
 ./data/Chicago_parcels_points.shp 9999 1: took 525.2161259651184 seconds
 ./data/Chicago_parcels_points.shp 9999 1: took 521.223876953125 seconds
 ./data/Chicago_parcels_points.shp 9999 1: avg of 3 runs took 526.6515300273895 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 99999 1: took 3167.6618690490723 seconds
+./data/Chicago_parcels_points.shp 99999 1: took 3068.4751739501953 seconds
+./data/Chicago_parcels_points.shp 99999 1: took 3031.364897966385 seconds
+./data/Chicago_parcels_points.shp 99999 1: took 3303.8981239795685 seconds
+./data/Chicago_parcels_points.shp 99999 1: avg of 3 runs took 3134.5793986320496 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 999 8: took 119.65701818466187 seconds
+./data/Chicago_parcels_points.shp 999 8: took 115.01048302650452 seconds
+./data/Chicago_parcels_points.shp 999 8: took 116.30703687667847 seconds
+./data/Chicago_parcels_points.shp 999 8: took 117.48126482963562 seconds
+./data/Chicago_parcels_points.shp 999 8: avg of 3 runs took 116.2662615776062 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 9999 8: took 268.2430639266968 seconds
+./data/Chicago_parcels_points.shp 9999 8: took 260.1949281692505 seconds
+./data/Chicago_parcels_points.shp 9999 8: took 262.4033977985382 seconds
+./data/Chicago_parcels_points.shp 9999 8: took 257.20090889930725 seconds
+./data/Chicago_parcels_points.shp 9999 8: avg of 3 runs took 259.933078289032 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 99999 8: took 1512.686189174652 seconds
+./data/Chicago_parcels_points.shp 99999 8: took 1508.185928106308 seconds
+./data/Chicago_parcels_points.shp 99999 8: took 1515.6619420051575 seconds
+./data/Chicago_parcels_points.shp 99999 8: took 1509.8755869865417 seconds
+./data/Chicago_parcels_points.shp 99999 8: avg of 3 runs took 1511.2411523660023 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 999 16: took 120.92893695831299 seconds
+./data/Chicago_parcels_points.shp 999 16: took 115.0222978591919 seconds
+./data/Chicago_parcels_points.shp 999 16: took 116.59808206558228 seconds
+./data/Chicago_parcels_points.shp 999 16: took 114.4118242263794 seconds
+./data/Chicago_parcels_points.shp 999 16: avg of 3 runs took 115.34406805038452 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 9999 16: took 262.89400696754456 seconds
+./data/Chicago_parcels_points.shp 9999 16: took 255.12273406982422 seconds
+./data/Chicago_parcels_points.shp 9999 16: took 251.3152940273285 seconds
+./data/Chicago_parcels_points.shp 9999 16: took 245.84433102607727 seconds
+./data/Chicago_parcels_points.shp 9999 16: avg of 3 runs took 250.76078637441 seconds
+Numba version installed: 0.52.0
+./data/Chicago_parcels_points.shp 99999 16: took 1595.5829310417175 seconds
+./data/Chicago_parcels_points.shp 99999 16: took 1611.703912973404 seconds
+./data/Chicago_parcels_points.shp 99999 16: took 1588.3096680641174 seconds
+./data/Chicago_parcels_points.shp 99999 16: took 1583.7380690574646 seconds
+./data/Chicago_parcels_points.shp 99999 16: avg of 3 runs took 1594.5838833649952 seconds
