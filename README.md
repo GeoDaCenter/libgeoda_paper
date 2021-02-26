@@ -252,7 +252,7 @@ You can find the result with or without `OPENBLAS_NUM_THREADS` setting in the go
 |Chicago|9999|5.342666667|159.269|161.4538433|164.331|560.1833333|259.9330783|19.51306844|20.197|19.4687|72.33786313|71.2023|8.17933|
 |Chicago|99999|52.83633333|1589.36|1629.589604|1640.682|3651.002333|1511.241152|191.0071477|193.1073333|190.031|809.6136088|753.725|85.9223|
 
-<sup>5</sup>On this test machine, each physical CPU core has 2 CPU threads (logical cores). Therefore, there are 24 logical CPU cores, and the CPU usage could be 2400%. The spdep and pysal+numba do multi-processing for parallalization.  For testing spdep, the function localmoran_perm() is called after setting up using 8/16 CPU logical cores (or 800%/1600% CPU usage):
+<sup>5</sup>On this test machine, each physical CPU core has 2 CPU threads (logical CPU cores). Therefore, there are total of 24 logical CPU cores, and the maximum CPU usage could be 2400%. The spdep and pysal+numba do multi-processing for parallalization.  For testing spdep, the function localmoran_perm() is called after setting up using 8/16 CPU logical cores (or 800%/1600% CPU usage):
 ```R
 # using 8 CPU cores
 set.coresOption(8) 
@@ -289,7 +289,7 @@ For testing pysal+numba, the parameter `n_jobs=8` and `n_jobs=16` are used to us
 
 
 
-NOTE: The first-time call of queen_weights() or knn_weights() includes a procedure to convert sf geometry objects (wkb) to an internally used object of rgeoda. 
+NOTE: In rgeoda, the first-time call of queen_weights() or knn_weights() includes a procedure to convert sf geometry objects (wkb) to an internally used object of rgeoda. 
 
 
 ### 2.1.5 Memory Usage
@@ -410,14 +410,6 @@ result_pygeoda_complete_3.txt
 | 999    |0.04360795021057129 | 0.00798487663269043| 0.006453990936279297| 
 | 9999  |0.43384885787963867 |0.06716704368591309|0.04981708526611328|
 | 99999 |4.340112924575806 |0.6552529335021973|0.46471595764160156|
-
-* PySAL/ESDA without Numba (No multi-threading)
-
-| Permutations | 1st run  | 2nd run | 3rd run |
-|--------------|----------|---------|---------|
-| 999  |0.5763969421386719 |0.48716282844543457 |0.47518301010131836 |
-| 9999  | 2.856947898864746  |2.2893621921539307 |2.289219856262207 |
-| 99999  | 32.94658708572388 |26.458045959472656 |25.723090887069702 |
 
 * rgeoda (permutation_method="complete")
 
@@ -659,17 +651,6 @@ result_pygeoda_complete_3.txt
 |99999| 345.15664529800415|53.35491728782654 |  38.20850610733032|
 
 
-* PySAL/ESDA 
-
-result_pysal_1.txt  result_pysal_2.txt result_pysal_3.txt
-
-| Permutations | 1st run  | 2nd run | 3rd run |
-|--------------|----------|---------|---------|
-| 999  |47.61773729324341 |46.0396671295166 |47.36133885383606 |
-| 9999  | 125.48144698143005 |132.58697986602783 |129.3332269191742 |
-| 99999  | 1302.5638799667358 |1396.2914578914642|1359.767255783081 |
-
-
 * rgeoda (permutation_method="complete")
 
 result_rgeoda_3runs_noChicago.txt
@@ -782,13 +763,6 @@ result_pygeoda_lookup_2.txt
 |9999|131.80281591415405 | 19.515313148498535| 15.37784194946289|
 |99999| 1308.7933557033539| 191.1084270477295| 146.57098078727722|
 
-* PySAL/ESDA 
-
-| Permutations | 1st run  | 2nd run | 3rd run |
-|--------------|----------|---------|---------|
-| 999  |  488.52151322364807 | 421.1374022960663| 505.58254313468933|
-| 9999  | 727.2412669658661 | 646.2213499546051| 789.2126560211182|
-| 99999  | 3937.0313351154327 | 5037.343729972839| 4396.347628116608 |
 
 * rgeoda (permutation_method="complete")
 
