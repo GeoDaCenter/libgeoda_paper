@@ -215,23 +215,23 @@ See the details in Google spreadsheet: https://docs.google.com/spreadsheets/d/18
 
 ### 2.1.1 No parallelization<sup>4</sup>
 
-| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | pysal | pysal+numba |pygeoda (lookup-table) | rgeoda (lookup-table) | libgeoda (lookup-table) | pygeoda-AppleM1 | libgeoda-AppleM1 | libgeoda-M1 (lookup) |
-|------|--------------|-----------|----------|---------|--------|-------|-------|-------------|-----------------------|-----------------------|-------------------------|-----------------|------------------|----------------------|
-|Natregimes|999|0.06666666667|0.570333|0.5861863295|0.597|1.314|0.4302792549|0.1495076815|0.04602972666|0.054|0.042|0.1605165799|0.147|0.023|
-|Natregimes|9999|0.4303333333|5.76967|5.894174417|5.90|9.22|2.089783351|1.007939339|0.4580373764|0.478|0.417|1.556330681|1.54133|0.234667|
-|Natregimes|99999|4.077333333|56.616|58.42296004|57.196|89.39866667|22.22039835|12.81152924|4.580973943|4.477666667|4.251|15.68434167|14.999|2.36767|
-|US-SDOH|999|0.309|16.849|17.30434664|17.188|77.53933333|19.70310203|17.33241868|1.876623313|2.525|1.77233|4.108779351|4.07567|0.586|
-|US-SDOH|9999|2.897666667|166.898|172.4183534|174.760|383.189|57.66912961|43.98250111|18.74490062|19.428|17.8793|41.89048203|40.2537|5.677|
-|US-SDOH|99999|28.05333333|1675.58|1709.570349|1734.242|3465.897|585.8508159|501.7582227|215.611668|248.4403333|177.241|426.1011527|406.263|58.2803|
-|NYC|999|1.753666667|27.6187|28.45079025|28.814|138.8043333|38.86428777|37.19531957|3.535606623|3.68|3.22467|8.06589365|7.77867|0.989667|
-|NYC|9999|17.41733333|273.915|282.0992463|285.253|502.8656667|102.50761|93.65690366|34.31966758|34.90566667|32.0497|80.29664334|78.0457|9.636|
-|NYC|99999|50.59|2782.88|2814.519481|2850.638|4275.771333|1181.500536|903.7217659|453.8002907|492.5203333|337.156|838.5820987|802.617|156.24|
-|Chicago|999|0.8403333333|108.819|113.7595565|113.233|1339.121333|324.180121|345.8915047|13.85470406|14.99833333|13.3857|27.22306705|25.8913|3.84467|
-|Chicago|9999|5.342666667|1088.7|1153.4873|1137.660|3503.14|561.5777951|526.65153|134.816866|134.4793333|129.789|276.7192132|252.098|35.5853|
-|Chicago|99999|52.83633333|10830.4|13514.23282|13189.34033|>5hours|3201.671933|3134.579399|1354.542644|1337.711333|1301.51|2826.268243|2541.72|355.573|
+| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | pysal+numba |pygeoda (lookup-table) | rgeoda (lookup-table) | libgeoda (lookup-table) | pygeoda-AppleM1 | libgeoda-AppleM1 | libgeoda-M1 (lookup) |
+|------|--------------|-----------|----------|---------|--------|-------|-------------|-----------------------|-----------------------|-------------------------|-----------------|------------------|----------------------|
+|Natregimes|999|0.06666666667|0.570333|0.5861863295|0.597|1.314|0.1495076815|0.04602972666|0.054|0.042|0.1605165799|0.147|0.023|
+|Natregimes|9999|0.4303333333|5.76967|5.894174417|5.90|9.22|1.007939339|0.4580373764|0.478|0.417|1.556330681|1.54133|0.234667|
+|Natregimes|99999|4.077333333|56.616|58.42296004|57.196|89.39866667|12.81152924|4.580973943|4.477666667|4.251|15.68434167|14.999|2.36767|
+|US-SDOH|999|0.309|16.849|17.30434664|17.188|77.53933333|17.33241868|1.876623313|2.525|1.77233|4.108779351|4.07567|0.586|
+|US-SDOH|9999|2.897666667|166.898|172.4183534|174.760|383.189|43.98250111|18.74490062|19.428|17.8793|41.89048203|40.2537|5.677|
+|US-SDOH|99999|28.05333333|1675.58|1709.570349|1734.242|3465.897|501.7582227|215.611668|248.4403333|177.241|426.1011527|406.263|58.2803|
+|NYC|999|1.753666667|27.6187|28.45079025|28.814|138.8043333|37.19531957|3.535606623|3.68|3.22467|8.06589365|7.77867|0.989667|
+|NYC|9999|17.41733333|273.915|282.0992463|285.253|502.8656667|93.65690366|34.31966758|34.90566667|32.0497|80.29664334|78.0457|9.636|
+|NYC|99999|50.59|2782.88|2814.519481|2850.638|4275.771333|903.7217659|453.8002907|492.5203333|337.156|838.5820987|802.617|156.24|
+|Chicago|999|0.8403333333|108.819|113.7595565|113.233|1339.121333|345.8915047|13.85470406|14.99833333|13.3857|27.22306705|25.8913|3.84467|
+|Chicago|9999|5.342666667|1088.7|1153.4873|1137.660|3503.14|526.65153|134.816866|134.4793333|129.789|276.7192132|252.098|35.5853|
+|Chicago|99999|52.83633333|10830.4|13514.23282|13189.34033|>5hours|3134.579399|1354.542644|1337.711333|1301.51|2826.268243|2541.72|355.573|
 
-<sup>4</sup>pysal has been tested by calling Moran_Local() function with parameters: keep_simulations=False and n_jobs=1.
-The n_jobs=1 parameter is used to explicitly set not doing parallel run of the function. However, the Moran_Local() function still uses 12 CPU cores (specifically 1200% CPU usage) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. To avoid this issue, additional environment setting `export OPENBLAS_NUM_THREADS=1` needs to be set before running the tests.
+<sup>4</sup>The function Moran_Local() in pysal has been tested with parameters: keep_simulations=False and n_jobs=1.
+The n_jobs=1 parameter is used to explicitly set not doing parallel run. However, the Moran_Local() function still uses 12 CPU cores (specifically 1200% CPU usage) to run its sub-function `_prepare_univariate()` in parallel on the testing machine. To avoid this issue, additional environment setting `export OPENBLAS_NUM_THREADS=1` needs to be set before running the tests.
 You can find the result with or without `OPENBLAS_NUM_THREADS` setting in the google spreadsheet.
 `pysal+numba` has been tested using pysal with Numba (version 0.52.0). pysal uses Numba package to compile the python code into fast machine code when calling Moran_Local() the first time. The compilation takes extra 3-4 seconds, which is not included in the testing results. pysal+numba also provides a parallelized Moran_Local() function using multi-processing.
 
