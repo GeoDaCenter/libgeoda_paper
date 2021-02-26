@@ -113,7 +113,7 @@ so to create a "conditional" permutation test. Therefore, the total number of pe
 
 The "lookup-table" method is implemented in pysal/esda (version 2.3.6) and pygeoda/rgeoda (version 0.0.8 with parameter: permutation_method="lookup-table").
 
-In this test, the weights creation function is also tested among pygeoda, rgeoda, pysal and spdep
+In this test, the weights creation function is also tested among libgeoda, pygeoda, rgeoda, pysal and spdep.
  
 | Software | Test Function |
 |----------|---------------|
@@ -211,7 +211,7 @@ The testing code `perf_local_moran.cpp` for libgeoda C++ is compiled as a binary
 
 NOTE: for pygeoda(arm64) on Apple M1 chip, there are results only for "no parallelization" and "using 8 CPU threads" since Apple M1 chip has 8 total logical cores (4 performance and 4 efficiency).
 
-See the spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y/edit?usp=sharing
+See the details in Google spreadsheet: https://docs.google.com/spreadsheets/d/18zsN6JMGKCObf7DW0NlVQUJYEE4Qt3WTVkYuQ0pNZ-Y
 
 ### 2.1.1 No parallelization<sup>4</sup>
 
@@ -252,14 +252,7 @@ You can find the result with or without `OPENBLAS_NUM_THREADS` setting in the go
 |Chicago|9999|5.342666667|159.269|161.4538433|164.331|560.1833333|259.9330783|19.51306844|20.197|19.4687|72.33786313|71.2023|8.17933|
 |Chicago|99999|52.83633333|1589.36|1629.589604|1640.682|3651.002333|1511.241152|191.0071477|193.1073333|190.031|809.6136088|753.725|85.9223|
 
-<sup>5</sup>On this test machine, each physical CPU core has 2 CPU threads (logical CPU cores). Therefore, there are total of 24 logical CPU cores, and the maximum CPU usage could be 2400%. The spdep and pysal+numba do multi-processing for parallalization.  For testing spdep, the function localmoran_perm() is called after setting up using 8/16 CPU logical cores (or 800%/1600% CPU usage):
-```R
-# using 8 CPU cores
-set.coresOption(8) 
-# using 16 CPU cores
-set.coresOption(16) 
-``` 
-For testing pysal+numba, the parameter `n_jobs=8` and `n_jobs=16` are used to use 8/16 logical CPU cores.
+<sup>5</sup>On this test machine, each physical CPU core has 2 CPU threads (logical CPU cores). Therefore, there are total of 24 logical CPU cores, and the maximum CPU usage could be 2400%. The spdep and pysal+numba do multi-processing for parallalization.  For testing spdep, the function localmoran_perm() is called after setting up using 8/16 CPU logical cores (or 800%/1600% CPU usage): `set.coresOption(8)` or `set.coresOption(16)`. For testing pysal+numba, the parameter `n_jobs=8` and `n_jobs=16` are used to use 8/16 logical CPU cores.
 
 ### 2.1.3 Using 16 logical CPU cores or CPU threads 
 
@@ -271,12 +264,12 @@ For testing pysal+numba, the parameter `n_jobs=8` and `n_jobs=16` are used to us
 |US-SDOH|999|0.309|1.77233|1.726169745|1.860|13.361|4.298636675|0.2171577613|0.3186666667|0.202|
 |US-SDOH|9999|2.897666667|17.4743|16.95118411|17.079|41.66766667|20.97272158|2.014290571|2.120666667|1.90467|
 |US-SDOH|99999|28.05333333|166.635|165.9426964|166.148|340.0086667|204.9198567|20.96293465|21.02633333|19.369|
-|NYC|999|1.753666667|2.97567|2.897502263|3.083||13.86122473|0.3977809747|0.5156666667|0.377|
-|NYC|9999|17.41733333|28.3143|28.33021959|28.872||43.93848205|3.816352606|3.964333333|3.55733|
-|NYC|99999|50.59|289.036|280.0743279|282.211||365.8231714|42.481|42.481|38.2043|
-|Chicago|999|0.8403333333|11.6433|11.80314898|11.701||115.3440681|1.847482602|2.009|1.80967|
-|Chicago|9999|5.342666667|109.078|113.620623|111.078||250.7607864|15.56285644|15.737|15.251|
-|Chicago|99999|52.83633333|1100.37|1131.008971|1175.597333||1594.583883|152.6243389|149.5633333|149.441|
+|NYC|999|1.753666667|2.97567|2.897502263|3.083|23.62766667|13.86122473|0.3977809747|0.5156666667|0.377|
+|NYC|9999|17.41733333|28.3143|28.33021959|28.872|60.51|43.93848205|3.816352606|3.964333333|3.55733|
+|NYC|99999|50.59|289.036|280.0743279|282.211|417.348|365.8231714|42.481|42.481|38.2043|
+|Chicago|999|0.8403333333|11.6433|11.80314898|11.701|164.3243333|115.3440681|1.847482602|2.009|1.80967|
+|Chicago|9999|5.342666667|109.078|113.620623|111.078|331.2663333|250.7607864|15.56285644|15.737|15.251|
+|Chicago|99999|52.83633333|1100.37|1131.008971|1175.597333|2219.241|1594.583883|152.6243389|149.5633333|149.441|
 
 ### 2.1.4 Weights Creation
 
