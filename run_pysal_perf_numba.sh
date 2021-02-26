@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-python perf_pysal_numba.py ./data/NYC_Area2010_2data.shp CE01_02 99999 1
-python perf_pysal_numba.py ./data/Chicago_parcels_points.shp EstBuild 99999 1
 echo "export OPENBLAS_NUM_THREADS=1"
 export OPENBLAS_NUM_THREADS=1
 echo "Test pysal local moran with Natregimes with Numba"
