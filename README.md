@@ -53,9 +53,10 @@ chi = pygeoda.open("./data/us-sdoh-2014-chi_utm.shp")
 
 # get data from variables:"1_SES", "2_MOB", "3_URB","4_MICA"
 v = ("1_SES", "2_MOB", "3_URB","4_MICA")
+df = [chi.GetRealCol(i) for i in v]
 
 # apply neighbor match test with 8 nearest neighbors
-chsdoh = pygeoda.neighbor_match_test(chi, v, 8)
+chsdoh = pygeoda.neighbor_match_test(chi, df, 8)
 
 print(chsdoh)
 ```
@@ -74,10 +75,10 @@ The outpu:
 
 | Name | Alias | # observations | variable |
 |------|-------|----------------|----------|
-|U.S. counties (natregimes.shp)| Natregimes | 3,085 (.shp 1.5MB)| HR60 (homicide rates for 1960) |
-|U.S. census tracts (us-sdoh-2014.shp) | US-SDOH | 72,329<sup>1</sup> (.shp 72.1MB) | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
-|New York City census blocks (NYC Area2010_2data.shp) | NYC_blocks | 108,332<sup>2</sup> (.shp 34.1MB)| CE01_02 (employed persons earning less than $1250 per month in 2002) |
-| Chicago parcels (Chicago_parcels_points.shp) | Chicago_parcels | 321,701<sup>3</sup> (.shp 9MB)| EstBuild (Board of Review final estimated market value of building from the prior tax year)|
+|U.S. Counties (natregimes.shp)| Natregimes | 3,085 (.shp 1.5MB)| HR60 (homicide rates for 1960) |
+|U.S. Tracts (us-sdoh-2014.shp) | US-SDOH | 72,329<sup>1</sup> (.shp 72.1MB) | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
+|New York City (NYC) Blocks (NYC Area2010_2data.shp) | NYC_blocks | 108,332<sup>2</sup> (.shp 34.1MB)| CE01_02 (employed persons earning less than $1250 per month in 2002) |
+| Chicago Parcels (Chicago_parcels_points.shp) | Chicago_parcels | 321,701<sup>3</sup> (.shp 9MB)| EstBuild (Board of Review final estimated market value of building from the prior tax year)|
 
 <sup>1</sup>The original dataset has 72,344 observations with 15 islands were removed.
 
