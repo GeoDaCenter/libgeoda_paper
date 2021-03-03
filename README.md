@@ -343,3 +343,35 @@ Chicago_parcels:
 | rgeoda   | 999 | 657.7265625 Mb |
 | spdep    | 999 | 3443.359375 Mb |
 
+## 3. Re-Run with updated spdep and projected Chicago dataset
+
+### 3.1 Project Chicago_parcels.shp using UTM 16N
+
+The Chicago_parcels.shp dataset uses latitude/longitude, which is unprojected. The kNN calcuations could be incorrect in a strict sense. Therefore, the Chicago_parcels_points.shp dataset has been projected using UTM 16N and was saved as Chicago_parcels_projected.shp. We re-run all the Chicago_parcels results for projected dataset.
+
+### 3.2 Re-Run weights creation with updated spdep and RANN
+
+The spdep package has a soft dependency "RANN" package (for spatial indexing) that is used to improve the performance of weights creation. However, the "RANN" package does not be installed automatically when installing spdep package. This means that the testing cases of weights creation using spdep above doesn't have "RANN" installed. Besides, the spdep package made some changes to improve the weights creation on 3/1/2021 (see https://github.com/r-spatial/spdep/commit/ef833665b28b48a2bcb724164eba7b55c15f5467). 
+
+Therefore, we re-run the weights creation tests for spdep by:
+1. manually install "RANN" package
+2. reinstall the latest spdep package (3/1/2021) 
+
+### 3.3 Re-Run weights creation with updated rgeoda
+
+There is a update of rgeoda (version 0.0.8-1 https://github.com/GeoDaCenter/rgeoda/commit/433c7fc4f43d85b2d98f5ba0dc7b058168b54ff9) to improve the performance of weights creation on 3/2/2021. We re-run the weights creation tests for rgeoda by reinstalling the latest rgeoda package (3/2/2021)
+
+### 3.3 Results:
+
+#### 3.3.1 The updated results of weights creation:
+
+| Data | libgeoda |pygeoda | PySAL (from_dataframe) | rgeoda (rerun) | spdep (rerun) | PySAL (from_shapefile) | pygeoda (Apple M1) | libgeoda (Apple M1) |
+|------|----------|--------|------------------------|----------------|---------------|------------------------|--------------------|---------------------|
+| Natregimes | 0.025 | 0.02688233058| 0.7145156066| **0.2376666667**| **1.668666667**| 0.3945383231| 0.01253199577 |0.014|
+| US-SDOH | 0.8543333333 | 0.9045639833| 34.34305215| **3.097666667**|**46.07866667**|21.06307236| 0.4436721802|0.434|
+| NYC_blocks | 1.179666667 | 1.272605975 | 19.53454574 |**2.928666667** | **63.53566667** | 13.52057767|0.5766201019|0.572|
+|Chicago_parcels | 3.118666667 | 3.517646313| 30.32266418 | **5.559** | **36.264** | 22.42620635|1.776056051|1.751|
+
+
+#### 3.3.2 The updated results using projected Chicago dataset
+
