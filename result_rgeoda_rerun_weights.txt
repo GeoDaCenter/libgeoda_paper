@@ -1,0 +1,128 @@
+(venv) xuns-black-pro:libgeoda_paper xun$ Rscript perf_rgeoda_weights.R 
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+here
+bbox -124.731422, 24.955967, -66.969849, 49.371735
+   user  system elapsed 
+  0.234   0.010   0.243 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+here
+bbox -124.762546, 24.523096, -66.949895, 49.384358
+   user  system elapsed 
+  2.925   0.151   3.078 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+here
+bbox 1796732.945724, 544070.805908, 1991063.490636, 677021.426781
+   user  system elapsed 
+  2.841   0.072   2.914 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+here
+bbox -88.263506, 41.469868, -87.524884, 42.153979
+   user  system elapsed 
+  5.427   0.059   5.488 
+(venv) xuns-black-pro:libgeoda_paper xun$ Rscript perf_rgeoda_weights.R 
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+here
+bbox -124.731422, 24.955967, -66.969849, 49.371735
+   user  system elapsed 
+  0.232   0.010   0.242 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+here
+bbox -124.762546, 24.523096, -66.949895, 49.384358
+   user  system elapsed 
+  2.975   0.156   3.133 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+here
+bbox 1796732.945724, 544070.805908, 1991063.490636, 677021.426781
+   user  system elapsed 
+  2.848   0.080   2.931 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+here
+bbox -88.263506, 41.469868, -87.524884, 42.153979
+   user  system elapsed 
+  5.548   0.069   5.621 
+(venv) xuns-black-pro:libgeoda_paper xun$ Rscript perf_rgeoda_weights.R 
+Loading required package: digest
+Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+here
+bbox -124.731422, 24.955967, -66.969849, 49.371735
+   user  system elapsed 
+  0.216   0.011   0.228 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+here
+bbox -124.762546, 24.523096, -66.949895, 49.384358
+   user  system elapsed 
+  2.929   0.152   3.082 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+here
+bbox 1796732.945724, 544070.805908, 1991063.490636, 677021.426781
+   user  system elapsed 
+  2.857   0.082   2.941 
+Reading layer `Chicago_parcels_points' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_points.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -88.26351 ymin: 41.46987 xmax: -87.52488 ymax: 42.15398
+geographic CRS: WGS 84
+here
+bbox -88.263506, 41.469868, -87.524884, 42.153979
+   user  system elapsed 

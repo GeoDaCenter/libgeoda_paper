@@ -1,0 +1,76 @@
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "999"                                  
+[4] "8-cores"                              
+    user   system  elapsed 
+1027.244  621.896  220.530 
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "999"                                  
+[4] "16-cores"                             
+    user   system  elapsed 
+1753.502  991.793  190.413 
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "999"                                  
+[4] "no-core"                              
+    user   system  elapsed 
+ 880.556  365.251 1245.888 
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "8-cores"                              
+    user   system  elapsed 
+3537.185  645.428  538.126 
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "16-cores"                             
+    user   system  elapsed 
+4699.391  727.396  353.753 
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "no-core"                              
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "no-core"                              
+    user   system  elapsed 
+2945.613  475.237 3421.389 
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "99999"                                
+[4] "8-cores"                              
+     user    system   elapsed 
+27377.975  1614.951  3655.065 
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "99999"                                
+[4] "16-cores"                             
+     user    system   elapsed 
+35523.140  1913.712  2364.605 

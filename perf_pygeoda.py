@@ -21,6 +21,7 @@ if data_path == './data/Chicago_parcels_points.shp':
     w = pygeoda.weights.knn_weights(dt, 10)
 else:
     w = pygeoda.weights.queen_weights(dt)
+    print(w.GetNumObs())
 w_run_time = time.time() - w_start_time
 if cpu_threads==1:
     print("Weights creation took {0} seconds".format(w_run_time))

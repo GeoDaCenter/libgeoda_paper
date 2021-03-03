@@ -1,0 +1,108 @@
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+weights creation ./data/Chicago_parcels_projected.shp 
+   user  system elapsed 
+ 36.046   0.274  36.340 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+weights creation ./data/natregimes.shp 
+   user  system elapsed 
+  1.698   0.019   1.724 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+weights creation ./data/NYC_Area2010_2data.shp 
+   user  system elapsed 
+ 64.164   0.271  64.473 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+weights creation ./data/us-sdoh-2014.shp 
+   user  system elapsed 
+ 45.923   0.375  46.325 
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+weights creation ./data/Chicago_parcels_projected.shp 
+   user  system elapsed 
+ 35.781   0.281  36.087 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+weights creation ./data/natregimes.shp 
+   user  system elapsed 
+  1.631   0.015   1.646 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+weights creation ./data/NYC_Area2010_2data.shp 
+   user  system elapsed 
+ 63.287   0.258  63.591 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+weights creation ./data/us-sdoh-2014.shp 
+   user  system elapsed 
+ 45.511   0.367  45.890 
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+weights creation ./data/Chicago_parcels_projected.shp 
+   user  system elapsed 
+ 36.103   0.256  36.365 
+Reading layer `natregimes' from data source `/Users/xun/Github/libgeoda_paper/data/natregimes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 3085 features and 73 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7314 ymin: 24.95597 xmax: -66.96985 ymax: 49.37173
+geographic CRS: WGS 84
+weights creation ./data/natregimes.shp 
+   user  system elapsed 
+  1.621   0.014   1.636 
+Reading layer `NYC_Area2010_2data' from data source `/Users/xun/Github/libgeoda_paper/data/NYC_Area2010_2data.shp' using driver `ESRI Shapefile'
+Simple feature collection with 108487 features and 8 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 1796733 ymin: 544070.8 xmax: 1991063 ymax: 677021.4
+projected CRS:  USA_Contiguous_Albers_Equal_Area_Conic
+weights creation ./data/NYC_Area2010_2data.shp 
+   user  system elapsed 
+ 62.326   0.212  62.543 
+Reading layer `us-sdoh-2014' from data source `/Users/xun/Github/libgeoda_paper/data/us-sdoh-2014.shp' using driver `ESRI Shapefile'
+Simple feature collection with 71901 features and 25 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: -124.7625 ymin: 24.5231 xmax: -66.94989 ymax: 49.38436
+geographic CRS: WGS 84
+weights creation ./data/us-sdoh-2014.shp 
+   user  system elapsed 
+ 45.668   0.347  46.021 
