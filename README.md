@@ -76,11 +76,11 @@ The outpu:
 | Name | Alias | # observations | variable |
 |------|-------|----------------|----------|
 |U.S. Counties (natregimes.shp)| Natregimes | 3,085 (.shp 1.5MB)| HR60 (homicide rates for 1960) |
-|U.S. Tracts (us-sdoh-2014.shp) | US-SDOH | 72,329<sup>1</sup> (.shp 72.1MB) | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
+|U.S. Tracts (us-sdoh-2014.shp) | US-SDOH | 71,886<sup>1</sup> (.shp 72.1MB) | EP_UNEMP (unemployment rate by U.S. census tract in 2010) |
 |New York City (NYC) Blocks (NYC Area2010_2data.shp) | NYC_blocks | 108,332<sup>2</sup> (.shp 34.1MB)| CE01_02 (employed persons earning less than $1250 per month in 2002) |
 | Chicago Parcels (Chicago_parcels_points.shp) | Chicago_parcels | 321,701<sup>3</sup> (.shp 9MB)| EstBuild (Board of Review final estimated market value of building from the prior tax year)|
 
-<sup>1</sup>The original dataset has 72,344 observations with 15 islands were removed.
+<sup>1</sup>The original dataset has 71,901 observations with 15 islands were removed.
 
 <sup>2</sup>The original dataset has 108,487 observations with 155 islands were removed.
 
