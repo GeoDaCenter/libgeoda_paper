@@ -1,0 +1,9 @@
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=lookup
+Weights creation took 3.24295973777771 seconds
+../data/Chicago_parcels_projected.shp 999 lookup 1: avg 14.251746972401937 seconds
+../data/Chicago_parcels_projected.shp 999 lookup 8: avg 2.3158555030822754 seconds
+../data/Chicago_parcels_projected.shp 999 lookup 16: avg 1.8051015535990398 seconds
+Weights creation took 3.292604923248291 seconds
+../data/Chicago_parcels_projected.shp 9999 lookup 1: avg 137.5472593307495 seconds
+../data/Chicago_parcels_projected.shp 9999 lookup 8: avg 19.653326590855915 seconds
+../data/Chicago_parcels_projected.shp 9999 lookup 16: avg 15.326448122660318 seconds

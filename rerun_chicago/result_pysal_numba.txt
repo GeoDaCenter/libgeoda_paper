@@ -1,2 +1,56 @@
 export OPENBLAS_NUM_THREADS=1
 Test pysal local moran with Chicago_Parcels with Numba
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 999 1: took 356.1762230396271 seconds
+../data/Chicago_parcels_projected.shp 999 1: took 349.3375072479248 seconds
+../data/Chicago_parcels_projected.shp 999 1: took 360.1217510700226 seconds
+../data/Chicago_parcels_projected.shp 999 1: took 345.5870158672333 seconds
+../data/Chicago_parcels_projected.shp 999 1: avg of 3 runs took 351.68209139506024 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 9999 1: took 538.3739819526672 seconds
+../data/Chicago_parcels_projected.shp 9999 1: took 523.4981451034546 seconds
+../data/Chicago_parcels_projected.shp 9999 1: took 568.0205790996552 seconds
+../data/Chicago_parcels_projected.shp 9999 1: took 561.4474728107452 seconds
+../data/Chicago_parcels_projected.shp 9999 1: avg of 3 runs took 550.9887323379517 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 99999 1: took 2947.784919977188 seconds
+../data/Chicago_parcels_projected.shp 99999 1: took 2971.6019229888916 seconds
+../data/Chicago_parcels_projected.shp 99999 1: took 2887.9126160144806 seconds
+../data/Chicago_parcels_projected.shp 99999 1: took 2899.8581080436707 seconds
+../data/Chicago_parcels_projected.shp 99999 1: avg of 3 runs took 2919.7908823490143 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 999 8: took 115.85107803344727 seconds
+../data/Chicago_parcels_projected.shp 999 8: took 109.29629492759705 seconds
+../data/Chicago_parcels_projected.shp 999 8: took 110.67644429206848 seconds
+../data/Chicago_parcels_projected.shp 999 8: took 112.2124400138855 seconds
+../data/Chicago_parcels_projected.shp 999 8: avg of 3 runs took 110.72839307785034 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 9999 8: took 258.3326201438904 seconds
+../data/Chicago_parcels_projected.shp 9999 8: took 250.48005199432373 seconds
+../data/Chicago_parcels_projected.shp 9999 8: took 251.2850217819214 seconds
+../data/Chicago_parcels_projected.shp 9999 8: took 250.9288728237152 seconds
+../data/Chicago_parcels_projected.shp 9999 8: avg of 3 runs took 250.89798219998679 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 99999 8: took 1491.837166070938 seconds
+../data/Chicago_parcels_projected.shp 99999 8: took 1492.4924302101135 seconds
+../data/Chicago_parcels_projected.shp 99999 8: took 1494.7760787010193 seconds
+../data/Chicago_parcels_projected.shp 99999 8: took 1497.7844648361206 seconds
+../data/Chicago_parcels_projected.shp 99999 8: avg of 3 runs took 1495.0176579157512 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 999 16: took 118.74680280685425 seconds
+../data/Chicago_parcels_projected.shp 999 16: took 112.3870837688446 seconds
+../data/Chicago_parcels_projected.shp 999 16: took 111.99257802963257 seconds
+../data/Chicago_parcels_projected.shp 999 16: took 111.7286970615387 seconds
+../data/Chicago_parcels_projected.shp 999 16: avg of 3 runs took 112.0361196200053 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 9999 16: took 252.48912692070007 seconds
+../data/Chicago_parcels_projected.shp 9999 16: took 245.08733797073364 seconds
+../data/Chicago_parcels_projected.shp 9999 16: took 245.07533431053162 seconds
+../data/Chicago_parcels_projected.shp 9999 16: took 245.48048090934753 seconds
+../data/Chicago_parcels_projected.shp 9999 16: avg of 3 runs took 245.21438439687094 seconds
+Numba version installed: 0.52.0
+../data/Chicago_parcels_projected.shp 99999 16: took 1582.885731935501 seconds
+../data/Chicago_parcels_projected.shp 99999 16: took 1586.3905959129333 seconds
+../data/Chicago_parcels_projected.shp 99999 16: took 1587.281809091568 seconds
+../data/Chicago_parcels_projected.shp 99999 16: took 1584.1920771598816 seconds
+../data/Chicago_parcels_projected.shp 99999 16: avg of 3 runs took 1585.9548273881276 seconds

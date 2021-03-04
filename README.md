@@ -375,3 +375,28 @@ There is a update of rgeoda (version 0.0.8-1 https://github.com/GeoDaCenter/rgeo
 
 #### 3.3.2 The updated results using projected Chicago dataset
 
+**No parallelization** 
+
+| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | PySAL+numba |pygeoda (lookup-table) | rgeoda (lookup-table) | libgeoda (lookup-table) | pygeoda-AppleM1 | libgeoda-AppleM1 | libgeoda-M1 (lookup) |
+|------|--------------|-----------|----------|---------|--------|-------|-------------|-----------------------|-----------------------|-------------------------|-----------------|------------------|----------------------|
+|Chicago_parcels|999||||122.7653333|1232.191|351.6820914||||28.19863915|26.8127|3.78133|
+|Chicago_parcels|9999||||1137.513667|3386.519667|550.9887323||||282.8068848|270.167|35.4723|
+|Chicago_parcels|99999||||11498.43667|>5hours|2919.790882||||2785.58942|2664.21|353.835|
+
+
+**8 CPU Cores/Threads** 
+
+| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | PySAL+numba |pygeoda (lookup-table) | rgeoda (lookup-table) | libgeoda (lookup-table) | pygeoda-AppleM1 | libgeoda-AppleM1 | libgeoda-M1 (lookup) |
+|------|--------------|-----------|----------|---------|--------|-------|-------------|-----------------------|-----------------------|-------------------------|-----------------|------------------|----------------------|
+|Chicago_parcels|999||||17.04533333|217.3633333|110.7283931||||7.328261296|7.156|0.885|
+|Chicago_parcels|9999||||162.6446667|534.693|250.8979822||||75.01957703|72.1607|8.30133|
+|Chicago_parcels|99999||||1611.862333|3593.604333|1495.017658||||775.6198767|707.908|83.979|
+
+
+**16 CPU Cores/Threads** 
+
+| Data | Permutations | GeoDa GPU | libgeoda | pygeoda | rgeoda | spdep | PySAL+numba |pygeoda (lookup-table) | rgeoda (lookup-table) | libgeoda (lookup-table) |
+|------|--------------|-----------|----------|---------|--------|-------|-------------|-----------------------|-----------------------|-------------------------|
+|Chicago_parcels|999||||12.32|190.7413333|351.6820914||||
+|Chicago_parcels|9999||||112.5883333|354.803|550.9887323||||
+|Chicago_parcels|99999||||1136.704|2406.149|2919.790882||||
