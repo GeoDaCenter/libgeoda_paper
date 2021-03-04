@@ -1,2 +1,36 @@
 Test pyGeoDa local moran with Chicago_Parcels_Projected using permutation_method=complete
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.8308327198028564 seconds
+../data/Chicago_parcels_projected.shp 999 complete 1: avg 28.198639154434204 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 999 complete 8: avg 7.328261295954387 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 999 complete 16: avg 7.283228715260823 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Test pyGeoDa local moran with Chicago_Parcels_Projected using permutation_method=complete
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.863123893737793 seconds
+../data/Chicago_parcels_projected.shp 9999 complete 1: avg 282.806884765625 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 9999 complete 8: avg 75.01957702636719 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 99999 complete 8: avg 775.6198767026266 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.8135650157928467 seconds
+../data/Chicago_parcels_projected.shp 99999 complete 1: avg 2785.5894199212394 seconds
 Test pyGeoDa local moran with Chicago_Parcels_Projected using permutation_method=lookup
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.9068412780761719 seconds
+../data/Chicago_parcels_projected.shp 999 lookup 1: avg 3.914775292078654 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 999 lookup 8: avg 0.9278749624888102 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.7773048877716064 seconds
+../data/Chicago_parcels_projected.shp 9999 lookup 1: avg 36.53137946128845 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 9999 lookup 8: avg 8.153874317804972 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+../data/Chicago_parcels_projected.shp 99999 lookup 8: avg 86.30595819155376 seconds
+(Optional) GeoPandas is not found. Please install GeoPandas for ESDA features.
+Weights creation took 1.859546184539795 seconds
+../data/Chicago_parcels_projected.shp 99999 lookup 1: avg 364.829355319341 seconds
