@@ -1,0 +1,2 @@
+export OPENBLAS_NUM_THREADS=1
+Test pysal local moran with Chicago_Parcels with Numba

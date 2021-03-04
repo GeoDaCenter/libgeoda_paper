@@ -139,3 +139,7 @@ here
 [3] "99999"                                
 [4] "complete"                             
 [5] "16"                                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications  elapsed relative user.self sys.self user.child sys.child
+1            3 3410.112        1  54156.15     69.5          0         0

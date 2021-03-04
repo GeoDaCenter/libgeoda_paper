@@ -22,16 +22,8 @@ np.random.seed(12345)
 gdf = gpd.read_file(data_path)
 x = gdf[var_name]
 
-
-if data_path == '../data/Chicago_parcels_projected.shp':
-    w = lps.weights.KNN.from_dataframe(gdf, k=10)
-else:
-    w = lps.weights.Queen.from_dataframe(gdf)
-    # remove islands
-    if len(w.islands) > 0:
-        df_noi = gdf[~gdf.index.isin(w.islands)]
-        w = lps.weights.w_subset(w, df_noi.index.tolist())
-        x = df_noi[var_name]
+#w = lps.weights.KNN.from_dataframe(gdf, k=10)
+w = lps.weights.KNN.from_shapefile(data_path, k=10)
 w.transform = 'r'
 
 try:

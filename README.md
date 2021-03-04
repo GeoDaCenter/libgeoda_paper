@@ -253,7 +253,7 @@ You can find the result with or without `OPENBLAS_NUM_THREADS` setting in the go
 |Chicago_parcels|9999|5.342666667|159.269|161.4538433|164.331|560.1833333|259.9330783|19.51306844|20.197|19.4687|72.33786313|71.2023|8.17933|
 |Chicago_parcels|99999|52.83633333|1589.36|1629.589604|1640.682|3651.002333|1511.241152|191.0071477|193.1073333|190.031|809.6136088|753.725|85.9223|
 
-<sup>5</sup>On this test machine, each physical CPU core has 2 CPU threads (logical CPU cores). Therefore, there are total of 24 logical CPU cores, and the maximum CPU usage could be 2400%. The spdep and PySAL+numba do multi-processing for parallalization.  For testing spdep, the function localmoran_perm() is called after setting up using 8/16 CPU logical cores (or 800%/1600% CPU usage): `set.coresOption(8)` or `set.coresOption(16)`. For testing PySAL+numba, the parameter `n_jobs=8` and `n_jobs=16` are used to use 8/16 logical CPU cores.
+<sup>5</sup>On this test machine, each physical CPU core has 2 CPU threads (logical CPU cores). Therefore, there are total of 24 logical CPU cores, and the maximum CPU usage could be 2400%. The spdep and PySAL+numba do multi-processing for parallalization.  For testing spdep, the function localmoran_perm() is called after setting up using 8/16 CPU logical cores (or 800%/1600% CPU usage): `set.coresOption(8)` or `set.coresOption(16)`. For testing PySAL+numba, the parameter `n_jobs=8` and `n_jobs=16` are defined to use 8/16 logical CPU cores.
 
 ### 2.1.3 Using 16 logical CPU cores or CPU threads 
 
