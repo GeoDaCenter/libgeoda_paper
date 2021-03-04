@@ -1,0 +1,2 @@
+Test pyGeoDa local moran with Chicago_Parcels_Projected using permutation_method=complete
+Test pyGeoDa local moran with Chicago_Parcels_Projected using permutation_method=lookup
