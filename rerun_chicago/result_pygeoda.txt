@@ -7,3 +7,20 @@ Weights creation took 3.292604923248291 seconds
 ../data/Chicago_parcels_projected.shp 9999 lookup 1: avg 137.5472593307495 seconds
 ../data/Chicago_parcels_projected.shp 9999 lookup 8: avg 19.653326590855915 seconds
 ../data/Chicago_parcels_projected.shp 9999 lookup 16: avg 15.326448122660318 seconds
+Weights creation took 3.2718310356140137 seconds
+../data/Chicago_parcels_projected.shp 99999 lookup 1: avg 1339.6305826505024 seconds
+../data/Chicago_parcels_projected.shp 99999 lookup 8: avg 191.0675654411316 seconds
+../data/Chicago_parcels_projected.shp 99999 lookup 16: avg 148.88065401713052 seconds
+Test pyGeoDa local moran with Chicago_Parcels using permutation_method=complete
+Weights creation took 3.2089500427246094 seconds
+../data/Chicago_parcels_projected.shp 999 complete 1: avg 113.15550168355306 seconds
+../data/Chicago_parcels_projected.shp 999 complete 8: avg 16.299524466196697 seconds
+../data/Chicago_parcels_projected.shp 999 complete 16: avg 11.398874044418335 seconds
+Weights creation took 3.3187270164489746 seconds
+../data/Chicago_parcels_projected.shp 9999 complete 1: avg 1128.4268178145091 seconds
+../data/Chicago_parcels_projected.shp 9999 complete 8: avg 163.6925741036733 seconds
+../data/Chicago_parcels_projected.shp 9999 complete 16: avg 111.15728219350179 seconds
+Weights creation took 3.2370588779449463 seconds
+../data/Chicago_parcels_projected.shp 99999 complete 1: avg 11275.496208111445 seconds
+../data/Chicago_parcels_projected.shp 99999 complete 8: avg 1608.6461503505707 seconds
+../data/Chicago_parcels_projected.shp 99999 complete 16: avg 1086.440269390742 seconds

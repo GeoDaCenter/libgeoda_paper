@@ -1,0 +1,5 @@
+Test libgeoda C++ local moran-complete with Chicago_Parcels_projected
+Weights creation takes: 3234 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 109518 milliseconds.
+perm: 999 threads: 8 avg of 3 runs: 16533.3 milliseconds.
+perm: 999 threads: 16 avg of 3 runs: 11556.3 milliseconds.

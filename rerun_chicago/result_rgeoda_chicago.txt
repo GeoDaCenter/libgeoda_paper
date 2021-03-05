@@ -143,3 +143,158 @@ here
 1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
   replications  elapsed relative user.self sys.self user.child sys.child
 1            3 3410.112        1  54156.15     69.5          0         0
+====Run rgeoda local_moran using Chicago_Parcels and permutation_method=complete
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 999 complete 1
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 999 complete 8
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 999 complete 16
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 9999 complete 1
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 9999 complete 8
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 9999 complete 16
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 99999 complete 1
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 99999 complete 8
+Rscript perf_rgeoda.R ../data/Chicago_parcels_projected.shp EstBuild 99999 complete 16
+====Run rgeoda local_moran using Chicago_Parcels and permutation_method=lookup
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "999"                                  
+[4] "lookup"                               
+[5] "1"                                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  42.791        1    42.737    0.046          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "999"                                  
+[4] "lookup"                               
+[5] "8"                                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   7.557        1    48.251    0.049          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "999"                                  
+[4] "lookup"                               
+[5] "16"                                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   6.155        1    64.986    0.078          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "lookup"                               
+[5] "1"                                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 403.806        1   403.634    0.134          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "lookup"                               
+[5] "8"                                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  60.025        1   465.208    0.146          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "9999"                                 
+[4] "lookup"                               
+[5] "16"                                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3   46.29        1   678.779    0.497          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "99999"                                
+[4] "lookup"                               
+[5] "1"                                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3    4049        1  4047.056    1.281          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "99999"                                
+[4] "lookup"                               
+[5] "8"                                    
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3 579.132        1  4606.595    1.295          0         0
+Reading layer `Chicago_parcels_projected' from data source `/Users/xun/Github/libgeoda_paper/data/Chicago_parcels_projected.shp' using driver `ESRI Shapefile'
+Simple feature collection with 321701 features and 6 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: 395431.4 ymin: 4591128 xmax: 456328 ymax: 4667551
+projected CRS:  WGS 84 / UTM zone 16N
+here
+[1] "../data/Chicago_parcels_projected.shp"
+[2] "EstBuild"                             
+[3] "99999"                                
+[4] "lookup"                               
+[5] "16"                                   
+                                                                                                                        test
+1 lm <- local_moran(w, dt[variable_name], permutations = perms, permutation_method = perm_method, cpu_threads = cpu_threads)
+  replications elapsed relative user.self sys.self user.child sys.child
+1            3  447.56        1  7007.815    6.759          0         0
