@@ -3,3 +3,20 @@ Weights creation takes: 3234 milliseconds.
 perm: 999 threads: 1 avg of 3 runs: 109518 milliseconds.
 perm: 999 threads: 8 avg of 3 runs: 16533.3 milliseconds.
 perm: 999 threads: 16 avg of 3 runs: 11556.3 milliseconds.
+perm: 9999 threads: 1 avg of 3 runs: 1.09183e+06 milliseconds.
+perm: 9999 threads: 8 avg of 3 runs: 162286 milliseconds.
+perm: 9999 threads: 16 avg of 3 runs: 111097 milliseconds.
+perm: 99999 threads: 1 avg of 3 runs: 1.08797e+07 milliseconds.
+perm: 99999 threads: 8 avg of 3 runs: 1.59188e+06 milliseconds.
+perm: 99999 threads: 16 avg of 3 runs: 1.10474e+06 milliseconds.
+Test libgeoda C++ local moran-lookup with Chicago_Parcels_projected
+Weights creation takes: 3197 milliseconds.
+perm: 999 threads: 1 avg of 3 runs: 13453 milliseconds.
+perm: 999 threads: 8 avg of 3 runs: 2261.33 milliseconds.
+perm: 999 threads: 16 avg of 3 runs: 1768.67 milliseconds.
+perm: 9999 threads: 1 avg of 3 runs: 130681 milliseconds.
+perm: 9999 threads: 8 avg of 3 runs: 19487 milliseconds.
+perm: 9999 threads: 16 avg of 3 runs: 15349 milliseconds.
+perm: 99999 threads: 1 avg of 3 runs: 1.30331e+06 milliseconds.
+perm: 99999 threads: 8 avg of 3 runs: 190622 milliseconds.
+perm: 99999 threads: 16 avg of 3 runs: 147968 milliseconds.
